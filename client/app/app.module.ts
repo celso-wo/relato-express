@@ -7,9 +7,7 @@ import { AppComponent }   from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
 import { DashboardModule } from './dashboard/dashboard.module';
-import { SidebarModule } from './sidebar/sidebar.module';
 import { FooterModule } from './shared/footer/footer.module';
-import { NavbarModule} from './shared/navbar/navbar.module';
 
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
@@ -17,8 +15,6 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     imports:      [
         BrowserModule,
         DashboardModule,
-        SidebarModule,
-        NavbarModule,
         FooterModule,
         RouterModule.forRoot([])
     ],

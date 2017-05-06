@@ -1,14 +1,18 @@
 {
   "files.exclude": {
     ".editorconfig": true,
-    ".eslintrc": true,
+    ".eslintrc": false,
     ".gitignore": true,
     ".jshintrc": true,
     ".jsbeautifyrc": true,
     "client/node_modules/": true,
     "server/node_modules/": true,
-    "**/*.js": true,
-    "**/*.map": true,
+    "**/*.js": {
+      "when": "$(basename).ts"
+    },
+    "**/*.map": {
+      "when": "$(basename).map"
+    },
     "**/.git": true,
     "**/.DS_Store": true
   },

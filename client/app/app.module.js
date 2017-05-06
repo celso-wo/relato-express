@@ -14,9 +14,7 @@ var router_1 = require('@angular/router');
 var app_component_1 = require('./app.component');
 var dashboard_component_1 = require('./dashboard/dashboard.component');
 var dashboard_module_1 = require('./dashboard/dashboard.module');
-var sidebar_module_1 = require('./sidebar/sidebar.module');
 var footer_module_1 = require('./shared/footer/footer.module');
-var navbar_module_1 = require('./shared/navbar/navbar.module');
 var common_1 = require('@angular/common');
 var AppModule = (function () {
     function AppModule() {
@@ -26,8 +24,6 @@ var AppModule = (function () {
             imports: [
                 platform_browser_1.BrowserModule,
                 dashboard_module_1.DashboardModule,
-                sidebar_module_1.SidebarModule,
-                navbar_module_1.NavbarModule,
                 footer_module_1.FooterModule,
                 router_1.RouterModule.forRoot([])
             ],
