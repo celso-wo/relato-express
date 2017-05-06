@@ -9,28 +9,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var initDemo = require('../../../assets/js/charts.js');
-var HomeComponent = (function () {
-    function HomeComponent() {
-        this.dados = {
-            nome: 'Mike',
-            dadoscadastrais: {
-                opened: false
-            }
-        };
+var EntradaComponent = (function () {
+    function EntradaComponent() {
     }
-    HomeComponent.prototype.ngOnInit = function () {
-        initDemo();
+    EntradaComponent.prototype.ngOnInit = function () {
     };
-    HomeComponent = __decorate([
+    EntradaComponent = __decorate([
         core_1.Component({
-            selector: 'home-cmp',
+            selector: 'entrada-cmp',
             moduleId: module.id,
-            templateUrl: 'home.component.html'
+            templateUrl: 'entrada.component.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], HomeComponent);
-    return HomeComponent;
+    ], EntradaComponent);
+    return EntradaComponent;
 }());
-exports.HomeComponent = HomeComponent;
-//# sourceMappingURL=home.component.js.map
+exports.EntradaComponent = EntradaComponent;
+//# sourceMappingURL=entrada.component.js.map

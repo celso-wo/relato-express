@@ -3,11 +3,13 @@ var home_component_1 = require('./home/home.component');
 var user_component_1 = require('./user/user.component');
 var icons_component_1 = require('./icons/icons.component');
 var table_component_1 = require('./table/table.component');
+var entrada_component_1 = require('./entrada/entrada.component');
 var notifications_component_1 = require('./notifications/notifications.component');
 var typography_component_1 = require('./typography/typography.component');
 var maps_component_1 = require('./maps/maps.component');
 var upgrade_component_1 = require('./upgrade/upgrade.component');
 exports.MODULE_ROUTES = [
+    { path: 'entrada', component: entrada_component_1.EntradaComponent },
     { path: 'dashboard', component: home_component_1.HomeComponent },
     { path: 'user', component: user_component_1.UserComponent },
     { path: 'table', component: table_component_1.TableComponent },
@@ -26,6 +28,7 @@ exports.MODULE_COMPONENTS = [
     notifications_component_1.NotificationsComponent,
     typography_component_1.TypographyComponent,
     maps_component_1.MapsComponent,
-    upgrade_component_1.UpgradeComponent
+    upgrade_component_1.UpgradeComponent,
+    entrada_component_1.EntradaComponent
 ];
 //# sourceMappingURL=dashboard.routes.js.map

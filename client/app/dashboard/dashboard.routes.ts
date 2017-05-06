@@ -4,12 +4,14 @@ import { HomeComponent } from './home/home.component';
 import { UserComponent } from './user/user.component';
 import { IconsComponent } from './icons/icons.component';
 import { TableComponent } from './table/table.component';
+import { EntradaComponent } from './entrada/entrada.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { TypographyComponent } from './typography/typography.component';
 import { MapsComponent } from './maps/maps.component';
 import { UpgradeComponent } from './upgrade/upgrade.component';
 
 export const MODULE_ROUTES: Route[] =[
+    { path: 'entrada', component: EntradaComponent },
     { path: 'dashboard', component: HomeComponent },
     { path: 'user', component: UserComponent },
     { path: 'table', component: TableComponent },
@@ -29,5 +31,6 @@ export const MODULE_COMPONENTS = [
     NotificationsComponent,
     TypographyComponent,
     MapsComponent,
-    UpgradeComponent
+    UpgradeComponent,
+    EntradaComponent
 ]

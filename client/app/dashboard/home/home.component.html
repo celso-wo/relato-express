@@ -8,12 +8,12 @@
                             <i class="material-icons">content_copy</i>
                         </div>
                         <div class="card-content">
-                            <p class="category">Used Space</p>
+                            <p class="category">{{dados.nome}}</p>
                             <h3 class="title">49/50<small>GB</small></h3>
                         </div>
                         <div class="card-footer">
                             <div class="stats">
-                                <i class="material-icons text-danger">warning</i> <a href="#pablo">Get More Space...</a>
+                                <i class="material-icons text-danger">warning</i> <a href="#pablo"  (click)="dados.dadoscadastrais.opened = !dados.dadoscadastrais.opened">Get More Space...</a>
                             </div>
                         </div>
                     </div>
@@ -71,7 +71,7 @@
 
             <div class="row">
                 <div class="col-md-4">
-                    <div class="card" >
+                    <div class="card" *ngIf="dados.dadoscadastrais.opened">
                         <div class="card-header card-chart" data-background-color="green">
                             <div class="ct-chart" id="dailySalesChart"></div>
                         </div>
