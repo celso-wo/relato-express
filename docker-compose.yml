@@ -1,0 +1,33 @@
+server:
+  build: ./server/
+  dockerfile: Dockerfile
+  environment:
+    - NODE_ENV=development
+    - MONGODB_URI=mongodb://mongo/hackathon
+    - PORT=3000
+  volumes:
+    - ./server/:/src
+  links:
+    - mongo
+
+mongo:
+   image: mongo
+   ports:
+     - "27017:27017"
+
+client:
+  build: ./client/
+  dockerfile: Dockerfile
+  volumes:
+    - ./client/:/src
+  links:
+    - mongo
+
+proxy:
+  build: ./proxy/
+  dockerfile: Dockerfile
+  ports:
+    - "8080:80"
+  links:
+    - server
+    - client
