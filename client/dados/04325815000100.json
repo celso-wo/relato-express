@@ -2,7 +2,7 @@
   "nome": "Mike",
   "dadoscadastrais": {
     "data": {
-      "cnpj": "04.325.815/0001-00",
+      "cnpj": "05.325.815/0001-00",
       "razaoSocial": "DISPARE TRANSP ROD COM ATACADISTA HORTIFRUTIGRANJEIRO LTDA ME",
       "tipoSociedade": "SOCIEDADE EMPRESARIA LIMITADA",
       "antecessoraNome": "DISPARE TRANSPORTES LTDA ME",
@@ -28,7 +28,7 @@
     },
     "opened": false
   },
-  "informacoesConcentreProtesto": [
+  "informacoesconcentreprotesto": [
     {
       "dataProtesto":"20/02/2017",
       "valor": "1.275,00",
@@ -36,7 +36,7 @@
       "cidade": "UBERLANDIA - MG"
     }
   ],
-  "informacoesConcentreJudicial":[
+  "informacoesconcentrejudicial":[
     {
       "dataAcaoJudicial" :"19/08/2016",
       "naturezaAcao": "FISCAL FEDERAL",

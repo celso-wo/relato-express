@@ -4,11 +4,6 @@
       <ul class="nav navbar-nav">
         <img style="height: 40px;" src="../../assets/img/logo.png" alt="">
       </ul>
-      <!--<ul class="nav nav-pills nav-pills-info">
-        <li class="active"><a href="#pill1" data-toggle="tab">Geral</a></li>
-        <li><a href="#pill2" data-toggle="tab">Fornecedores</a></li>
-        <li><a href="#pill3" data-toggle="tab">Dívidas</a></li>
-      </ul>-->
     </div>
   </div>
 </nav>
@@ -114,8 +109,6 @@
             </div>
           </div>
         </div>
-
-
         <div class="row">
           <div class="col-md-12">
             <div class="card">
@@ -134,11 +127,11 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
-                      <td>12/11/2016</td>
-                      <td class="text-danger">R$ 120,738</td>
-                      <td>01</td>
-                      <td>Uberlandia/MG</td>
+                    <tr *ngFor="let informacao of dados.informacoesconcentreprotesto">
+                      <td>{{informacao.dataProtesto}}</td>
+                      <td class="text-danger">R$ {{informacao.dataProtesto}}</td>
+                      <td>{{informacao.cartorio}}</td>
+                      <td>{{informacao.cidade}}</td>
                     </tr>
                   </tbody>
                 </table>
@@ -169,7 +162,7 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
+                    <tr *ngFor="let informacao of dados.informacoesconcentrejudicial">
                       <td>18/08/2016</td>
                       <td>FISCAL FEDERAL</td>
                       <td></td>
