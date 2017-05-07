@@ -561,50 +561,14 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr data-intro="Essa dívida já passou de 5 meses">
-                      <td>12/12/2016</td>
-                      <td>TIT.DESCONTA</td>
-                      <td>N</td>
-                      <td class="text-danger">R$ 120,738</td>
-                      <td>0054154515589</td>
-                      <td>Algar Midia</td>
-                      <td>ULA</td>
-                    </tr>
-                    <tr data-intro="Essa dívida já passou de 5 meses">
-                      <td>12/12/2016</td>
-                      <td>TIT.DESCONTA</td>
-                      <td>N</td>
-                      <td class="text-danger">R$ 120,738</td>
-                      <td>0054154515589</td>
-                      <td>Algar Midia</td>
-                      <td>ULA</td>
-                    </tr>
-                    <tr data-intro="Essa dívida já passou de 5 meses">
-                      <td>12/12/2016</td>
-                      <td>TIT.DESCONTA</td>
-                      <td>N</td>
-                      <td class="text-danger">R$ 120,738</td>
-                      <td>0054154515589</td>
-                      <td>Algar Midia</td>
-                      <td>ULA</td>
-                    </tr>
-                    <tr data-intro="Essa dívida já passou de 5 meses">
-                      <td>12/12/2016</td>
-                      <td>TIT.DESCONTA</td>
-                      <td>N</td>
-                      <td class="text-danger">R$ 120,738</td>
-                      <td>0054154515589</td>
-                      <td>Algar Midia</td>
-                      <td>ULA</td>
-                    </tr>
-                    <tr data-intro="Essa dívida já passou de 5 meses">
-                      <td>12/12/2016</td>
-                      <td>TIT.DESCONTA</td>
-                      <td>N</td>
-                      <td class="text-danger">R$ 120,738</td>
-                      <td>0054154515589</td>
-                      <td>Algar Midia</td>
-                      <td>ULA</td>
+                    <tr *ngFor="let p of dados.pefin" data-intro="Essa dívida já passou de 5 meses">
+                      <td>{{p.data}}</td>
+                      <td>{{p.modalidade}}</td>
+                      <td>{{p.avalista}}</td>
+                      <td class="text-danger">R$ {{p.valor}}</td>
+                      <td>{{p.contrato}}</td>
+                      <td>{{p.origem}}</td>
+                      <td>{{p.local}}</td>
                     </tr>
                   </tbody>
                 </table>
@@ -633,50 +597,14 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
-                      <td>12/12/2016</td>
-                      <td>TIT.DESCONTA</td>
-                      <td>N</td>
-                      <td class="text-danger">R$ 360,738</td>
-                      <td>0054154515589</td>
-                      <td>Algar Midia</td>
-                      <td>ULA</td>
-                    </tr>
-                    <tr>
-                      <td>12/12/2016</td>
-                      <td>TIT.DESCONTA</td>
-                      <td>N</td>
-                      <td class="text-danger">R$ 360,738</td>
-                      <td>0054154515589</td>
-                      <td>Algar Midia</td>
-                      <td>ULA</td>
-                    </tr>
-                    <tr>
-                      <td>12/12/2016</td>
-                      <td>TIT.DESCONTA</td>
-                      <td>N</td>
-                      <td class="text-danger">R$ 360,738</td>
-                      <td>0054154515589</td>
-                      <td>Algar Midia</td>
-                      <td>ULA</td>
-                    </tr>
-                    <tr>
-                      <td>12/12/2016</td>
-                      <td>TIT.DESCONTA</td>
-                      <td>N</td>
-                      <td class="text-danger">R$ 360,738</td>
-                      <td>0054154515589</td>
-                      <td>Algar Midia</td>
-                      <td>ULA</td>
-                    </tr>
-                    <tr>
-                      <td>12/12/2016</td>
-                      <td>TIT.DESCONTA</td>
-                      <td>N</td>
-                      <td class="text-danger">R$ 360,738</td>
-                      <td>0054154515589</td>
-                      <td>Algar Midia</td>
-                      <td>ULA</td>
+                    <tr *ngFor="let r of dados.refin">
+                      <td>{{r.data}}</td>
+                      <td>{{r.modalidade}}</td>
+                      <td>{{r.avalista}}</td>
+                      <td class="text-danger">R$ {{r.valor}}</td>
+                      <td>{{r.contrato}}</td>
+                      <td>{{r.origem}}</td>
+                      <td>{{r.local}}</td>
                     </tr>
                   </tbody>
                 </table>
