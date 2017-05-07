@@ -294,79 +294,7 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="card">
-              <div class="card-header" data-background-color="red">
-                <h4 class="title">Pefin</h4>
-                <p class="category">(Ocorrências Mais Recentes - Até Cinco)</p>
-              </div>
-              <div class="card-content table-responsive">
-                <table class="table">
-                  <thead class="text-danger">
-                    <tr>
-                      <th>Data</th>
-                      <th>Modalidade</th>
-                      <th>Avalista</th>
-                      <th>Valor</th>
-                      <th>Contrato</th>
-                      <th>origem</th>
-                      <th>Local</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr *ngFor="let p of dados.pefin" data-intro="Essa dívida já passou de 5 meses">
-                      <td>{{p.data}}</td>
-                      <td>{{p.modalidade}}</td>
-                      <td>{{p.avalista}}</td>
-                      <td class="text-danger">R$ {{p.valor}}</td>
-                      <td>{{p.contrato}}</td>
-                      <td>{{p.origem}}</td>
-                      <td>{{p.local}}</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="row">
-          <div class="col-md-12">
-            <div class="card">
-              <div class="card-header" data-background-color="red">
-                <h4 class="title">Refin</h4>
-                <p class="category">(Ocorrências Mais Recentes - Até Cinco)</p>
-              </div>
-              <div class="card-content table-responsive">
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th>Data</th>
-                      <th>Modalidade</th>
-                      <th>Avalista</th>
-                      <th>Valor</th>
-                      <th>Contrato</th>
-                      <th>origem</th>
-                      <th>Local</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr *ngFor="let r of dados.refin">
-                      <td>{{r.data}}</td>
-                      <td>{{r.modalidade}}</td>
-                      <td>{{r.avalista}}</td>
-                      <td class="text-danger">R$ {{r.valor}}</td>
-                      <td>{{r.contrato}}</td>
-                      <td>{{r.origem}}</td>
-                      <td>{{r.local}}</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
 
         <div class="row">
           <div class="col-md-12">
@@ -410,6 +338,75 @@
             </div>
           </div>
         </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header" data-background-color="red">
+                <h4 class="title">Informações do Concentre - Ações Judiciais</h4>
+                <p class="category">(Ocorrências mais recentes - Até Cinco)</p>
+              </div>
+              <div class="card-content table-responsive">
+                <table class="table">
+                  <thead class="text-danger">
+                    <tr>
+                      <th>Data da Ação Judicial</th>
+                      <th>Natureza da Ação</th>
+                      <th>Avalista</th>
+                      <th>Valor</th>
+                      <th>Distrito</th>
+                      <th>Vara</th>
+                      <th>Cidade/UF</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let informacaojudicial of dados.informacoesconcentrejudicial">
+                      <td>{{informacaojudicial.dataAcaoJudicial}}</td>
+                      <td>{{informacaojudicial.naturezaAcao}}</td>
+                      <td>{{informacaojudicial.avalista}}</td>
+                      <td class="text-danger">R$ {{informacaojudicial.valor}}</td>
+                      <td>{{informacaojudicial.distrito}}</td>
+                      <td>{{informacaojudicial.vara}}</td>
+                      <td>{{informacaojudicial.cidade}}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header" data-background-color="red">
+                <h4 class="title">Informações do Concentre - Protesto</h4>
+                <p class="category">(Ocorrências mais recentes - Até Cinco)</p>
+              </div>
+              <div class="card-content table-responsive">
+                <table class="table">
+                  <thead class="text-danger">
+                    <tr>
+                      <th>Data Protesto</th>
+                      <th>Valor</th>
+                      <th>Cartório</th>
+                      <th>Cidade/UF</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let informacao of dados.informacoesconcentreprotesto">
+                      <td>{{informacao.dataProtesto}}</td>
+                      <td class="text-danger">R$ {{informacao.dataProtesto}}</td>
+                      <td>{{informacao.cartorio}}</td>
+                      <td>{{informacao.cidade}}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
 
       <div class="col-md-6">
@@ -542,27 +539,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="card">
-              <div class="card-header" data-background-color="red">
-                <h4 class="title">Informações do Recheque</h4>
-                <p class="category">Cheque Extraviados/Sustados</p>
-              </div>
-              <div class="card-content table-responsive">
-                <table class="table">
-                  <tr style="text-align: center">
-                    <td>=== NADA CONSTA PARA O CNPJ CONSULTADO ===</td>
-                  </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="row">
-          <div class="col-md-12">
-            <div class="card">
-              <div class="card-header" data-background-color="red">
+              <div class="card-header" data-background-color="serasa-blue">
                 <h4 class="title">Referenciais de Negócios no Mercado</h4>
                 <p class="category">Valores em Reais</p>
               </div>
@@ -594,25 +571,31 @@
           <div class="col-md-12">
             <div class="card">
               <div class="card-header" data-background-color="red">
-                <h4 class="title">Informações do Concentre - Protesto</h4>
-                <p class="category">(Ocorrências mais recentes - Até Cinco)</p>
+                <h4 class="title">Pefin</h4>
+                <p class="category">(Ocorrências Mais Recentes - Até Cinco)</p>
               </div>
               <div class="card-content table-responsive">
                 <table class="table">
                   <thead class="text-danger">
                     <tr>
-                      <th>Data Protesto</th>
+                      <th>Data</th>
+                      <th>Modalidade</th>
+                      <th>Avalista</th>
                       <th>Valor</th>
-                      <th>Cartório</th>
-                      <th>Cidade/UF</th>
+                      <th>Contrato</th>
+                      <th>origem</th>
+                      <th>Local</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr *ngFor="let informacao of dados.informacoesconcentreprotesto">
-                      <td>{{informacao.dataProtesto}}</td>
-                      <td class="text-danger">R$ {{informacao.dataProtesto}}</td>
-                      <td>{{informacao.cartorio}}</td>
-                      <td>{{informacao.cidade}}</td>
+                    <tr *ngFor="let p of dados.pefin" data-intro="Essa dívida já passou de 5 meses">
+                      <td>{{p.data}}</td>
+                      <td>{{p.modalidade}}</td>
+                      <td>{{p.avalista}}</td>
+                      <td class="text-danger">R$ {{p.valor}}</td>
+                      <td>{{p.contrato}}</td>
+                      <td>{{p.origem}}</td>
+                      <td>{{p.local}}</td>
                     </tr>
                   </tbody>
                 </table>
@@ -620,37 +603,36 @@
             </div>
           </div>
         </div>
-
 
         <div class="row">
           <div class="col-md-12">
             <div class="card">
               <div class="card-header" data-background-color="red">
-                <h4 class="title">Informações do Concentre - Ações Judiciais</h4>
-                <p class="category">(Ocorrências mais recentes - Até Cinco)</p>
+                <h4 class="title">Refin</h4>
+                <p class="category">(Ocorrências Mais Recentes - Até Cinco)</p>
               </div>
               <div class="card-content table-responsive">
                 <table class="table">
-                  <thead class="text-danger">
+                  <thead>
                     <tr>
-                      <th>Data da Ação Judicial</th>
-                      <th>Natureza da Ação</th>
+                      <th>Data</th>
+                      <th>Modalidade</th>
                       <th>Avalista</th>
                       <th>Valor</th>
-                      <th>Distrito</th>
-                      <th>Vara</th>
-                      <th>Cidade/UF</th>
+                      <th>Contrato</th>
+                      <th>origem</th>
+                      <th>Local</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr *ngFor="let informacaojudicial of dados.informacoesconcentrejudicial">
-                      <td>{{informacaojudicial.dataAcaoJudicial}}</td>
-                      <td>{{informacaojudicial.naturezaAcao}}</td>
-                      <td>{{informacaojudicial.avalista}}</td>
-                      <td class="text-danger">R$ {{informacaojudicial.valor}}</td>
-                      <td>{{informacaojudicial.distrito}}</td>
-                      <td>{{informacaojudicial.vara}}</td>
-                      <td>{{informacaojudicial.cidade}}</td>
+                    <tr *ngFor="let r of dados.refin">
+                      <td>{{r.data}}</td>
+                      <td>{{r.modalidade}}</td>
+                      <td>{{r.avalista}}</td>
+                      <td class="text-danger">R$ {{r.valor}}</td>
+                      <td>{{r.contrato}}</td>
+                      <td>{{r.origem}}</td>
+                      <td>{{r.local}}</td>
                     </tr>
                   </tbody>
                 </table>
@@ -658,6 +640,7 @@
             </div>
           </div>
         </div>
+
         <div class="row">
           <div class="col-md-12">
             <div class="card">
@@ -689,6 +672,24 @@
           </div>
         </div>
 
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header" data-background-color="red">
+                <h4 class="title">Informações do Recheque</h4>
+                <p class="category">Cheque Extraviados/Sustados</p>
+              </div>
+              <div class="card-content table-responsive">
+                <table class="table">
+                  <tr style="text-align: center">
+                    <td>=== NADA CONSTA PARA O CNPJ CONSULTADO ===</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
 
       </div>
     </div>
