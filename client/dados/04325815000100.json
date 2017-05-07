@@ -28,22 +28,27 @@
     },
     "opened": false
   },
-  "informacoesconcentreprotesto": [{
-    "dataProtesto": "20/02/2017",
-    "valor": "1.275,00",
-    "cartorio": "01",
-    "cidade": "UBERLANDIA - MG"
-  }],
-  "informacoesconcentrejudicial": [{
-    "dataAcaoJudicial": "19/08/2016",
-    "naturezaAcao": "FISCAL FEDERAL",
-    "avalista": "",
-    "valor": "43.333,00",
-    "distrito": "01",
-    "vara": "0013",
-    "cidade": "SAO PAULO/SP"
-  }],
-  "pefin": [{
+  "informacoesconcentreprotesto": [
+    {
+      "dataProtesto": "20/02/2017",
+      "valor": "1.275,00",
+      "cartorio": "01",
+      "cidade": "UBERLANDIA - MG"
+    }
+  ],
+  "informacoesconcentrejudicial": [
+    {
+      "dataAcaoJudicial": "19/08/2016",
+      "naturezaAcao": "FISCAL FEDERAL",
+      "avalista": "",
+      "valor": "43.333,00",
+      "distrito": "01",
+      "vara": "0013",
+      "cidade": "SAO PAULO/SP"
+    }
+  ],
+  "pefin": [
+    {
       "data": "20/03/2017",
       "modalidade": "TIT.DESCONTA",
       "avalista": "Não",
@@ -71,7 +76,8 @@
       "local": "ULA"
     }
   ],
-  "refin": [{
+  "refin": [
+    {
       "data": "17/02/2017",
       "modalidade": "TIT.DESCONTA",
       "avalista": "Não",
@@ -115,7 +121,8 @@
     "+60": 0,
     "avista": 1
   },
-  "registroConsultaCincoUltimas": [{
+  "registroConsultaCincoUltimas": [
+    {
       "dataConsulta": "18/04/2016",
       "cnpjConsultante": "66.369.892/0004-77",
       "clienteConsultante": "ANTONIO DA SILVA BRAGA",
@@ -153,12 +160,126 @@
     "valorVencer": "45.679,55",
     "valotTotal": "45.679,55"
   },
+  "compromissosParceladosAndamentoGrafico": {
+    "dados": [
+      { "data": [110,220,330,440,550,660,770,880,990], "label": "Em Aberto"},
+      {
+        "data": [
+          24101,
+          18069,
+          8258,
+          3175,
+          7795,
+          118948,
+          157854,
+          115814,
+          102518
+        ],
+        "label": "A Vencer"
+      }
+    ],
+    "labels": ["ABRIL/17","MAR/17","FEV/17","JAN/17","DEZ/16","NOV/16","OUT/16","SET/16","AGO/16"],
+    "options": {
+      "responsive": true,
+      "legend": {
+        "labels": {
+          "fontColor": "white"
+        }
+      },
+      "scales": {
+        "yAxes": [
+          {
+            "ticks": {
+              "fontColor": "white",
+              "beginAtZero": true
+            },
+            "stacked": true
+          }
+        ],
+        "xAxes": [
+          {
+            "ticks": {
+              "fontColor": "white",
+              "beginAtZero": true
+            }
+          }
+        ]
+      }
+    },
+    "colors": [
+      {
+        "backgroundColor": "#ef5350"
+      },
+      {
+        "backgroundColor": "#ef9a9a"
+      }
+    ],
+    "type": "bar"
+  },
   "compromissosParceladosPagos": {
     "instrucoes": 3,
     "contratos": 30,
     "valorMaiorAtraso": "0,00",
     "valotTotal": "45.679,55",
     "dias": 100
+  },
+
+  "compromissosParceladosPagosGrafico": {
+    "dados": [
+      { "data": [1417303, 1424183, 1431105, 1144866, 1356156, 1317900, 291046, 201344, 138011], "label": "Pontual"},
+      { "data": [1233, 4321, 4432, 43245, 32133, 12333, 31333, 12333, 11112], "label": "8-15"},
+      { "data": [0, 0, 0, 0, 0, 0, 0, 0, 0], "label": "16-30"},
+      { "data": [0, 0, 0, 0, 0, 0, 0, 0, 0], "label": "31-60"},
+      { "data": [0, 0, 0, 0, 0, 0, 0, 0, 0], "label": "+90"}
+    ],
+    "labels": [
+      "ABRIL/17","MAR/17","FEV/17","JAN/17","DEZ/16","NOV/16","OUT/16","SET/16","AGO/16"
+    ],
+    "options": {
+      "responsive": true,
+      "legend": {
+        "labels": {
+          "fontColor": "white"
+        }
+      },
+      "scales": {
+        "yAxes": [
+          {
+            "ticks": {
+              "fontColor": "white",
+              "beginAtZero": true
+            },
+            "stacked": true
+          }
+        ],
+        "xAxes": [
+          {
+            "ticks": {
+              "fontColor": "white",
+              "beginAtZero": true
+            }
+          }
+        ]
+      }
+    },
+    "colors": [
+      {
+        "backgroundColor": "rgba(255,255,255,0.8)"
+      },
+      {
+        "backgroundColor": "#ef9a9a"
+      },
+      {
+        "backgroundColor": "#ef5350"
+      },
+      {
+        "backgroundColor": "#d32f2f"
+      },
+      {
+        "backgroundColor": "#b71c1c"
+      }
+    ],
+    "type": "bar"
   },
 
   "cartaoCreditoLista": {
@@ -168,7 +289,8 @@
     "nomes": "R$ 800.00",
     "mediaMensal": "R$ 633.33",
     "mediopagamento": "R$ 99.00",
-    "historico": [{
+    "historico": [
+      {
         "data": "Set/16",
         "valorpagar": "R$ 233.23",
         "valorminino": "R$ 100.23",
