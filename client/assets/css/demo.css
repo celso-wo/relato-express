@@ -89,3 +89,18 @@ my-app .main-panel .main-content .card{
 .tim-row h3{
     margin-top: 0;
 }
+
+/*
+  CUSTOMIZAÇÃO
+*/
+
+#assistente {
+  cursor: pointer;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  height: 64px;
+  box-shadow: 2px 6px 20px -4px rgba(0,0,0,0.45);
+  z-index: 9999999;
+}
