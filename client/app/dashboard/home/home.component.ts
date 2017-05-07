@@ -1,4 +1,7 @@
 import { Component, OnInit, trigger, state, style, transition, animate } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Http, Response, Headers, RequestOptions } from '@angular/http';
+import 'rxjs/Rx';
 import initDemo = require('../../../assets/js/charts.js');
 
 declare var $: any;
@@ -16,40 +19,16 @@ export class HomeComponent implements OnInit {
   private introJsInstance;
   private openCompromissoEmAndamento = false;
   private openCompromissoPagos = false;
+  private routeParamSubscribe;
 
-  constructor() {
-    this.dados = {
-      nome: 'Mike',
-      dadoscadastrais: {
-        data: {
-          "cnpj": "04.325.815/0001-00",
-          "razaoSocial": "DISPARE TRANSP ROD COM ATACADISTA HORTIFRUTIGRANJEIRO LTDA ME",
-          "tipoSociedade": "SOCIEDADE EMPRESARIA LIMITADA",
-          "antecessoraNome": "DISPARE TRANSPORTES LTDA ME",
-          "antecessoraAte": "07/07/2009",
-          "registro": "4.155.487",
-          "dataRegistro": "07/06/2009",
-          "nire": "31.206.172.236",
-          "inscricaoEstadual": "702129520067",
-          "endereco": "ROD BR 050 50 KM 76 BOX 28 PAVILHO GP 1 A",
-          "bairro": "SEGISMUNDO",
-          "cidade": "UBERLANDIA",
-          "telefone": "(034) 4111-2022",
-          "cep": "38408-369",
-          "fax": "(034)",
-          "fundacao": "19/01/2002",
-          "filiais": "UBERLANDIA",
-          "ramo": "COM ATACADISTAS DE FRUTAS",
-          "quantidadeFiliais": "1",
-          "codigoAtividadeSerasa": "C-04.03.00",
-          "cnae": "46.338-01",
-          "opcaoTributaria": "SIMPLES NACIONAL",
-          "situacaoCnpj": "ATIVA"
-
-        },
-        opened: false
-      }
-    };
+  constructor(private route: ActivatedRoute, private http: Http) {
+    this.routeParamSubscribe = this.route.params.subscribe(params => {
+      this.http.get(`/dados/${params['cnpj']}.json`).toPromise().then(res => {
+        this.dados = res.json();
+      }).catch(reason => {
+        console.error(reason);
+      });
+    });
   }
 
   expandTableCompromissoEmAndamento() {
@@ -69,6 +48,10 @@ export class HomeComponent implements OnInit {
     this.introJsInstance.setOption("doneLabel", " Fechar ");
     this.introJsInstance.setOption("hidePrev", true);
     this.introJsInstance.setOption("hideNext", true);
+  }
+
+  ngOnDestroy() {
+    this.routeParamSubscribe.unsubscribe();
   }
 
   onAssistenteClick() {

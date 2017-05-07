@@ -13,17 +13,18 @@
             <p class="category">Relatório de Comportamento em Negócios</p>
           </div>
           <div class="card-content">
-            <form>
+            <form (ngSubmit)="onSubmit()">
               <div class="row">
                 <div class="col-md-12">
                   <div class="form-group form-black label-floating is-empty">
                     <label class="control-label">CNPJ</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="cnpj" [(ngModel)]="cnpj">
+                    <!--<input type="text" class="form-control" name="cnpj" [(ngModel)]="cnpj" kzMask="99.999.999/9999-99">-->
                   </div>
                 </div>
               </div>
 
-              <a class="btn btn-danger pull-right" [routerLink]="['/dashboard']">Consultar</a>
+              <button type="submit" class="btn btn-danger pull-right">Consultar</button>
               <div class="clearfix"></div>
             </form>
           </div>

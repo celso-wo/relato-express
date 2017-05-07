@@ -1,0 +1,116 @@
+{
+  "nome": "Mike",
+  "dadoscadastrais": {
+    "data": {
+      "cnpj": "04.325.815/0001-00",
+      "razaoSocial": "DISPARE TRANSP ROD COM ATACADISTA HORTIFRUTIGRANJEIRO LTDA ME",
+      "tipoSociedade": "SOCIEDADE EMPRESARIA LIMITADA",
+      "antecessoraNome": "DISPARE TRANSPORTES LTDA ME",
+      "antecessoraAte": "07/07/2009",
+      "registro": "4.155.487",
+      "dataRegistro": "07/06/2009",
+      "nire": "31.206.172.236",
+      "inscricaoEstadual": "702129520067",
+      "endereco": "ROD BR 050 50 KM 76 BOX 28 PAVILHO GP 1 A",
+      "bairro": "SEGISMUNDO",
+      "cidade": "UBERLANDIA",
+      "telefone": "(034) 4111-2022",
+      "cep": "38408-369",
+      "fax": "(034)",
+      "fundacao": "19/01/2002",
+      "filiais": "UBERLANDIA",
+      "ramo": "COM ATACADISTAS DE FRUTAS",
+      "quantidadeFiliais": "1",
+      "codigoAtividadeSerasa": "C-04.03.00",
+      "cnae": "46.338-01",
+      "opcaoTributaria": "SIMPLES NACIONAL",
+      "situacaoCnpj": "ATIVA"
+    },
+    "opened": false
+  },
+  "informacoesConcentreProtesto": [
+    {
+      "dataProtesto":"20/02/2017",
+      "valor": "R$ 1.275,00",
+      "cartorio": "01",
+      "cidade": "UBERLANDIA - MG"
+    }
+  ],
+  "informacoesConcentreJudicial":[
+    {
+      "dataAcaoJudicial" :"19/08/2016",
+      "naturezaAcao": "FISCAL FEDERAL",
+      "avalista": "",
+      "valor":"R$ 43.333,00",
+      "distrito":"01",
+      "vara": "0013",
+      "cidade": "SAO PAULO/SP"
+    }
+  ],
+  "pefin" : [
+    {
+      "data": "20/03/2017",
+      "modalidade": "TIT.DESCONTA",
+      "avalista": "Não",
+      "valor": "R$ 50,00",
+      "contrato": "30276/9",
+      "origem":"ALGAR MIDIA",
+      "local": "ULA"
+    },
+    {
+      "data": "20/02/2017",
+      "modalidade": "TIT.DESCONTA",
+      "avalista": "Não",
+      "valor": "R$ 50,00",
+      "contrato": "30276/9",
+      "origem":"ALGAR MIDIA",
+      "local": "ULA"
+    },
+    {
+      "data": "20/01/2017",
+      "modalidade": "TIT.DESCONTA",
+      "avalista": "Não",
+      "valor": "R$ 50,00",
+      "contrato": "30276/9",
+      "origem":"ALGAR MIDIA",
+      "local": "ULA"
+    }
+  ],
+  "refin" : [
+    {
+      "data": "17/02/2017",
+      "modalidade": "TIT.DESCONTA",
+      "avalista": "Não",
+      "valor": "R$ 50,00",
+      "contrato": "08200000000045212",
+      "origem":"ALGAR MIDIA",
+      "local": "ULA"
+    },
+    {
+      "data": "01/03/2017",
+      "modalidade": "TIT.DESCONTA",
+      "avalista": "Não",
+      "valor": "R$ 50,00",
+      "contrato": "042000000000053112",
+      "origem":"ALGAR MIDIA",
+      "local": "ULA"
+    }
+  ],
+  "informacoesRecheque": "NADA CONSTA PARA O CNPJ CONSULTADO",
+  "registroConsulta": {
+    "atual": 1,
+    "marAtual": 2,
+    "fev": 0,
+    "jan": 4,
+    "dez": 1,
+    "nov": 2,
+    "out": 1,
+    "set": 1,
+    "ago": 0,
+    "jul": 2,
+    "jun": 1,
+    "mai": 2, 
+    "abr": 1,
+    "marAnterior": 1
+  }
+}
