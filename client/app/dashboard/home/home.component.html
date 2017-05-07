@@ -39,8 +39,97 @@
                         </div>
                         <div class="card-content">
                             <div class="row">
-                                <div class="col-md-6">
-
+                                <div class="col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-2"> CNPJ:</div>
+                                        <div class="col-md-6"> {{dados.dadoscadastrais.data.cnpj}}</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2"> Razão Social:</div>
+                                        <div class="col-md-6"> {{dados.dadoscadastrais.data.razaoSocial}}</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2"> Tipo de Sociedade:</div>
+                                        <div class="col-md-6"> {{dados.dadoscadastrais.data.tipoSociedade}}</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2"> Antecessora:</div>
+                                        <div class="col-md-6"> {{dados.dadoscadastrais.data.antecessoraNome}}</div>
+                                        <div class="col-md-2"> Até:</div>
+                                        <div class="col-md-2"> {{dados.dadoscadastrais.data.antecessoraAte}}</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2"> Registro:</div>
+                                        <div class="col-md-6"> {{dados.dadoscadastrais.data.registro}}</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2"> Data de Registro:</div>
+                                        <div class="col-md-6"> {{dados.dadoscadastrais.data.dataRegistro}}</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2"> NIRE:</div>
+                                        <div class="col-md-6"> {{dados.dadoscadastrais.data.nire}}</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2"> Inscricao Estadual:</div>
+                                        <div class="col-md-6"> {{dados.dadoscadastrais.data.inscricaoEstadual}}</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2"> Endereço:</div>
+                                        <div class="col-md-6"> {{dados.dadoscadastrais.data.endereco}}</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2"> Inscricao Estadual:</div>
+                                        <div class="col-md-6"> {{dados.dadoscadastrais.data.inscricaoEstadual}}</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2"> Bairro:</div>
+                                        <div class="col-md-6"> {{dados.dadoscadastrais.data.bairro}}</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2"> Cidade:</div>
+                                        <div class="col-md-6"> {{dados.dadoscadastrais.data.cidade}}</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2"> Telefone:</div>
+                                        <div class="col-md-6"> {{dados.dadoscadastrais.data.telefone}}</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2"> CEP:</div>
+                                        <div class="col-md-6"> {{dados.dadoscadastrais.data.cep}}</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2"> FAX:</div>
+                                        <div class="col-md-6"> {{dados.dadoscadastrais.data.fax}}</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2"> Fundacao:</div>
+                                        <div class="col-md-6"> {{dados.dadoscadastrais.data.fundacao}}</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2"> Filiais:</div>
+                                        <div class="col-md-6"> {{dados.dadoscadastrais.data.filiais}}</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2"> Ramo:</div>
+                                        <div class="col-md-6"> {{dados.dadoscadastrais.data.ramo}}</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2"> Cod. Atividade Serasa:</div>
+                                        <div class="col-md-6"> {{dados.dadoscadastrais.data.codigoAtividadeSerasa}}</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2"> CNAE:</div>
+                                        <div class="col-md-6"> {{dados.dadoscadastrais.data.cnae}}</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2"> Opção Tributária:</div>
+                                        <div class="col-md-6"> {{dados.dadoscadastrais.data.opcaoTributaria}}</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2"> Situação do CNPJ:</div>
+                                        <div class="col-md-6"> {{dados.dadoscadastrais.data.situacaoCnpj}}</div>
+                                    </div>
                                 </div>
                                 <div class="col-md-6">
 
@@ -48,9 +137,74 @@
                             </div>
                         </div>
                     </div>
+                    <div class="card">
+                        <div class="card-header" data-background-color="red">
+                            <h4 class="title">Pefin (Ocorrências Mais Recentes)</h4>
+                            <p class="category">Até Cinco</p>
+                        </div>
+                        <div class="card-content table-responsive">
+                            <table class="table">
+                            <thead class="text-danger">
+                                <tr>
+                                <th>Data</th>
+                                <th>Modalidade</th>
+                                <th>Avalista</th>
+                                <th>Valor</th>
+                                <th>Contrato</th>
+                                <th>origem</th>
+                                <th>Local</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <td>12/12/2016</td>
+                                <td>TIT.DESCONTA</td>
+                                <td>N</td>
+                                <td class="text-danger">$120,738</td>
+                                <td>0054154515589</td>
+                                <td>Algar Midia</td>
+                                <td>ULA</td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        </div>
+                        </div>
+                        <div class="card">
+                        <div class="card-header" data-background-color="red">
+                            <h4 class="title">Refin (Ocorrências Mais Recentes)</h4>
+                            <p class="category">Até Cinco</p>
+                        </div>
+                        <div class="card-content table-responsive">
+                            <table class="table">
+                            <thead class="text-danger">
+                                <tr>
+                                <th>Data</th>
+                                <th>Modalidade</th>
+                                <th>Avalista</th>
+                                <th>Valor</th>
+                                <th>Contrato</th>
+                                <th>origem</th>
+                                <th>Local</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <td>12/12/2016</td>
+                                <td>TIT.DESCONTA</td>
+                                <td>N</td>
+                                <td class="text-danger">$360,738</td>
+                                <td>0054154515589</td>
+                                <td>Algar Midia</td>
+                                <td>ULA</td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        </div>
+                        </div>
                 </div>
             </div>
         </div>
 
         <img id="assistente" src="assets/img/photo.png" (click)="onAssistenteClick()"/>
 </div>
+
