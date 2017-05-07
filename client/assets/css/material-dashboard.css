@@ -3021,7 +3021,7 @@ footer {
       margin-bottom: 0;
       color: rgba(255, 255, 255, 0.62); }
     .card .card-header.card-chart {
-      padding: 0;
+      padding: 10px;
       min-height: 160px; }
       .card .card-header.card-chart + .content h4 {
         margin-top: 0; }

@@ -13,6 +13,7 @@ var common_1 = require('@angular/common');
 var forms_1 = require('@angular/forms');
 var router_1 = require('@angular/router');
 var kz_mask_directive_1 = require('./directives/kz-mask.directive');
+var ng2_charts_1 = require('ng2-charts');
 var dashboard_routes_1 = require('./dashboard.routes');
 var DashboardModule = (function () {
     function DashboardModule() {
@@ -20,6 +21,7 @@ var DashboardModule = (function () {
     DashboardModule = __decorate([
         core_1.NgModule({
             imports: [
+                ng2_charts_1.ChartsModule,
                 common_1.CommonModule,
                 forms_1.FormsModule,
                 router_1.RouterModule.forChild(dashboard_routes_1.MODULE_ROUTES)
