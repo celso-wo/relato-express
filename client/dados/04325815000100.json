@@ -28,14 +28,13 @@
     },
     "opened": false
   },
-<<<<<<< HEAD
-  "informacoesConcentreProtesto": [{
+  "informacoesconcentreprotesto": [{
     "dataProtesto": "20/02/2017",
     "valor": "1.275,00",
     "cartorio": "01",
     "cidade": "UBERLANDIA - MG"
   }],
-  "informacoesConcentreJudicial": [{
+  "informacoesconcentrejudicial": [{
     "dataAcaoJudicial": "19/08/2016",
     "naturezaAcao": "FISCAL FEDERAL",
     "avalista": "",
@@ -45,29 +44,6 @@
     "cidade": "SAO PAULO/SP"
   }],
   "pefin": [{
-=======
-  "informacoesconcentreprotesto": [
-    {
-      "dataProtesto":"20/02/2017",
-      "valor": "1.275,00",
-      "cartorio": "01",
-      "cidade": "UBERLANDIA - MG"
-    }
-  ],
-  "informacoesconcentrejudicial":[
-    {
-      "dataAcaoJudicial" :"19/08/2016",
-      "naturezaAcao": "FISCAL FEDERAL",
-      "avalista": "",
-      "valor":"43.333,00",
-      "distrito":"01",
-      "vara": "0013",
-      "cidade": "SAO PAULO/SP"
-    }
-  ],
-  "pefin" : [
-    {
->>>>>>> e8b0ac9454f15d2845c7ee4acf5cfc3151333456
       "data": "20/03/2017",
       "modalidade": "TIT.DESCONTA",
       "avalista": "Não",
