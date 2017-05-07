@@ -703,6 +703,20 @@
         <div class="row">
           <div class="col-md-12">
             <div class="card">
+              <div class="card-header card-chart" data-background-color="red">
+                <canvas baseChart [datasets]="dados.evolucaoCompromissosGrafico.dados" [labels]="dados.evolucaoCompromissosGrafico.labels" [options]="dados.evolucaoCompromissosGrafico.options" [colors]="dados.evolucaoCompromissosGrafico.colors" [legend]="true" [chartType]="dados.evolucaoCompromissosGrafico.type"></canvas>
+              </div>
+              <div class="card-content">
+                <h4 class="title">Evolução de Compromissos no Mercado</h4>
+                <p class="category">(Valores em Reais)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
               <div class="card-header" data-background-color="red">
                 <h4 class="title">Registro de Consulta</h4>
                 <p class="category">Cinco Últimas</p>
