@@ -109,6 +109,425 @@
             </div>
           </div>
         </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header" data-background-color="serasa-blue">
+                <h4 class="title">Compromissos Rotativos</h4>
+                <p class="category">Valores em Reais</p>
+              </div>
+              <div class="card-content table-responsive">
+                <table class="table">
+                  <thead class="text-danger">
+                    <tr>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                      <th>Saldo Utilizado</th>
+                      <th></th>
+                    </tr>
+                    <tr>
+                      <th>Instruções</th>
+                      <th>Contratos</th>
+                      <th>Média Mensal</th>
+                      <th>Maior Mensal</th>
+                      <th>Mais Recente</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>3</th>
+                      <th>4</th>
+                      <th>R$ 158.26</th>
+                      <th>R$ 322.22</th>
+                      <th>R$ 222.36</th>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header card-chart" data-background-color="serasa-blue">
+                <canvas baseChart [datasets]="dados.compromissosRotativosGrafico.dados" [labels]="dados.compromissosRotativosGrafico.labels" [options]="dados.compromissosRotativosGrafico.options" [colors]="dados.compromissosRotativosGrafico.colors" [legend]="true" [chartType]="dados.compromissosRotativosGrafico.type"></canvas>
+              </div>
+              <div class="card-content">
+                <h4 class="title">Histórico de Compromissos Rotativos</h4>
+                <p class="category">(Valores em Reais)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header" data-background-color="serasa-blue">
+                <h4 class="title">Cartão de Crédito - Resumo</h4>
+                <p class="category">Valores em Reais</p>
+              </div>
+              <div class="card-content table-responsive">
+                <table class="table">
+                  <thead class="text-danger">
+                    <tr>
+                      <th>Instruções</th>
+                      <th>Contratos</th>
+                      <th>Valor</th>
+                      <th>No Mês</th>
+                      <th>Média Mensal</th>
+                      <th>% Médio de Pagamentos das Faturas</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>2</th>
+                      <th>4</th>
+                      <th>A Pagar</th>
+                      <th>R$ 633.33</th>
+                      <th>R$ 800.00</th>
+                      <th>R$ 99.00</th>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header card-chart" data-background-color="serasa-blue">
+                <canvas baseChart [datasets]="dados.cartaoCreditoGrafico.dados" [labels]="dados.cartaoCreditoGrafico.labels" [options]="dados.cartaoCreditoGrafico.options" [colors]="dados.cartaoCreditoGrafico.colors" [legend]="true" [chartType]="dados.cartaoCreditoGrafico.type"></canvas>
+              </div>
+              <div class="card-content">
+                <h4 class="title">Histórico de Cartão de Crédito</h4>
+                <p class="category">(Valores em Reais)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header" data-background-color="serasa-blue">
+                <h4 class="title">Compromissos Parcelados Pagos</h4>
+                <p class="category">Valores em Reais</p>
+              </div>
+              <div class="card-content table-responsive">
+                <table class="table">
+                  <thead class="text-danger">
+                    <tr>
+                      <th></th>
+                      <th></th>
+                      <th>Total</th>
+                      <th>P.M.A</th>
+                      <th></th>
+                      <th>Maior Atraso</th>
+                    </tr>
+                    <tr>
+                      <th>Instruções</th>
+                      <th>Contratos</th>
+                      <th>Valor</th>
+                      <th>Dias</th>
+                      <th>Valor</th>
+                      <th>Dias</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>{{dados.compromissosResumoParceladoAndamento.intrucoes}}</th>
+                      <th>{{dados.compromissosResumoParceladoAndamento.contrato}}</th>
+                      <th>R$ {{dados.compromissosResumoParceladoAndamento.valor}}</th>
+                      <th>{{dados.compromissosResumoParceladoAndamento.dias}}</th>
+                      <th>R$ {{dados.compromissosResumoParceladoAndamento.valor2}}</th>
+                      <th>{{dados.compromissosResumoParceladoAndamento.dias2}}</th>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header card-chart" data-background-color="serasa-blue">
+                <canvas baseChart [datasets]="dados.compromissosParceladosPagosGrafico.dados" [labels]="dados.compromissosParceladosPagosGrafico.labels" [options]="dados.compromissosParceladosPagosGrafico.options" [colors]="dados.compromissosParceladosPagosGrafico.colors"
+                  [legend]="true" [chartType]="dados.compromissosParceladosPagosGrafico.type"></canvas>
+              </div>
+              <div class="card-content">
+                <h4 class="title">Compromissos Parcelados Pagos por Data</h4>
+                <p class="category">(Valores em Reais)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header" data-background-color="red">
+                <h4 class="title">Pefin</h4>
+                <p class="category">(Ocorrências Mais Recentes - Até Cinco)</p>
+              </div>
+              <div class="card-content table-responsive">
+                <table class="table">
+                  <thead class="text-danger">
+                    <tr>
+                      <th>Data</th>
+                      <th>Modalidade</th>
+                      <th>Avalista</th>
+                      <th>Valor</th>
+                      <th>Contrato</th>
+                      <th>origem</th>
+                      <th>Local</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let p of dados.pefin" data-intro="Essa dívida já passou de 5 meses">
+                      <td>{{p.data}}</td>
+                      <td>{{p.modalidade}}</td>
+                      <td>{{p.avalista}}</td>
+                      <td class="text-danger">R$ {{p.valor}}</td>
+                      <td>{{p.contrato}}</td>
+                      <td>{{p.origem}}</td>
+                      <td>{{p.local}}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header" data-background-color="red">
+                <h4 class="title">Refin</h4>
+                <p class="category">(Ocorrências Mais Recentes - Até Cinco)</p>
+              </div>
+              <div class="card-content table-responsive">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Data</th>
+                      <th>Modalidade</th>
+                      <th>Avalista</th>
+                      <th>Valor</th>
+                      <th>Contrato</th>
+                      <th>origem</th>
+                      <th>Local</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let r of dados.refin">
+                      <td>{{r.data}}</td>
+                      <td>{{r.modalidade}}</td>
+                      <td>{{r.avalista}}</td>
+                      <td class="text-danger">R$ {{r.valor}}</td>
+                      <td>{{r.contrato}}</td>
+                      <td>{{r.origem}}</td>
+                      <td>{{r.local}}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header" data-background-color="serasa-blue">
+                <h4 class="title">Histórico de Pagamentos</h4>
+                <p class="category">Quantidade de Títulos</p>
+              </div>
+              <div class="card-content table-responsive">
+                <table class="table">
+                  <thead class="text-danger">
+                    <tr>
+                      <th>Pontual</th>
+                      <th>8-15</th>
+                      <th>16-30</th>
+                      <th>31-60</th>
+                      <th>+60</th>
+                      <th>Á Vista</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>{{dados.historicopagamentos.pontual}}</th>
+                      <th>{{dados.historicopagamentos.oitoquinze}}</th>
+                      <th>{{dados.historicopagamentos.dezesseistrinta}}</th>
+                      <th>{{dados.historicopagamentos.trintaeumsessenta}}</th>
+                      <th>{{dados.historicopagamentos.maissessentaa}}</th>
+                      <th>{{dados.historicopagamentos.avista}}</th>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header card-chart" data-background-color="serasa-blue">
+                <canvas baseChart [datasets]="dados.historicoPagamentosGrafico.dados" [labels]="dados.historicoPagamentosGrafico.labels" [options]="dados.historicoPagamentosGrafico.options" [colors]="dados.historicoPagamentosGrafico.colors" [legend]="true" [chartType]="dados.historicoPagamentosGrafico.type"></canvas>
+              </div>
+              <div class="card-content">
+                <h4 class="title">Histórico de Pagamentos no Mercado</h4>
+                <p class="category">(Valores em Reais)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header" data-background-color="serasa-blue">
+                <h4 class="title">Compromissos Parcelados Em Andamento</h4>
+                <p class="category">Valores em Reais</p>
+              </div>
+              <div class="card-content table-responsive">
+                <table class="table">
+                  <thead class="text-danger">
+                    <tr>
+                      <th></th>
+                      <th></th>
+                      <th>Em Aberto</th>
+                      <th></th>
+                      <th>A Vencer</th>
+                      <th></th>
+                      <th>Total</th>
+                    </tr>
+                    <tr>
+                      <th>Instruções</th>
+                      <th>Contratos</th>
+                      <th>Valor</th>
+                      <th>%</th>
+                      <th>Valor</th>
+                      <th>%</th>
+                      <th>Valor</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>{{dados.compromissosResumoParceladoAndamento.intrucoes}}</th>
+                      <th>{{dados.compromissosResumoParceladoAndamento.contrato}}</th>
+                      <th>R$ {{dados.compromissosResumoParceladoAndamento.valor}}</th>
+                      <th>{{dados.compromissosResumoParceladoAndamento.porcentagem}}</th>
+                      <th>R$ {{dados.compromissosResumoParceladoAndamento.valor2}}</th>
+                      <th>{{dados.compromissosResumoParceladoAndamento.porcentagem2}}</th>
+                      <th>R$ {{dados.compromissosResumoParceladoAndamento.valor3}}</th>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card" data-intro="Parece que o cliente está com uma tendência de compromissos em aberto">
+              <div class="card-header card-chart" data-background-color="serasa-blue">
+                <canvas baseChart [datasets]="dados.compromissosParceladosAndamentoGrafico.dados" [labels]="dados.compromissosParceladosAndamentoGrafico.labels" [options]="dados.compromissosParceladosAndamentoGrafico.options" [colors]="dados.compromissosParceladosAndamentoGrafico.colors"
+                  [legend]="true" [chartType]="dados.compromissosParceladosAndamentoGrafico.type"></canvas>
+              </div>
+              <div class="card-content">
+                <h4 class="title">Compromissos Parcelados em Andamento</h4>
+                <p class="category">(Valores em Reais)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header card-chart" data-background-color="serasa-blue">
+                <canvas baseChart [datasets]="dados.evolucaoCompromissosGrafico.dados" [labels]="dados.evolucaoCompromissosGrafico.labels" [options]="dados.evolucaoCompromissosGrafico.options" [colors]="dados.evolucaoCompromissosGrafico.colors" [legend]="true" [chartType]="dados.evolucaoCompromissosGrafico.type"></canvas>
+              </div>
+              <div class="card-content">
+                <h4 class="title">Evolução de Compromissos no Mercado</h4>
+                <p class="category">(Valores em Reais)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header" data-background-color="red">
+                <h4 class="title">Informações do Recheque</h4>
+                <p class="category">Cheque Extraviados/Sustados</p>
+              </div>
+              <div class="card-content table-responsive">
+                <table class="table">
+                  <tr style="text-align: center">
+                    <td>=== NADA CONSTA PARA O CNPJ CONSULTADO ===</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header" data-background-color="red">
+                <h4 class="title">Referenciais de Negócios no Mercado</h4>
+                <p class="category">Valores em Reais</p>
+              </div>
+              <div class="card-content table-responsive">
+                <table class="table">
+                  <thead class="text-danger">
+                    <tr>
+                      <th>Descrição</th>
+                      <th>Data</th>
+                      <th>Valor</th>
+                      <th>Média</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let negocio of dados.referenciasNegocios">
+                      <td>{{negocio.descricao}}</td>
+                      <td>{{negocio.data}}</td>
+                      <td>R$ {{negocio.valor}}</td>
+                      <td>{{negocio.media}}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="row">
           <div class="col-md-12">
             <div class="card">
@@ -208,436 +627,7 @@
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-md-12">
-            <div class="card">
-              <div class="card-header" data-background-color="red">
-                <h4 class="title">Referenciais de Negócios no Mercado</h4>
-                <p class="category">Valores em Reais</p>
-              </div>
-              <div class="card-content table-responsive">
-                <table class="table">
-                  <thead class="text-danger">
-                    <tr>
-                      <th>Descrição</th>
-                      <th>Data</th>
-                      <th>Valor</th>
-                      <th>Média</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr *ngFor="let negocio of dados.referenciasNegocios">
-                      <td>{{negocio.descricao}}</td>
-                      <td>{{negocio.data}}</td>
-                      <td>R$ {{negocio.valor}}</td>
-                      <td>{{negocio.media}}</td>
-                    </tr>                      
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="row">
-          <div class="col-md-12">
-            <div class="card">
-              <div class="card-header" data-background-color="red">
-                <h4 class="title">Compromissos Rotativos</h4>
-                <i class="material-icons pull-right" (click)="expandTableCompromissosRotativo()">add</i>
-                <p class="category">Valores em Reais</p>
-              </div>
-              <div class="card-content table-responsive">
-                <table class="table">
-                  <thead class="text-danger">
-                    <tr>
-                      <th></th>
-                      <th></th>
-                      <th></th>
-                      <th></th>
-                      <th>Saldo Utilizado</th>
-                      <th></th>
-                    </tr>
-                    <tr>
-                      <th>Instruções</th>
-                      <th>Contratos</th>
-                      <th>Média Mensal</th>
-                      <th>Maior Mensal</th>
-                      <th>Mais Recente</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th>3</th>
-                      <th>4</th>
-                      <th>R$ 158.26</th>
-                      <th>R$ 322.22</th>
-                      <th>R$ 222.36</th>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="row">
-          <div class="col-md-12">
-            <div class="card">
-              <div class="card-header" data-background-color="red">
-                <h4 class="title">Cartão de Crédito - Resumo</h4>
-                <i class="material-icons pull-right" (click)="expandTableCartaoCredito()">add</i>
-                <p class="category">Valores em Reais</p>
-              </div>
-              <div class="card-content table-responsive">
-                <table class="table">
-                  <thead class="text-danger">
-                    <tr>
-                      <th>Instruções</th>
-                      <th>Contratos</th>
-                      <th>Valor</th>
-                      <th>No Mês</th>
-                      <th>Média Mensal</th>
-                      <th>% Médio de Pagamentos das Faturas</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th>2</th>
-                      <th>4</th>
-                      <th>A Pagar</th>
-                      <th>R$ 633.33</th>
-                      <th>R$ 800.00</th>
-                      <th>R$ 99.00</th>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <div class="col-md-6">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="card">
-              <div class="card-header" data-background-color="serasa-blue">
-                <h4 class="title">Pefin</h4>
-                <p class="category">(Ocorrências Mais Recentes - Até Cinco)</p>
-              </div>
-              <div class="card-content table-responsive">
-                <table class="table">
-                  <thead class="text-danger">
-                    <tr>
-                      <th>Data</th>
-                      <th>Modalidade</th>
-                      <th>Avalista</th>
-                      <th>Valor</th>
-                      <th>Contrato</th>
-                      <th>origem</th>
-                      <th>Local</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr *ngFor="let p of dados.pefin" data-intro="Essa dívida já passou de 5 meses">
-                      <td>{{p.data}}</td>
-                      <td>{{p.modalidade}}</td>
-                      <td>{{p.avalista}}</td>
-                      <td class="text-danger">R$ {{p.valor}}</td>
-                      <td>{{p.contrato}}</td>
-                      <td>{{p.origem}}</td>
-                      <td>{{p.local}}</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="card">
-              <div class="card-header" data-background-color="serasa-blue">
-                <h4 class="title">Refin</h4>
-                <p class="category">(Ocorrências Mais Recentes - Até Cinco)</p>
-              </div>
-              <div class="card-content table-responsive">
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th>Data</th>
-                      <th>Modalidade</th>
-                      <th>Avalista</th>
-                      <th>Valor</th>
-                      <th>Contrato</th>
-                      <th>origem</th>
-                      <th>Local</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr *ngFor="let r of dados.refin">
-                      <td>{{r.data}}</td>
-                      <td>{{r.modalidade}}</td>
-                      <td>{{r.avalista}}</td>
-                      <td class="text-danger">R$ {{r.valor}}</td>
-                      <td>{{r.contrato}}</td>
-                      <td>{{r.origem}}</td>
-                      <td>{{r.local}}</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-12">
-            <div class="card">
-              <div class="card-header" data-background-color="red">
-                <h4 class="title">Informações do Recheque</h4>
-                <p class="category">Cheque Extraviados/Sustados</p>
-              </div>
-              <div class="card-content table-responsive">
-                <table class="table">
-                  <tr style="text-align: center">
-                    <td>=== NADA CONSTA PARA O CNPJ CONSULTADO ===</td>
-                  </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-12">
-            <div class="card">
-              <div class="card-header" data-background-color="red">
-                <h4 class="title">Histórico de Pagamentos</h4>
-                <p class="category">Quantidade de Títulos</p>
-              </div>
-              <div class="card-content table-responsive">
-                <table class="table">
-                  <thead class="text-danger">
-                    <tr>
-                      <th>Pontual</th>
-                      <th>8-15</th>
-                      <th>16-30</th>
-                      <th>31-60</th>
-                      <th>+60</th>
-                      <th>Á Vista</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th>{{dados.historicopagamentos.pontual}}</th>
-                      <th>{{dados.historicopagamentos.oitoquinze}}</th>
-                      <th>{{dados.historicopagamentos.dezesseistrinta}}</th>
-                      <th>{{dados.historicopagamentos.trintaeumsessenta}}</th>
-                      <th>{{dados.historicopagamentos.maissessentaa}}</th>
-                      <th>{{dados.historicopagamentos.avista}}</th>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-12">
-            <div class="card">
-              <div class="card-header" data-background-color="red">
-                <h4 class="title">Compromissos Parcelados Em Andamento</h4>
-                <p class="category">Valores em Reais</p>
-              </div>
-              <div class="card-content table-responsive">
-                <table class="table">
-                  <thead class="text-danger">
-                    <tr>
-                      <th></th>
-                      <th></th>
-                      <th>Em Aberto</th>
-                      <th></th>
-                      <th>A Vencer</th>
-                      <th></th>
-                      <th>Total</th>
-                    </tr>
-                    <tr>
-                      <th>Instruções</th>
-                      <th>Contratos</th>
-                      <th>Valor</th>
-                      <th>%</th>
-                      <th>Valor</th>
-                      <th>%</th>
-                      <th>Valor</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th>{{dados.compromissosResumoParceladoAndamento.intrucoes}}</th>
-                      <th>{{dados.compromissosResumoParceladoAndamento.contrato}}</th>
-                      <th>R$ {{dados.compromissosResumoParceladoAndamento.valor}}</th>
-                      <th>{{dados.compromissosResumoParceladoAndamento.porcentagem}}</th>
-                      <th>R$ {{dados.compromissosResumoParceladoAndamento.valor2}}</th>
-                      <th>{{dados.compromissosResumoParceladoAndamento.porcentagem2}}</th>
-                      <th>R$ {{dados.compromissosResumoParceladoAndamento.valor3}}</th>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-12">
-            <div class="card">
-              <div class="card-header" data-background-color="red">
-                <h4 class="title">Compromissos Parcelados Pagos</h4>
-                <i class="material-icons pull-right" (click)="expandTableCompromissoPagos()">add</i>
-                <p class="category">Valores em Reais</p>
-              </div>
-              <div class="card-content table-responsive">
-                <table class="table">
-                  <thead class="text-danger">
-                    <tr>
-                      <th></th>
-                      <th></th>
-                      <th>Total</th>
-                      <th>P.M.A</th>
-                      <th></th>
-                      <th>Maior Atraso</th>
-                    </tr>
-                    <tr>
-                      <th>Instruções</th>
-                      <th>Contratos</th>
-                      <th>Valor</th>
-                      <th>Dias</th>
-                      <th>Valor</th>
-                      <th>Dias</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th>{{dados.compromissosResumoParceladoAndamento.intrucoes}}</th>
-                      <th>{{dados.compromissosResumoParceladoAndamento.contrato}}</th>
-                      <th>R$ {{dados.compromissosResumoParceladoAndamento.valor}}</th>
-                      <th>{{dados.compromissosResumoParceladoAndamento.dias}}</th>
-                      <th>R$ {{dados.compromissosResumoParceladoAndamento.valor2}}</th>
-                      <th>{{dados.compromissosResumoParceladoAndamento.dias2}}</th>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-12">
-            <div class="card">
-              <div class="card-header card-chart" data-background-color="serasa-blue">
-                <canvas baseChart [datasets]="dados.evolucaoCompromissosGrafico.dados" [labels]="dados.evolucaoCompromissosGrafico.labels" [options]="dados.evolucaoCompromissosGrafico.options" [colors]="dados.evolucaoCompromissosGrafico.colors" [legend]="true" [chartType]="dados.evolucaoCompromissosGrafico.type"></canvas>
-              </div>
-              <div class="card-content">
-                <h4 class="title">Evolução de Compromissos no Mercado</h4>
-                <p class="category">(Valores em Reais)</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-12">
-            <div class="card">
-              <div class="card-header card-chart" data-background-color="serasa-blue">
-                <canvas baseChart [datasets]="dados.compromissosParceladosPagosGrafico.dados" [labels]="dados.compromissosParceladosPagosGrafico.labels" [options]="dados.compromissosParceladosPagosGrafico.options" [colors]="dados.compromissosParceladosPagosGrafico.colors"
-                  [legend]="true" [chartType]="dados.compromissosParceladosPagosGrafico.type"></canvas>
-              </div>
-              <div class="card-content">
-                <h4 class="title">Compromissos Parcelados Pagos por Data</h4>
-                <p class="category">(Valores em Reais)</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-12">
-            <div class="card" data-intro="Parece que o cliente está com uma tendência de compromissos em aberto">
-              <div class="card-header card-chart" data-background-color="serasa-blue">
-                <canvas baseChart [datasets]="dados.compromissosParceladosAndamentoGrafico.dados" [labels]="dados.compromissosParceladosAndamentoGrafico.labels" [options]="dados.compromissosParceladosAndamentoGrafico.options" [colors]="dados.compromissosParceladosAndamentoGrafico.colors"
-                  [legend]="true" [chartType]="dados.compromissosParceladosAndamentoGrafico.type"></canvas>
-              </div>
-              <div class="card-content">
-                <h4 class="title">Compromissos Parcelados em Andamento</h4>
-                <p class="category">(Valores em Reais)</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-12">
-            <div class="card">
-              <div class="card-header card-chart" data-background-color="serasa-blue">
-                <canvas baseChart [datasets]="dados.historicoPagamentosGrafico.dados" [labels]="dados.historicoPagamentosGrafico.labels" [options]="dados.historicoPagamentosGrafico.options" [colors]="dados.historicoPagamentosGrafico.colors"
-                  [legend]="true" [chartType]="dados.historicoPagamentosGrafico.type"></canvas>
-              </div>
-              <div class="card-content">
-                <h4 class="title">Histórico de Pagamentos no Mercado</h4>
-                <p class="category">(Valores em Reais)</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-12">
-            <div class="card">
-              <div class="card-header card-chart" data-background-color="serasa-blue">
-                <canvas baseChart [datasets]="dados.evolucaoCompromissosGrafico.dados" [labels]="dados.evolucaoCompromissosGrafico.labels" [options]="dados.evolucaoCompromissosGrafico.options" [colors]="dados.evolucaoCompromissosGrafico.colors" [legend]="true" [chartType]="dados.evolucaoCompromissosGrafico.type"></canvas>
-              </div>
-              <div class="card-content">
-                <h4 class="title">Evolução de Compromissos no Mercado</h4>
-                <p class="category">(Valores em Reais)</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="row">
-          <div class="col-md-12">
-            <div class="card">
-              <div class="card-header card-chart" data-background-color="serasa-blue">
-                <canvas baseChart [datasets]="dados.compromissosRotativosGrafico.dados" [labels]="dados.compromissosRotativosGrafico.labels" [options]="dados.compromissosRotativosGrafico.options" [colors]="dados.compromissosRotativosGrafico.colors" [legend]="true" [chartType]="dados.compromissosRotativosGrafico.type"></canvas>
-              </div>
-              <div class="card-content">
-                <h4 class="title">Histórico de Compromissos Rotativos</h4>
-                <p class="category">(Valores em Reais)</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-12">
-            <div class="card">
-              <div class="card-header card-chart" data-background-color="serasa-blue">
-                <canvas baseChart [datasets]="dados.cartaoCreditoGrafico.dados" [labels]="dados.cartaoCreditoGrafico.labels" [options]="dados.cartaoCreditoGrafico.options" [colors]="dados.cartaoCreditoGrafico.colors" [legend]="true" [chartType]="dados.cartaoCreditoGrafico.type"></canvas>
-              </div>
-              <div class="card-content">
-                <h4 class="title">Histórico de Cartão de Crédito</h4>
-                <p class="category">(Valores em Reais)</p>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </div>
