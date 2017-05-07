@@ -1,10 +1,7 @@
 <nav class="navbar navbar-default">
   <div class="container-fluid">
-    <div class="collapse navbar-collapse">
-      <ul class="nav navbar-nav">
-        <img style="height: 40px;" src="../../assets/img/logo.png" alt="">
-      </ul>
-    </div>
+    <img class="pull-left" style="height: 40px;" src="../../assets/img/logo.png" alt="">
+    <a class="navbar-brand" href="#">Relato Express</a>
   </div>
 </nav>
 <div class="main-content dashboard" *ngIf="dados">
@@ -407,6 +404,25 @@
           </div>
         </div>
 
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header" data-background-color="red">
+                <h4 class="title">Informações do Recheque</h4>
+                <p class="category">Cheque Extraviados/Sustados</p>
+              </div>
+              <div class="card-content table-responsive">
+                <table class="table">
+                  <tr style="text-align: center">
+                    <td>=== NADA CONSTA PARA O CNPJ CONSULTADO ===</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
 
       <div class="col-md-6">
@@ -540,25 +556,37 @@
           <div class="col-md-12">
             <div class="card">
               <div class="card-header" data-background-color="serasa-blue">
-                <h4 class="title">Referenciais de Negócios no Mercado</h4>
+                <h4 class="title">Detalhes dos 10 Maiores Compromissos Financeiros Parcelados</h4>
                 <p class="category">Valores em Reais</p>
               </div>
               <div class="card-content table-responsive">
                 <table class="table">
-                  <thead class="text-danger">
+                  <thead>
                     <tr>
-                      <th>Descrição</th>
-                      <th>Data</th>
-                      <th>Valor</th>
-                      <th>Média</th>
+                      <th>Modalidade</th>
+                      <th>Data de Contratação</th>
+                      <th>Último</th>
+                      <th>Pré-Fixado</th>
+                      <th>QTD</th>
+                      <th>Total</th>
+                      <th>Pagas</th>
+                      <th>A Vencer</th>
+                      <th>Em Aberto</th>
+                      <th>Última Atualização</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr *ngFor="let negocio of dados.referenciasNegocios">
-                      <td>{{negocio.descricao}}</td>
-                      <td>{{negocio.data}}</td>
-                      <td>R$ {{negocio.valor}}</td>
-                      <td>{{negocio.media}}</td>
+                    <tr *ngFor="let r of dados.parcelados">
+                      <td>{{r.modalidade}}</td>
+                      <td>{{r.dataContratacao}}</td>
+                      <td>{{r.ultimoVencimento}}</td>
+                      <td>{{r.preFixado}}</td>
+                      <td>{{r.qtd}}</td>
+                      <td class="text-danger">R$ {{r.total}}</td>
+                      <td>{{r.pagas}}</td>
+                      <td>{{r.avencer}}</td>
+                      <td>{{r.emAberto}}</td>
+                      <td>{{r.ultimaAtualizacao}}</td>
                     </tr>
                   </tbody>
                 </table>
@@ -645,6 +673,37 @@
           <div class="col-md-12">
             <div class="card">
               <div class="card-header" data-background-color="red">
+                <h4 class="title">Referenciais de Negócios no Mercado</h4>
+                <p class="category">Valores em Reais</p>
+              </div>
+              <div class="card-content table-responsive">
+                <table class="table">
+                  <thead class="text-danger">
+                    <tr>
+                      <th>Descrição</th>
+                      <th>Data</th>
+                      <th>Valor</th>
+                      <th>Média</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let negocio of dados.referenciasNegocios">
+                      <td>{{negocio.descricao}}</td>
+                      <td>{{negocio.data}}</td>
+                      <td>R$ {{negocio.valor}}</td>
+                      <td>{{negocio.media}}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header" data-background-color="red">
                 <h4 class="title">Registro de Consulta</h4>
                 <p class="category">Cinco Últimas</p>
               </div>
@@ -665,25 +724,6 @@
                       <td>{{registro.clienteConsultante}}</td>
                       <td>{{registro.quantidadeConsutaDia}}</td>
                     </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-12">
-            <div class="card">
-              <div class="card-header" data-background-color="red">
-                <h4 class="title">Informações do Recheque</h4>
-                <p class="category">Cheque Extraviados/Sustados</p>
-              </div>
-              <div class="card-content table-responsive">
-                <table class="table">
-                  <tr style="text-align: center">
-                    <td>=== NADA CONSTA PARA O CNPJ CONSULTADO ===</td>
-                  </tr>
                   </tbody>
                 </table>
               </div>

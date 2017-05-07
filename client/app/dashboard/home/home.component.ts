@@ -29,6 +29,11 @@ export class HomeComponent implements OnInit {
       this.http.get(`/dados/${params['cnpj']}.json`).toPromise().then(res => {
         this.dados = res.json();
 
+        setTimeout(() => {
+          $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+          })
+        }, 1000);
       }).catch(reason => {
         console.error(reason);
       });

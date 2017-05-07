@@ -143,6 +143,12 @@
       "data": "02/02/2017",
       "valor": "55.600,20",
       "media": "55.600,20"
+    },
+    {
+      "descricao": "Maior Compra",
+      "data": "02/02/2017",
+      "valor": "55.600,20",
+      "media": "55.600,20"
     }
   ],
   "historicoPagamentosGrafico": {

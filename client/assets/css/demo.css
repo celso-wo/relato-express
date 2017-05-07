@@ -117,3 +117,7 @@ my-app .main-panel .main-content .card{
 .dashboard .card-content.table-responsive {
   min-height: 146px;
 }
+
+body {
+  font-size: 12px;
+}
