@@ -278,6 +278,266 @@
           </div>
         </div>
 
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header" data-background-color="red">
+                <h4 class="title">Compromissos Rotativos</h4>
+                <i class="material-icons pull-right" (click)="expandTableCompromissosRotativo()">add</i>
+                <p class="category">Valores em Reais</p>
+              </div>
+              <div class="card-content table-responsive">
+                <table class="table">
+                  <thead class="text-danger">
+                    <tr>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                      <th>Saldo Utilizado</th>
+                      <th></th>
+                    </tr>
+                    <tr>
+                      <th>Instruções</th>
+                      <th>Contratos</th>
+                      <th>Média Mensal</th>
+                      <th>Maior Mensal</th>
+                      <th>Mais Recente</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>3</th>
+                      <th>4</th>
+                      <th>R$ 158.26</th>
+                      <th>R$ 322.22</th>
+                      <th>R$ 222.36</th>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div *ngIf="openCompromissoRotativos">
+                <div class="card-header" ng-show="false">
+                  <h4 class="title">Histórico de Compomissos Rotativos - Por Data</h4>
+                  <p class="category">Valores em Reais</p>
+                </div>
+                <div class="card-content table-responsive">
+                  <table class="table">
+                    <thead class="text-danger">
+                      <tr>
+                        <th>Data</th>
+                        <th>Valor Mês</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>Set/16</th>
+                        <th>R$ 233.23</th>
+                      </tr>
+                      <tr>
+                        <th>Ago/16</th>
+                        <th>R$ 233.23</th>
+                      </tr>
+                      <tr>
+                        <th>Jul/16</th>
+                        <th>R$ 233.23</th>
+                      </tr>
+                      <tr>
+                        <th>Jun/16</th>
+                        <th>R$ 233.23</th>
+                      </tr>
+                      <tr>
+                        <th>Mai/16</th>
+                        <th>R$ 233.23</th>
+                      </tr>
+                      <tr>
+                        <th>Abr/16</th>
+                        <th>R$ 233.23</th>
+                      </tr>
+                      <tr>
+                        <th>Mar/16</th>
+                        <th>R$ 233.23</th>
+                      </tr>
+                      <tr>
+                        <th>Fev/16</th>
+                        <th>R$ 233.23</th>
+                      </tr>
+                      <tr>
+                        <th>Jan/16</th>
+                        <th>R$ 233.23</th>
+                      </tr>
+                      <tr>
+                        <th>Dez/15</th>
+                        <th>R$ 233.23</th>
+                      </tr>
+                      <tr>
+                        <th>Nov/15</th>
+                        <th>R$ 233.23</th>
+                      </tr>
+                      <tr>
+                        <th>Out/15</th>
+                        <th>R$ 233.23</th>
+                      </tr>
+                      <tr>
+                        <th>Dez/15</th>
+                        <th>R$ 233.23</th>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header" data-background-color="red">
+                <h4 class="title">Cartão de Crédito - Resumo</h4>
+                <i class="material-icons pull-right" (click)="expandTableCartaoCredito()">add</i>
+                <p class="category">Valores em Reais</p>
+              </div>
+              <div class="card-content table-responsive">
+                <table class="table">
+                  <thead class="text-danger">
+                    <tr>
+                      <th>Instruções</th>
+                      <th>Contratos</th>
+                      <th>Valor</th>
+                      <th>No Mês</th>
+                      <th>Média Mensal</th>
+                      <th>% Médio de Pagamentos das Faturas</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>2</th>
+                      <th>4</th>
+                      <th>A Pagar</th>
+                      <th>R$ 633.33</th>
+                      <th>R$ 800.00</th>
+                      <th>R$ 99.00</th>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div *ngIf="openCartaoCredito">
+                <div class="card-header" ng-show="false">
+                  <h4 class="title">Histórico de Cartão de Crédito - Por Data</h4>
+                  <p class="category">Valores em Reais</p>
+                </div>
+                <div class="card-content table-responsive">
+                  <table class="table">
+                    <thead class="text-danger">
+                      <tr>
+                        <th>Data</th>
+                        <th>Valor A Pagar</th>
+                        <th>Valor Mínimo</th>
+                        <th>Valor Pago</th>
+                        <th>% de Pagamentos das Faturas</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>Set/16</th>
+                        <th>R$ 233.23</th>
+                        <th>R$ 100.23</th>
+                        <th>R$ 233.23</th>
+                        <th>R$ 100.23</th>
+                      </tr>
+                      <tr>
+                        <th>Ago/16</th>
+                        <th>R$ 233.23</th>
+                        <th>R$ 100.23</th>
+                        <th>R$ 233.23</th>
+                        <th>R$ 100.23</th>
+                      </tr>
+                      <tr>
+                        <th>Jul/16</th>
+                        <th>R$ 233.23</th>
+                        <th>R$ 100.23</th>
+                        <th>R$ 233.23</th>
+                        <th>R$ 100.23</th>
+                      </tr>
+                      <tr>
+                        <th>Jun/16</th>
+                        <th>R$ 233.23</th>
+                        <th>R$ 100.23</th>
+                        <th>R$ 233.23</th>
+                        <th>R$ 100.23</th>
+                      </tr>
+                      <tr>
+                        <th>Mai/16</th>
+                        <th>R$ 233.23</th>
+                        <th>R$ 100.23</th>
+                        <th>R$ 233.23</th>
+                        <th>R$ 100.23</th>
+                      </tr>
+                      <tr>
+                        <th>Abr/16</th>
+                        <th>R$ 233.23</th>
+                        <th>R$ 100.23</th>
+                        <th>R$ 233.23</th>
+                        <th>R$ 100.23</th>
+                      </tr>
+                      <tr>
+                        <th>Mar/16</th>
+                        <th>R$ 233.23</th>
+                        <th>R$ 100.23</th>
+                        <th>R$ 233.23</th>
+                        <th>R$ 100.23</th>
+                      </tr>
+                      <tr>
+                        <th>Fev/16</th>
+                        <th>R$ 233.23</th>
+                        <th>R$ 100.23</th>
+                        <th>R$ 233.23</th>
+                        <th>R$ 100.23</th>
+                      </tr>
+                      <tr>
+                        <th>Jan/16</th>
+                        <th>R$ 233.23</th>
+                        <th>R$ 233.23</th>
+                        <th>R$ 100.23</th>
+                        <th>R$ 100.23</th>
+                      </tr>
+                      <tr>
+                        <th>Dez/15</th>
+                        <th>R$ 233.23</th>
+                        <th>R$ 100.23</th>
+                        <th>R$ 233.23</th>
+                        <th>R$ 100.23</th>
+                      </tr>
+                      <tr>
+                        <th>Nov/15</th>
+                        <th>R$ 233.23</th>
+                        <th>R$ 100.23</th>
+                        <th>R$ 233.23</th>
+                        <th>R$ 100.23</th>
+                      </tr>
+                      <tr>
+                        <th>Out/15</th>
+                        <th>R$ 233.23</th>
+                        <th>R$ 100.23</th>
+                        <th>R$ 233.23</th>
+                        <th>R$ 100.23</th>
+                      </tr>
+                      <tr>
+                        <th>Dez/15</th>
+                        <th>R$ 233.23</th>
+                        <th>R$ 100.23</th>
+                        <th>R$ 233.23</th>
+                        <th>R$ 100.23</th>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
       <div class="col-md-6">
         <div class="row">
@@ -791,8 +1051,7 @@
           <div class="col-md-12">
             <div class="card">
               <div class="card-header card-chart" data-background-color="serasa-blue">
-                <canvas baseChart [datasets]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions" [colors]="lineChartColors"
-                  [legend]="false" [chartType]="'line'"></canvas>
+                <canvas baseChart [datasets]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions" [colors]="lineChartColors" [legend]="false" [chartType]="'line'"></canvas>
               </div>
               <div class="card-content">
                 <h4 class="title">Evolução de Compromissos no Mercado</h4>
