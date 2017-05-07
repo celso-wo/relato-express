@@ -28,7 +28,9 @@
     },
     "opened": false
   },
-  "controlesocietario": [
+  "controlesocietario": {
+    "enableitens":false,
+    "data":[
     {
       "cpfcnpj": "048.932.158-95",
       "socio": "GILBERTO CARDOSO DE MORAES",
@@ -53,7 +55,7 @@
       "votante":"0,00",
       "total": "80,00"
     }
-  ],
+  ]},
   "informacoesconcentreprotesto": [{
     "dataProtesto": "20/02/2017",
     "valor": "1.275,00",

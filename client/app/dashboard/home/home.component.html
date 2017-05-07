@@ -749,7 +749,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="card">
-              <div class="card-header" data-background-color="red">
+              <div class="card-header" data-background-color="serasa-blue">
                 <h4 class="title">Controle Societário</h4>
                 <p class="category">Atualização em 03/01/2017</p>
               </div>
@@ -775,7 +775,14 @@
                   </tbody>
                 </table>
               </div>
-              <div class="card-header" data-background-color="gray">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header" data-background-color="serasa-purple">
                 <h4 class="title">Detalhe</h4>
               </div>
               <div class="card-content table-responsive">
@@ -807,7 +814,10 @@
                       <td>0,00</td>
                       <td>70,00</td>
                     </tr>
-                    <tr *ngFor="let societario of dados.controlesocietario">
+                    <div [hidden]="dados.controlesocietario.enableitens">
+                        <button class="btn pull-right" (click)="dados.controlesocietario.enableitens = true" [hidden]="dados.controlesocietario.enableitens">Sócio ADM (Completo)</button>
+                    </div>
+                    <tr *ngFor="let societario of dados.controlesocietario.data" [hidden]="!dados.controlesocietario.enableitens">
                       <td>{{societario.cpfcnpj}}</td>
                       <td>{{societario.socio}}</td>
                       <td>{{societario.entrada}}</td>
