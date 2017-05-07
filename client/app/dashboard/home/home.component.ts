@@ -19,6 +19,8 @@ export class HomeComponent implements OnInit {
   private dados;
   private introJsInstance;
   private openCompromissoEmAndamento = false;
+  private openCompromissoRotativos = false;
+  private openCartaoCredito = false;
   private openCompromissoPagos = false;
   private routeParamSubscribe;
 
@@ -72,6 +74,14 @@ export class HomeComponent implements OnInit {
 
   expandTableCompromissoPagos() {
     this.openCompromissoPagos = !this.openCompromissoPagos;
+  }
+
+  expandTableCompromissosRotativo() {
+    this.openCompromissoRotativos = !this.openCompromissoRotativos;
+  }
+
+  expandTableCartaoCredito() {
+    this.openCartaoCredito = !this.openCartaoCredito;
   }
 
   ngOnInit() {
