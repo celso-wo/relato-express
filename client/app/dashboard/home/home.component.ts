@@ -18,11 +18,8 @@ export class HomeComponent implements OnInit {
 
   private dados;
   private introJsInstance;
-  private openCompromissoEmAndamento = false;
-  private openCompromissoRotativos = false;
-  private openCartaoCredito = false;
-  private openCompromissoPagos = false;
   private routeParamSubscribe;
+  private openbar;
 
   constructor(private route: ActivatedRoute, private http: Http) {
     this.routeParamSubscribe = this.route.params.subscribe(params => {
@@ -40,20 +37,8 @@ export class HomeComponent implements OnInit {
     });
   }
 
-  expandTableCompromissoEmAndamento() {
-    this.openCompromissoEmAndamento = !this.openCompromissoEmAndamento;
-  }
-
-  expandTableCompromissoPagos() {
-    this.openCompromissoPagos = !this.openCompromissoPagos;
-  }
-
-  expandTableCompromissosRotativo() {
-    this.openCompromissoRotativos = !this.openCompromissoRotativos;
-  }
-
-  expandTableCartaoCredito() {
-    this.openCartaoCredito = !this.openCartaoCredito;
+  openTable() {
+    this.openbar = !this.openbar;
   }
 
   ngOnInit() {
