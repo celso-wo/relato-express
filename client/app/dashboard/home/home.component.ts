@@ -18,6 +18,14 @@ export class HomeComponent implements OnInit {
     this.dados = {
       nome: 'Mike',
       dadoscadastrais: {
+        data:{
+           "cnpj": "04.325.815/0001-00",
+           "razaoSocial": "DISPARE TRANSP ROD COM ATACADISTA HORTIFRUTIGRANJEIRO LTDA ME",
+           "tipoSociedade": "SOCIEDADE EMPRESARIA LIMITADA",
+           "antecessora": "DISPARE TRANSPORTES LTDA ME",
+           "registro": "4.155.487",
+           "inscricaoEstadual": "702129520067"
+        },
         opened: false
       }
     };
