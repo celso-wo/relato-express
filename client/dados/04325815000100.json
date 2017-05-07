@@ -4,7 +4,7 @@
     "data": {
       "cnpj": "05.325.815/0001-00",
       "razaoSocial": "DISPARE TRANSP ROD COM ATACADISTA HORTIFRUTIGRANJEIRO LTDA ME",
-      "tipoSociedade": "SOCIEDADE EMPRESARIA HORTIGO HORTIFRUTI LIMITADA",
+      "tipoSociedade": "SOCIEDADE EMPRESARIA LIMITADA",
       "antecessoraNome": "DROGARIA SAL COM MANIPULACAO LTDA ME",
       "antecessoraAte": "07/07/2009",
       "registro": "4.155.487",
@@ -92,28 +92,28 @@
     "marAnterior": 1
   },
   "historicopagamentos": {
-    "pontual": 0,
-    "oitoquinze": 0,
-    "dezesseistrinta": 0,
-    "trintaeumsessenta": 0,
-    "maissessentaa": 0,
+    "pontual": 144,
+    "oitoquinze": 30,
+    "dezesseistrinta": 12,
+    "trintaeumsessenta": 4,
+    "maissessentaa": 2,
     "avista": 1
   },
   "compromissosResumoParceladoAndamento": {
-    "intrucoes": 0,
-    "contrato": 0,
-    "valor": 0,
+    "intrucoes": 140,
+    "contrato": 84,
+    "valor": 245000,
     "porcentagem": 0,
-    "valor2": 0,
+    "valor2": 123000,
     "porcentagem2": 1,
     "valor3": 0
   },
   "compromissosResumoParceladoPagos": {
-    "intrucoes": 0,
-    "contrato": 0,
-    "valor": 0,
+    "intrucoes": 100,
+    "contrato": 100,
+    "valor": 120400,
     "dias": 0,
-    "valor2": 0,
+    "valor2": 12000,
     "dias2": 1
   },
   "referenciasNegocios": [{
@@ -137,28 +137,28 @@
   ],
   "historicoPagamentosGrafico": {
     "dados": [{
-        "data": [1417303, 1424183, 1431105, 1144866, 1356156, 1317900, 291046, 201344, 138011],
+        "data": [1340, 900, 1300, 1000, 1030, 1000, 1200, 1000, 1400],
         "label": "Pontual"
       },
       {
-        "data": [1233, 4321, 4432, 43245, 32133, 12333, 31333, 12333, 11112],
+        "data": [100, 200, 100, 100, 100, 100, 100, 100, 100],
         "label": "8-15"
       },
       {
-        "data": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "data": [0, 0, 0, 440, 100, 0, 0, 0, 0],
         "label": "16-30"
       },
       {
-        "data": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "data": [0, 0, 0, 0, 0, 0, 340, 0, 0],
         "label": "31-60"
       },
       {
-        "data": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "data": [0, 0, 0, 0, 0, 0, 0, 0, 120],
         "label": "+90"
       }
     ],
     "labels": [
-      "ABRIL/17", "MAR/17", "FEV/17", "JAN/17", "DEZ/16", "NOV/16", "OUT/16", "SET/16", "AGO/16"
+      "AGO/16", "SET/16", "OUT/16", "NOV/16", "DEZ/16", "JAN/17", "FEV/17", "MAR/17", "ABRIL/17"
     ],
     "options": {
       "responsive": true,
@@ -263,7 +263,7 @@
         "label": "A Vencer"
       }
     ],
-    "labels": ["ABRIL/17", "MAR/17", "FEV/17", "JAN/17", "DEZ/16", "NOV/16", "OUT/16", "SET/16", "AGO/16"],
+    "labels": ["AGO/16", "SET/16", "OUT/16", "NOV/16", "DEZ/16", "JAN/17", "FEV/17", "MAR/17", "ABRIL/17"],
     "options": {
       "responsive": true,
       "legend": {
@@ -309,11 +309,11 @@
 
   "compromissosParceladosPagosGrafico": {
     "dados": [{
-        "data": [1417303, 1424183, 1431105, 1144866, 1356156, 1317900, 291046, 201344, 138011],
+        "data": [47303, 44183, 43105, 44866, 56156, 27900, 41046, 31344, 38011],
         "label": "Pontual"
       },
       {
-        "data": [1233, 4321, 4432, 43245, 32133, 12333, 31333, 12333, 11112],
+        "data": [1233, 4321, 4432, 43245, 2133, 2333, 1333, 2333, 1112],
         "label": "8-15"
       },
       {
@@ -330,7 +330,7 @@
       }
     ],
     "labels": [
-      "ABRIL/17", "MAR/17", "FEV/17", "JAN/17", "DEZ/16", "NOV/16", "OUT/16", "SET/16", "AGO/16"
+      "AGO/16", "SET/16", "OUT/16", "NOV/16", "DEZ/16", "JAN/17", "FEV/17", "MAR/17", "ABRIL/17"
     ],
     "options": {
       "responsive": true,
@@ -402,7 +402,7 @@
       }
     ],
     "labels": [
-      "ABRIL/17", "MAR/17", "FEV/17", "JAN/17", "DEZ/16", "NOV/16", "OUT/16", "SET/16", "AGO/16"
+      "AGO/16", "SET/16", "OUT/16", "NOV/16", "DEZ/16", "JAN/17", "FEV/17", "MAR/17", "ABRIL/17"
     ],
     "options": {
       "responsive": true,
@@ -472,7 +472,7 @@
       "label": "A Vencer"
     }],
     "labels": [
-      "ABRIL/17", "MAR/17", "FEV/17", "JAN/17", "DEZ/16", "NOV/16", "OUT/16", "SET/16", "AGO/16"
+      "AGO/16", "SET/16", "OUT/16", "NOV/16", "DEZ/16", "JAN/17", "FEV/17", "MAR/17", "ABRIL/17"
     ],
     "options": {
       "responsive": true,

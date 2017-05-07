@@ -3,13 +3,13 @@
     <img class="pull-left" style="height: 40px;" src="../../assets/img/logo.png" alt="">
     <a class="navbar-brand" href="#">Relato Express</a>
     <ul class="nav nav-pills pull-right nav-pills-danger" style="margin-right:10px">
-      <li class="active"><a href="#">Negativo</a></li>
+      <li class="active"><a href="#">Dados Negativo</a></li>
     </ul>
     <ul class="nav nav-pills pull-right nav-pills-serasa-blue" style="margin-right:10px">
-      <li class="active"><a href="#">Positivo</a></li>
+      <li class="active"><a href="#">Cadastro Positivo</a></li>
     </ul>
     <ul class="nav nav-pills pull-right" style="margin-right:10px">
-      <li class="active"><a href="#">Cadastral</a></li>
+      <li class="active"><a href="#">Dados Cadastral</a></li>
     </ul>
   </div>
 </nav>
@@ -20,7 +20,7 @@
         <div class="card">
           <div class="card-header" data-background-color="serasa-purple">
             <h4 class="title">Indentificação / Localização</h4>
-            <span class="pull-right" data-toggle="tooltip" style="font-size: 18px" data-placement="left" title="Pagamentos realizados nos últimos 9 meses"> <i class="fa fa-info-circle" aria-hidden="true"></i></span>
+            <span class="pull-right" data-toggle="tooltip" style="font-size: 18px" data-placement="left" title="Informações cadastrais do cliente."> <i class="fa fa-info-circle" aria-hidden="true"></i></span>
             <p class="category">Atualizado em 06/04/2017</p>
           </div>
           <div class="card-content">
@@ -56,7 +56,7 @@
                   <div class="col-md-4"><strong>Tipo de Sociedade:</strong></div>
                   <div class="col-md-8"> {{dados.dadoscadastrais.data.tipoSociedade}}</div>
                 </div>
-                <div class="row">
+                <div class="row" data-step="1" data-intro="Atenção foi mudado a razão social dessa empresa recentement.">
                   <div class="col-md-4"><strong>Antecessora:</strong></div>
                   <div class="col-md-4"> {{dados.dadoscadastrais.data.antecessoraNome}}</div>
                   <div class="col-md-2"><strong>Até:</strong></div>
@@ -141,7 +141,7 @@
             <div class="card">
               <div class="card-header" data-background-color="serasa-blue">
                 <h4 class="title">Compromissos Rotativos</h4>
-                <span class="pull-right" data-toggle="tooltip" style="font-size: 18px" data-placement="left" title="Desmonstrativo de utilização do crédito rotativo no período de 9 meses"> <i class="fa fa-info-circle" aria-hidden="true"></i></span>
+                <span class="pull-right" data-toggle="tooltip" style="font-size: 18px" data-placement="left" title="Desmonstrativo acumulado de utilização do crédito rotativo no período de 9 meses"> <i class="fa fa-info-circle" aria-hidden="true"></i></span>
                 <p class="category">Valores em Reais</p>
               </div>
               <div class="card-content table-responsive">
@@ -186,7 +186,7 @@
               </div>
               <div class="card-content">
                 <h4 class="title">Histórico de Compromissos Rotativos</h4>
-                <span class="pull-right" data-toggle="tooltip" style="font-size: 18px" data-placement="left" title="Desmonstrativo de utilização do crédito rotativo no período de 9 meses"> <i class="fa fa-info-circle" aria-hidden="true"></i></span>
+                <span class="pull-right" data-toggle="tooltip" style="font-size: 18px" data-placement="left" title="Desmonstrativo detalhado de utilização do crédito rotativo no período de 9 meses"> <i class="fa fa-info-circle" aria-hidden="true"></i></span>
                 <p class="category">(Valores em Reais)</p>
               </div>
             </div>
@@ -248,7 +248,7 @@
               </div>
               <div class="card-content">
                 <h4 class="title">Compromissos Parcelados Pagos por Data</h4>
-                <span class="pull-right" data-toggle="tooltip" style="font-size: 18px" data-placement="left" title="Pagamentos realizados nos últimos 9 meses"> <i class="fa fa-info-circle" aria-hidden="true"></i></span>
+                <span class="pull-right" data-toggle="tooltip" style="font-size: 18px" data-placement="left" title="Evolução dos compromissos aquiridos no período de 9 meses"> <i class="fa fa-info-circle" aria-hidden="true"></i></span>
                 <p class="category">(Valores em Reais)</p>
               </div>
             </div>
@@ -264,7 +264,7 @@
                 <span class="pull-right" data-toggle="tooltip" style="font-size: 18px" data-placement="left" title="Desmonstrativo de utilização do crédito rotativo no período de 9 meses"> <i class="fa fa-info-circle" aria-hidden="true"></i></span>
                 <p class="category">Valores em Reais</p>
               </div>
-              <div class="card-content table-responsive" style="margin-bottom: 140px;">
+              <div class="card-content table-responsive" style="margin-bottom: 134px;">
                 <table class="table">
                   <thead class="text-danger">
                     <tr>
@@ -349,7 +349,7 @@
                 <span class="pull-right" data-toggle="tooltip" style="font-size: 18px" data-placement="left" title="Pagamentos realizados nos últimos 9 meses"> <i class="fa fa-info-circle" aria-hidden="true"></i></span>
                 <p class="category">(Ocorrências mais recentes - Até Cinco)</p>
               </div>
-              <div class="card-content table-responsive" style="margin-bottom: 84px;">
+              <div class="card-content table-responsive">
                 <table class="table">
                   <thead class="text-danger">
                     <tr>
@@ -387,7 +387,7 @@
                 <span class="pull-right" data-toggle="tooltip" style="font-size: 18px" data-placement="left" title="Pagamentos realizados nos últimos 9 meses"> <i class="fa fa-info-circle" aria-hidden="true"></i></span>
                 <p class="category">(Ocorrências mais recentes - Até Cinco)</p>
               </div>
-              <div class="card-content table-responsive" style="margin-bottom: 36px;">
+              <div class="card-content table-responsive">
                 <table class="table">
                   <tbody>
                     <tr style="text-align: center">
@@ -424,9 +424,9 @@
           <div class="col-md-12">
             <div class="card">
               <div class="card-header" data-background-color="serasa-purple">
-                <span class="pull-right" style="padding-top: 8px; cursor: pointer;" (click)="!openbar ? openTable(): undefined">
-                  <span style="font-size: 18px; padding-right: 10px;">Ver cadastro completo</span> <i style="font-size: 18px" *ngIf="openbar" class="fa fa-unlock" aria-hidden="true"></i>
-                <i style="font-size: 18px" *ngIf="!openbar" class="fa fa-lock" aria-hidden="true"></i>
+                <span class="pull-right" style="padding-top: 8px; cursor: pointer;" (click)="!openbar ? openTable(): undefined" data-toggle="tooltip" data-placement="bottom" title="Consultar tabela de preços">
+                  <span style="font-size: 12px; padding-right: 10px;">Ver cadastro completo</span> <i style="font-size: 12px" *ngIf="openbar" class="fa fa-unlock" aria-hidden="true"></i>
+                <i style="font-size: 12px" *ngIf="!openbar" class="fa fa-lock" aria-hidden="true"></i>
                 </span>
                 <h4 class="title">Sócios e Acionistas</h4>
               </div>
@@ -485,7 +485,7 @@
             <div class="card">
               <div class="card-header" data-background-color="serasa-blue">
                 <h4 class="title">Histórico de Pagamentos</h4>
-                <span class="pull-right" data-toggle="tooltip" style="font-size: 18px" data-placement="left" title="Pontualidade nos negócios nos últimos 9 meses"> <i class="fa fa-info-circle" aria-hidden="true"></i></span>
+                <span class="pull-right" data-toggle="tooltip" style="font-size: 18px" data-placement="left" title="Pontualidade de negócios nos últimos 9 meses"> <i class="fa fa-info-circle" aria-hidden="true"></i></span>
                 <p class="category">Quantidade de Títulos</p>
               </div>
               <div class="card-content table-responsive">
@@ -524,7 +524,7 @@
               </div>
               <div class="card-content">
                 <h4 class="title">Histórico de Pagamentos no Mercado</h4>
-                <span class="pull-right" data-toggle="tooltip" style="font-size: 18px" data-placement="left" title="Pontualidade nos negócios nos últimos 9 meses"> <i class="fa fa-info-circle" aria-hidden="true"></i></span>
+                <span class="pull-right" data-toggle="tooltip" style="font-size: 18px" data-placement="left" title="Evolução da pontualidade de negócio nos últimos 9 meses"> <i class="fa fa-info-circle" aria-hidden="true"></i></span>
                 <p class="category">(Valores em Reais)</p>
               </div>
             </div>
@@ -581,7 +581,7 @@
 
         <div class="row">
           <div class="col-md-12">
-            <div class="card" data-intro="Parece que o cliente está com uma tendência de compromissos em aberto">
+            <div class="card" data-step="3" data-intro="Foi detectado um aumento dos compromissos em abertos nos últimos meses.">
               <div class="card-header card-chart" data-background-color="serasa-blue">
                 <canvas baseChart [datasets]="dados.compromissosParceladosAndamentoGrafico.dados" [labels]="dados.compromissosParceladosAndamentoGrafico.labels" [options]="dados.compromissosParceladosAndamentoGrafico.options" [colors]="dados.compromissosParceladosAndamentoGrafico.colors"
                   [legend]="true" [chartType]="dados.compromissosParceladosAndamentoGrafico.type"></canvas>
@@ -696,7 +696,7 @@
                 <span class="pull-right" data-toggle="tooltip" style="font-size: 18px" data-placement="left" title="Pagamentos realizados nos últimos 9 meses"> <i class="fa fa-info-circle" aria-hidden="true"></i></span>
                 <p class="category">(Ocorrências Mais Recentes - Até Cinco)</p>
               </div>
-              <div class="card-content table-responsive">
+              <div class="card-content table-responsive" style="margin-bottom: 4px">
                 <table class="table">
                   <tr style="text-align: center">
                     <td>=== NADA CONSTA PARA O CNPJ CONSULTADO ===</td>
@@ -730,7 +730,7 @@
 
         <div class="row">
           <div class="col-md-12">
-            <div class="card">
+            <div class="card" data-step="2" data-intro="Foi detectado um aumento significativo de consultas nos últimos meses.">
               <div class="card-header card-chart" data-background-color="purple">
                 <canvas baseChart [datasets]="dados.evolucaoRegistroConsultaGrafico.dados" [labels]="dados.evolucaoRegistroConsultaGrafico.labels" [options]="dados.evolucaoRegistroConsultaGrafico.options" [colors]="dados.evolucaoCompromissosGrafico.colors" [legend]="true"
                   [chartType]="dados.evolucaoRegistroConsultaGrafico.type"></canvas>
