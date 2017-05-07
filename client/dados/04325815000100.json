@@ -31,7 +31,7 @@
   "informacoesConcentreProtesto": [
     {
       "dataProtesto":"20/02/2017",
-      "valor": "R$ 1.275,00",
+      "valor": "1.275,00",
       "cartorio": "01",
       "cidade": "UBERLANDIA - MG"
     }
@@ -41,7 +41,7 @@
       "dataAcaoJudicial" :"19/08/2016",
       "naturezaAcao": "FISCAL FEDERAL",
       "avalista": "",
-      "valor":"R$ 43.333,00",
+      "valor":"43.333,00",
       "distrito":"01",
       "vara": "0013",
       "cidade": "SAO PAULO/SP"
@@ -52,7 +52,7 @@
       "data": "20/03/2017",
       "modalidade": "TIT.DESCONTA",
       "avalista": "Não",
-      "valor": "R$ 50,00",
+      "valor": "50,00",
       "contrato": "30276/9",
       "origem":"ALGAR MIDIA",
       "local": "ULA"
@@ -61,7 +61,7 @@
       "data": "20/02/2017",
       "modalidade": "TIT.DESCONTA",
       "avalista": "Não",
-      "valor": "R$ 50,00",
+      "valor": "50,00",
       "contrato": "30276/9",
       "origem":"ALGAR MIDIA",
       "local": "ULA"
@@ -70,7 +70,7 @@
       "data": "20/01/2017",
       "modalidade": "TIT.DESCONTA",
       "avalista": "Não",
-      "valor": "R$ 50,00",
+      "valor": "50,00",
       "contrato": "30276/9",
       "origem":"ALGAR MIDIA",
       "local": "ULA"
@@ -81,7 +81,7 @@
       "data": "17/02/2017",
       "modalidade": "TIT.DESCONTA",
       "avalista": "Não",
-      "valor": "R$ 50,00",
+      "valor": "50,00",
       "contrato": "08200000000045212",
       "origem":"ALGAR MIDIA",
       "local": "ULA"
@@ -90,7 +90,7 @@
       "data": "01/03/2017",
       "modalidade": "TIT.DESCONTA",
       "avalista": "Não",
-      "valor": "R$ 50,00",
+      "valor": "50,00",
       "contrato": "042000000000053112",
       "origem":"ALGAR MIDIA",
       "local": "ULA"
@@ -112,5 +112,59 @@
     "mai": 2, 
     "abr": 1,
     "marAnterior": 1
+  },
+  "historicoPagamentos": {
+    "pontual": 0,
+    "815": 0,
+    "1630": 0,
+    "3160": 0,
+    "+60": 0,
+    "avista": 1
+  },
+  "registroConsultaCincoUltimas": [
+    {
+      "dataConsulta":"18/04/2016",
+      "cnpjConsultante":"66.369.892/0004-77",
+      "clienteConsultante":"ANTONIO DA SILVA BRAGA",
+      "quantidadeConsutaDia":2
+    },
+    {
+      "dataConsulta":"12/03/2016",
+      "cnpjConsultante":"66.369.892/0004-77",
+      "clienteConsultante":"ANTONIO DA SILVA BRAGA",
+      "quantidadeConsutaDia":4
+    },
+    {
+      "dataConsulta":"12/02/2016",
+      "cnpjConsultante":"66.369.892/0004-77",
+      "clienteConsultante":"ANTONIO DA SILVA BRAGA",
+      "quantidadeConsutaDia":1
+    },
+    {
+      "dataConsulta":"11/02/2016",
+      "cnpjConsultante":"66.369.892/0004-77",
+      "clienteConsultante":"ANTONIO DA SILVA BRAGA",
+      "quantidadeConsutaDia":3
+    },
+    {
+      "dataConsulta":"11/01/2016",
+      "cnpjConsultante":"66.369.892/0004-77",
+      "clienteConsultante":"ANTONIO DA SILVA BRAGA",
+      "quantidadeConsutaDia":8
+    }
+  ],
+  "compromissosParceladosAndamento": {
+    "instrucoes":5,
+    "contratos":46,
+    "valorAberto":"0,00",
+    "valorVencer":"45.679,55",
+    "valotTotal": "45.679,55"
+  },
+  "compromissosParceladosPagos": {
+    "instrucoes":3,
+    "contratos":30,
+    "valorMaiorAtraso":"0,00",
+    "valotTotal": "45.679,55",
+    "dias": 100
   }
 }
