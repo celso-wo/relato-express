@@ -14,7 +14,8 @@ export class HomeComponent implements OnInit {
 
   private dados;
   private introJsInstance;
-  private open = false;
+  private openCompromissoEmAndamento = false;
+  private openCompromissoPagos = false;
 
   constructor() {
     this.dados = {
@@ -52,8 +53,11 @@ export class HomeComponent implements OnInit {
   }
 
   expandTableCompromissoEmAndamento() {
-    console.log('eita');
-    this.open = !this.open;
+    this.openCompromissoEmAndamento = !this.openCompromissoEmAndamento;
+  }
+
+  expandTableCompromissoPagos() {
+    this.openCompromissoPagos = !this.openCompromissoPagos;
   }
 
   ngOnInit() {
