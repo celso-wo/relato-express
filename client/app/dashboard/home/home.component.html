@@ -163,7 +163,7 @@
                   </thead>
                   <tbody>
                     <tr *ngFor="let informacaojudicial of dados.informacoesconcentrejudicial">
-                      <td>{{informacaojudicial.dataProtesto}}</td>
+                      <td>{{informacaojudicial.dataAcaoJudicial}}</td>
                       <td>{{informacaojudicial.naturezaAcao}}</td>
                       <td>{{informacaojudicial.avalista}}</td>
                       <td class="text-danger">R$ {{informacaojudicial.valor}}</td>
@@ -177,8 +177,6 @@
             </div>
           </div>
         </div>
-
-DESMOCAR
         <div class="row">
           <div class="col-md-12">
             <div class="card">
@@ -199,7 +197,7 @@ DESMOCAR
                   <tbody>
                     <tr *ngFor="let registro of dados.registroConsultaCincoUltimas">
                       <td>{{registro.dataConsulta}}</td>
-                      <td>{registro.cnpjConsultante}}</td>
+                      <td>{{registro.cnpjConsultante}}</td>
                       <td>{{registro.clienteConsultante}}</td>
                       <td>{{registro.quantidadeConsutaDia}}</td>
                     </tr>
@@ -210,8 +208,6 @@ DESMOCAR
           </div>
         </div>
 
-
-DESMOCAR
         <div class="row">
           <div class="col-md-12">
             <div class="card">
@@ -230,32 +226,19 @@ DESMOCAR
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
-                      <td>Última Compra</td>
-                      <td>18/08/2016</td>
-                      <td>R$ 55.600,20</td>
-                      <td>R$ 5.200,60</td>
-                    </tr>
-                    <tr>
-                      <tr>
-                        <td>Maior Fatura</td>
-                        <td>18/02/2017</td>
-                        <td>R$ 30.600,20</td>
-                        <td>R$ 7.200,60</td>
-                      </tr>
-                      <tr>
-                        <td>Maior Acúmulo</td>
-                        <td>18/08/2017</td>
-                        <td>R$ 30.600,20</td>
-                        <td>R$ 3.200,60</td>
-                      </tr>
+                    <tr *ngFor="let negocio of dados.referenciasNegocios">
+                      <td>{{negocio.descricao}}</td>
+                      <td>{{negocio.data}}</td>
+                      <td>R$ {{negocio.valor}}</td>
+                      <td>{{negocio.media}}</td>
+                    </tr>                      
                   </tbody>
                 </table>
               </div>
             </div>
           </div>
         </div>
-DESMOCAR
+
         <div class="row">
           <div class="col-md-12">
             <div class="card">
@@ -298,7 +281,7 @@ DESMOCAR
           </div>
         </div>
 
-DESMOCAR
+
         <div class="row">
           <div class="col-md-12">
             <div class="card">
@@ -409,7 +392,7 @@ DESMOCAR
             </div>
           </div>
         </div>
-INDICADOR
+
         <div class="row">
           <div class="col-md-12">
             <div class="card">
@@ -450,12 +433,12 @@ INDICADOR
                   </thead>
                   <tbody>
                     <tr>
-                      <th>{{data.historicoPagamentos.pontual}}</th>
-                      <th>{{data.historicoPagamentos.oitoquinze}}</th>
-                      <th>{{data.historicoPagamentos.dezesseistrinta}}</th>
-                      <th>{{data.historicoPagamentos.trintaeumsessenta}}</th>
-                      <th>{{data.historicoPagamentos.maissessentaa}}</th>
-                      <th>{{data.historicoPagamentos.avista}}</th>
+                      <th>{{dados.historicopagamentos.pontual}}</th>
+                      <th>{{dados.historicopagamentos.oitoquinze}}</th>
+                      <th>{{dados.historicopagamentos.dezesseistrinta}}</th>
+                      <th>{{dados.historicopagamentos.trintaeumsessenta}}</th>
+                      <th>{{dados.historicopagamentos.maissessentaa}}</th>
+                      <th>{{dados.historicopagamentos.avista}}</th>
                     </tr>
                   </tbody>
                 </table>
@@ -463,13 +446,12 @@ INDICADOR
             </div>
           </div>
         </div>
-DESMOCAR
+
         <div class="row">
           <div class="col-md-12">
             <div class="card">
               <div class="card-header" data-background-color="red">
                 <h4 class="title">Compromissos Parcelados Em Andamento</h4>
-                <i class="material-icons pull-right" (click)="expandTableCompromissoEmAndamento()">add</i>
                 <p class="category">Valores em Reais</p>
               </div>
               <div class="card-content table-responsive">
@@ -496,13 +478,13 @@ DESMOCAR
                   </thead>
                   <tbody>
                     <tr>
-                      <th>5</th>
-                      <th>46</th>
-                      <th>R$ 0</th>
-                      <th>0</th>
-                      <th>R$ 45.679,55</th>
-                      <th>100</th>
-                      <th>R$ 45.679,55</th>
+                      <th>{{dados.compromissosResumoParceladoAndamento.intrucoes}}</th>
+                      <th>{{dados.compromissosResumoParceladoAndamento.contrato}}</th>
+                      <th>R$ {{dados.compromissosResumoParceladoAndamento.valor}}</th>
+                      <th>{{dados.compromissosResumoParceladoAndamento.porcentagem}}</th>
+                      <th>R$ {{dados.compromissosResumoParceladoAndamento.valor2}}</th>
+                      <th>{{dados.compromissosResumoParceladoAndamento.porcentagem2}}</th>
+                      <th>R$ {{dados.compromissosResumoParceladoAndamento.valor3}}</th>
                     </tr>
                   </tbody>
                 </table>
@@ -510,7 +492,7 @@ DESMOCAR
             </div>
           </div>
         </div>
-DESMOCAR
+
         <div class="row">
           <div class="col-md-12">
             <div class="card">
@@ -541,13 +523,12 @@ DESMOCAR
                   </thead>
                   <tbody>
                     <tr>
-                      <th>5</th>
-                      <th>46</th>
-                      <th>R$ 0</th>
-                      <th>0</th>
-                      <th>R$ 45.679,55</th>
-                      <th>100</th>
-                      <th>28</th>
+                      <th>{{dados.compromissosResumoParceladoAndamento.intrucoes}}</th>
+                      <th>{{dados.compromissosResumoParceladoAndamento.contrato}}</th>
+                      <th>R$ {{dados.compromissosResumoParceladoAndamento.valor}}</th>
+                      <th>{{dados.compromissosResumoParceladoAndamento.dias}}</th>
+                      <th>R$ {{dados.compromissosResumoParceladoAndamento.valor2}}</th>
+                      <th>{{dados.compromissosResumoParceladoAndamento.dias2}}</th>
                     </tr>
                   </tbody>
                 </table>
