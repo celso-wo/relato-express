@@ -731,6 +731,61 @@
           </div>
         </div>
 
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header" data-background-color="red">
+                <h4 class="title">Controle Societário</h4>
+                <p class="category">Atualização em 03/01/2017</p>
+              </div>
+              <div class="card-content table-responsive">
+                <table class="table">
+                  <thead class="text-danger">
+                    <tr>
+                      <th>Capital Social</th>
+                      <th>Realizado</th>
+                      <th>Origem</th>
+                      <th>Controle</th>
+                      <th>Natureza</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>130.000,00</td>
+                      <td>130.000,00</td>
+                      <td>BRASIL</td>
+                      <td>PRIVADO</td>
+                      <td>FECHADO</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="card-header" data-background-color="gray">
+                <h4 class="title">Detalhe</h4>
+              </div>
+              <div class="card-content table-responsive">
+                <table class="table">
+                  <thead class="text-danger">
+                    <tr>
+                      <th>Data da Consulta</th>
+                      <th>CNPJ Consultante</th>
+                      <th>Cliente Consultante</th>
+                      <th>QTD de Consulta no Dia</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let registro of dados.registroConsultaCincoUltimas">
+                      <td>{{registro.dataConsulta}}</td>
+                      <td>{{registro.cnpjConsultante}}</td>
+                      <td>{{registro.clienteConsultante}}</td>
+                      <td>{{registro.quantidadeConsutaDia}}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
