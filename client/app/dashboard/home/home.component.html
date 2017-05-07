@@ -162,14 +162,14 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr *ngFor="let informacao of dados.informacoesconcentrejudicial">
-                      <td>18/08/2016</td>
-                      <td>FISCAL FEDERAL</td>
-                      <td></td>
-                      <td class="text-danger">R$ 420,738</td>
-                      <td>01</td>
-                      <td>012</td>
-                      <td>Uberlandia/MG</td>
+                    <tr *ngFor="let informacaojudicial of dados.informacoesconcentrejudicial">
+                      <td>{{informacaojudicial.dataProtesto}}</td>
+                      <td>{{informacaojudicial.naturezaAcao}}</td>
+                      <td>{{informacaojudicial.avalista}}</td>
+                      <td class="text-danger">R$ {{informacaojudicial.valor}}</td>
+                      <td>{{informacaojudicial.distrito}}</td>
+                      <td>{{informacaojudicial.vara}}</td>
+                      <td>{{informacaojudicial.cidade}}</td>
                     </tr>
                   </tbody>
                 </table>
