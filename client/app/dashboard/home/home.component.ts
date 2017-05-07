@@ -1,8 +1,8 @@
 import { Component, OnInit, trigger, state, style, transition, animate } from '@angular/core';
 import initDemo = require('../../../assets/js/charts.js');
-import * as introJs from 'intro.js';
 
 declare var $: any;
+declare var introJs;
 
 @Component({
   selector: 'home-cmp',
@@ -13,6 +13,7 @@ declare var $: any;
 export class HomeComponent implements OnInit {
 
   private dados;
+  private introJsInstance;
 
   constructor() {
     this.dados = {
@@ -33,7 +34,16 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     initDemo();
+    this.introJsInstance = introJs();
+    this.introJsInstance.setOption("nextLabel", " Próximo ");
+    this.introJsInstance.setOption("prevLabel", " Anterior ");
+    this.introJsInstance.setOption("skipLabel", " Fechar ");
+    this.introJsInstance.setOption("doneLabel", " Fechar ");
+    this.introJsInstance.setOption("hidePrev", true);
+    this.introJsInstance.setOption("hideNext", true);
+  }
 
-    introJs().start();
+  onAssistenteClick() {
+    this.introJsInstance.start();
   }
 }
