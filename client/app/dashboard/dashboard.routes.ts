@@ -5,8 +5,8 @@ import { EntradaComponent } from './entrada/entrada.component';
 
 export const MODULE_ROUTES: Route[] = [
   { path: 'entrada', component: EntradaComponent },
-  { path: 'dashboard', component: HomeComponent },
-  { path: '', redirectTo: 'dashboard', pathMatch: 'full' }
+  { path: 'dashboard/:cnpj', component: HomeComponent },
+  { path: '', redirectTo: 'entrada', pathMatch: 'full' }
 ]
 
 export const MODULE_COMPONENTS = [

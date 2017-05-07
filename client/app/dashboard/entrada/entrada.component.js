@@ -9,10 +9,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var router_1 = require('@angular/router');
 var EntradaComponent = (function () {
-    function EntradaComponent() {
+    function EntradaComponent(router) {
+        this.router = router;
+        this.cnpj = '04325815000100';
     }
     EntradaComponent.prototype.ngOnInit = function () {
+    };
+    EntradaComponent.prototype.onSubmit = function () {
+        this.router.navigate(['dashboard', this.cnpj]);
     };
     EntradaComponent = __decorate([
         core_1.Component({
@@ -20,7 +26,7 @@ var EntradaComponent = (function () {
             moduleId: module.id,
             templateUrl: 'entrada.component.html'
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [router_1.Router])
     ], EntradaComponent);
     return EntradaComponent;
 }());

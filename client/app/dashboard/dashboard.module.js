@@ -12,6 +12,7 @@ var core_1 = require('@angular/core');
 var common_1 = require('@angular/common');
 var forms_1 = require('@angular/forms');
 var router_1 = require('@angular/router');
+var kz_mask_directive_1 = require('./directives/kz-mask.directive');
 var dashboard_routes_1 = require('./dashboard.routes');
 var DashboardModule = (function () {
     function DashboardModule() {
@@ -23,7 +24,7 @@ var DashboardModule = (function () {
                 forms_1.FormsModule,
                 router_1.RouterModule.forChild(dashboard_routes_1.MODULE_ROUTES)
             ],
-            declarations: [dashboard_routes_1.MODULE_COMPONENTS]
+            declarations: [dashboard_routes_1.MODULE_COMPONENTS, kz_mask_directive_1.KzMaskDirective]
         }), 
         __metadata('design:paramtypes', [])
     ], DashboardModule);
