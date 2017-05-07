@@ -121,6 +121,65 @@
     "+60": 0,
     "avista": 1
   },
+
+  "historicoPagamentosGrafico": {
+    "dados": [
+      { "data": [1417303, 1424183, 1431105, 1144866, 1356156, 1317900, 291046, 201344, 138011], "label": "Pontual"},
+      { "data": [1233, 4321, 4432, 43245, 32133, 12333, 31333, 12333, 11112], "label": "8-15"},
+      { "data": [0, 0, 0, 0, 0, 0, 0, 0, 0], "label": "16-30"},
+      { "data": [0, 0, 0, 0, 0, 0, 0, 0, 0], "label": "31-60"},
+      { "data": [0, 0, 0, 0, 0, 0, 0, 0, 0], "label": "+90"}
+    ],
+    "labels": [
+      "ABRIL/17","MAR/17","FEV/17","JAN/17","DEZ/16","NOV/16","OUT/16","SET/16","AGO/16"
+    ],
+    "options": {
+      "responsive": true,
+      "legend": {
+        "labels": {
+          "fontColor": "white"
+        }
+      },
+      "scales": {
+        "yAxes": [
+          {
+            "ticks": {
+              "fontColor": "white",
+              "beginAtZero": true
+            },
+            "stacked": true
+          }
+        ],
+        "xAxes": [
+          {
+            "ticks": {
+              "fontColor": "white",
+              "beginAtZero": true
+            }
+          }
+        ]
+      }
+    },
+    "colors": [
+      {
+        "backgroundColor": "rgba(255,255,255,0.8)"
+      },
+      {
+        "backgroundColor": "#ef9a9a"
+      },
+      {
+        "backgroundColor": "#ef5350"
+      },
+      {
+        "backgroundColor": "#d32f2f"
+      },
+      {
+        "backgroundColor": "#b71c1c"
+      }
+    ],
+    "type": "bar"
+  },
+
   "registroConsultaCincoUltimas": [
     {
       "dataConsulta": "18/04/2016",
