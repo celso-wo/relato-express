@@ -930,7 +930,7 @@
           <div class="col-md-12">
             <div class="card">
               <div class="card-header card-chart" data-background-color="serasa-blue">
-                <canvas baseChart [datasets]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions" [colors]="lineChartColors" [legend]="true" [chartType]="'line'"></canvas>
+                <canvas baseChart [datasets]="dados.evolucaoCompromissosGrafico.dados" [labels]="dados.evolucaoCompromissosGrafico.labels" [options]="dados.evolucaoCompromissosGrafico.options" [colors]="dados.evolucaoCompromissosGrafico.colors" [legend]="true" [chartType]="dados.evolucaoCompromissosGrafico.type"></canvas>
               </div>
               <div class="card-content">
                 <h4 class="title">Evolução de Compromissos no Mercado</h4>
