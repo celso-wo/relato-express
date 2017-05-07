@@ -534,7 +534,6 @@
           </div>
         </div>
 
-
         <div class="row">
           <div class="col-md-12">
             <div class="card">
@@ -795,6 +794,23 @@
           </div>
         </div>
 
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header card-chart" data-background-color="serasa-blue">
+                <canvas baseChart [datasets]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions" [colors]="lineChartColors"
+                  [legend]="false" [chartType]="'line'"></canvas>
+              </div>
+              <div class="card-content">
+                <h4 class="title">Evolução de Compromissos no Mercado</h4>
+                <p class="category">(Valores em Reais)</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <img id="assistente" src="assets/img/photo.png" (click)="onAssistenteClick()" />
     </div>
+  </div>
+
+  <img id="assistente" src="assets/img/photo.png" (click)="onAssistenteClick()" />
+</div>
