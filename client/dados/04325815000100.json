@@ -208,13 +208,15 @@
       "responsive": true,
       "legend": {
         "labels": {
-          "fontColor": "white"
+          "fontColor": "white",
+          "fontSize": 11
         }
       },
       "scales": {
         "yAxes": [{
           "ticks": {
             "fontColor": "white",
+            "fontSize": 11,
             "beginAtZero": true
           },
           "stacked": true
@@ -222,6 +224,7 @@
         "xAxes": [{
           "ticks": {
             "fontColor": "white",
+            "fontSize": 11,
             "beginAtZero": true
           }
         }]
@@ -309,12 +312,14 @@
       "responsive": true,
       "legend": {
         "labels": {
+          "fontSize": 11,
           "fontColor": "white"
         }
       },
       "scales": {
         "yAxes": [{
           "ticks": {
+            "fontSize": 11,
             "fontColor": "white",
             "beginAtZero": true
           },
@@ -322,6 +327,7 @@
         }],
         "xAxes": [{
           "ticks": {
+            "fontSize": 11,
             "fontColor": "white",
             "beginAtZero": true
           }
@@ -374,12 +380,14 @@
       "responsive": true,
       "legend": {
         "labels": {
+          "fontSize": 11,
           "fontColor": "white"
         }
       },
       "scales": {
         "yAxes": [{
           "ticks": {
+            "fontSize": 11,
             "fontColor": "white",
             "beginAtZero": true
           },
@@ -387,6 +395,7 @@
         }],
         "xAxes": [{
           "ticks": {
+            "fontSize": 11,
             "fontColor": "white",
             "beginAtZero": true
           }
@@ -449,6 +458,7 @@
       "scales": {
         "yAxes": [{
             "ticks": {
+              "fontSize": 11,
               "fontColor": "white",
               "beginAtZero": true
             },
@@ -457,6 +467,7 @@
           {
             "id": "x",
             "ticks": {
+              "fontSize": 11,
               "fontColor": "white",
               "beginAtZero": true
             },
@@ -466,6 +477,7 @@
         ],
         "xAxes": [{
           "ticks": {
+            "fontSize": 11,
             "fontColor": "white",
             "beginAtZero": true
           }
@@ -510,12 +522,14 @@
       "responsive": true,
       "legend": {
         "labels": {
+          "fontSize": 11,
           "fontColor": "white"
         }
       },
       "scales": {
         "yAxes": [{
           "ticks": {
+            "fontSize": 11,
             "fontColor": "white",
             "beginAtZero": true
           },
@@ -523,6 +537,7 @@
         }],
         "xAxes": [{
           "ticks": {
+            "fontSize": 11,
             "fontColor": "white",
             "beginAtZero": true
           }
@@ -629,12 +644,14 @@
       "responsive": true,
       "legend": {
         "labels": {
+          "fontSize": 11,
           "fontColor": "white"
         }
       },
       "scales": {
         "yAxes": [{
           "ticks": {
+            "fontSize": 11,
             "fontColor": "white",
             "beginAtZero": true
           },
@@ -642,6 +659,7 @@
         }],
         "xAxes": [{
           "ticks": {
+            "fontSize": 11,
             "fontColor": "white",
             "beginAtZero": true
           }

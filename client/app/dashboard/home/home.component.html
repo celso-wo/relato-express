@@ -119,7 +119,6 @@
                   <div class="col-md-4"><strong>Ramo:</strong></div>
                   <div class="col-md-8"> {{dados.dadoscadastrais.data.ramo}}</div>
                 </div>
-
               </div>
             </div>
           </div>
@@ -179,58 +178,6 @@
               <div class="card-content">
                 <h4 class="title">Histórico de Compromissos Rotativos</h4>
                 <span class="pull-right" data-toggle="tooltip" style="font-size: 18px" data-placement="left" title="Desmonstrativo de utilização do crédito rotativo no período de 9 meses"> <i class="fa fa-info-circle" aria-hidden="true"></i></span>
-                <p class="category">(Valores em Reais)</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="row">
-          <div class="col-md-12">
-            <div class="card">
-              <div class="card-header" data-background-color="serasa-blue">
-                <h4 class="title">Cartão de Crédito - Resumo</h4>
-                <span class="pull-right" data-toggle="tooltip" style="font-size: 18px" data-placement="left" title="Pagamentos realizados nos últimos 9 meses"> <i class="fa fa-info-circle" aria-hidden="true"></i></span>
-                <p class="category">Valores em Reais</p>
-              </div>
-              <div class="card-content table-responsive">
-                <table class="table">
-                  <thead class="text-danger">
-                    <tr>
-                      <th>Instruções</th>
-                      <th>Contratos</th>
-                      <th>Valor</th>
-                      <th>No Mês</th>
-                      <th>Média Mensal</th>
-                      <th>% Médio de Pagamentos das Faturas</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th>2</th>
-                      <th>4</th>
-                      <th>A Pagar</th>
-                      <th>R$ 633.33</th>
-                      <th>R$ 800.00</th>
-                      <th>R$ 99.00</th>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-12">
-            <div class="card">
-              <div class="card-header card-chart" data-background-color="serasa-blue">
-                <canvas baseChart [datasets]="dados.cartaoCreditoGrafico.dados" [labels]="dados.cartaoCreditoGrafico.labels" [options]="dados.cartaoCreditoGrafico.options" [colors]="dados.cartaoCreditoGrafico.colors" [legend]="true" [chartType]="dados.cartaoCreditoGrafico.type"></canvas>
-              </div>
-              <div class="card-content">
-                <h4 class="title">Histórico de Cartão de Crédito</h4>
-                <span class="pull-right" data-toggle="tooltip" style="font-size: 18px" data-placement="left" title="Pagamentos realizados nos últimos 9 meses"> <i class="fa fa-info-circle" aria-hidden="true"></i></span>
                 <p class="category">(Valores em Reais)</p>
               </div>
             </div>
@@ -304,38 +251,30 @@
           <div class="col-md-12">
             <div class="card">
               <div class="card-header" data-background-color="serasa-blue">
-                <h4 class="title">Detalhes dos 10 Maiores Compromissos Financeiros Parcelados</h4>
-                <span class="pull-right" data-toggle="tooltip" style="font-size: 18px" data-placement="left" title="Pagamentos realizados nos últimos 9 meses"> <i class="fa fa-info-circle" aria-hidden="true"></i></span>
+                <h4 class="title">Cartão de Crédito - Resumo</h4>
+                <span class="pull-right" data-toggle="tooltip" style="font-size: 18px" data-placement="left" title="Desmonstrativo de utilização do crédito rotativo no período de 9 meses"> <i class="fa fa-info-circle" aria-hidden="true"></i></span>
                 <p class="category">Valores em Reais</p>
               </div>
               <div class="card-content table-responsive">
                 <table class="table">
-                  <thead>
+                  <thead class="text-danger">
                     <tr>
-                      <th>Modalidade</th>
-                      <th>Data de Contratação</th>
-                      <th>Último</th>
-                      <th>Pré-Fixado</th>
-                      <th>QTD</th>
-                      <th>Total</th>
-                      <th>Pagas</th>
-                      <th>A Vencer</th>
-                      <th>Em Aberto</th>
-                      <th>Última Atualização</th>
+                      <th>Instruções</th>
+                      <th>Contratos</th>
+                      <th>Valor</th>
+                      <th>No Mês</th>
+                      <th>Média Mensal</th>
+                      <th>% Médio de Pagamentos</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr *ngFor="let r of dados.parcelados">
-                      <td>{{r.modalidade}}</td>
-                      <td>{{r.dataContratacao}}</td>
-                      <td>{{r.ultimoVencimento}}</td>
-                      <td>{{r.preFixado}}</td>
-                      <td>{{r.qtd}}</td>
-                      <td class="text-danger">R$ {{r.total}}</td>
-                      <td>{{r.pagas}}</td>
-                      <td>{{r.avencer}}</td>
-                      <td>{{r.emAberto}}</td>
-                      <td>{{r.ultimaAtualizacao}}</td>
+                    <tr>
+                      <th>2</th>
+                      <th>4</th>
+                      <th>A Pagar</th>
+                      <th>R$ 633.33</th>
+                      <th>R$ 800.00</th>
+                      <th>90%</th>
                     </tr>
                   </tbody>
                 </table>
@@ -343,6 +282,22 @@
             </div>
           </div>
         </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header card-chart" data-background-color="serasa-blue">
+                <canvas baseChart [datasets]="dados.cartaoCreditoGrafico.dados" [labels]="dados.cartaoCreditoGrafico.labels" [options]="dados.cartaoCreditoGrafico.options" [colors]="dados.cartaoCreditoGrafico.colors" [legend]="true" [chartType]="dados.cartaoCreditoGrafico.type"></canvas>
+              </div>
+              <div class="card-content">
+                <h4 class="title">Histórico de Cartão de Crédito</h4>
+                <span class="pull-right" data-toggle="tooltip" style="font-size: 18px" data-placement="left" title="Desmonstrativo de utilização do crédito rotativo no período de 9 meses"> <i class="fa fa-info-circle" aria-hidden="true"></i></span>
+                <p class="category">(Valores em Reais)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
 
         <div class="row">
           <div class="col-md-12">
@@ -556,21 +511,6 @@
         <div class="row">
           <div class="col-md-12">
             <div class="card">
-              <div class="card-header card-chart" data-background-color="serasa-blue">
-                <canvas baseChart [datasets]="dados.evolucaoCompromissosGrafico.dados" [labels]="dados.evolucaoCompromissosGrafico.labels" [options]="dados.evolucaoCompromissosGrafico.options" [colors]="dados.evolucaoCompromissosGrafico.colors" [legend]="true" [chartType]="dados.evolucaoCompromissosGrafico.type"></canvas>
-              </div>
-              <div class="card-content">
-                <h4 class="title">Evolução de Compromissos no Mercado</h4>
-                <span class="pull-right" data-toggle="tooltip" style="font-size: 18px" data-placement="left" title="Pagamentos realizados nos últimos 9 meses"> <i class="fa fa-info-circle" aria-hidden="true"></i></span>
-                <p class="category">(Valores em Reais)</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-12">
-            <div class="card">
               <div class="card-header" data-background-color="serasa-blue">
                 <h4 class="title">Detalhes dos 10 Maiores Compromissos Financeiros Parcelados</h4>
                 <span class="pull-right" data-toggle="tooltip" style="font-size: 18px" data-placement="left" title="Pagamentos realizados nos últimos 9 meses"> <i class="fa fa-info-circle" aria-hidden="true"></i></span>
@@ -611,6 +551,56 @@
             </div>
           </div>
         </div>
+
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header card-chart" data-background-color="serasa-blue">
+                <canvas baseChart [datasets]="dados.evolucaoCompromissosGrafico.dados" [labels]="dados.evolucaoCompromissosGrafico.labels" [options]="dados.evolucaoCompromissosGrafico.options" [colors]="dados.evolucaoCompromissosGrafico.colors" [legend]="true" [chartType]="dados.evolucaoCompromissosGrafico.type"></canvas>
+              </div>
+              <div class="card-content">
+                <h4 class="title">Evolução de Compromissos no Mercado</h4>
+                <span class="pull-right" data-toggle="tooltip" style="font-size: 18px" data-placement="left" title="Pagamentos realizados nos últimos 9 meses"> <i class="fa fa-info-circle" aria-hidden="true"></i></span>
+                <p class="category">(Valores em Reais)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header" data-background-color="serasa-blue">
+                <h4 class="title">Referenciais de Negócios no Mercado</h4>
+                <span class="pull-right" data-toggle="tooltip" style="font-size: 18px" data-placement="left" title="Pagamentos realizados nos últimos 9 meses"> <i class="fa fa-info-circle" aria-hidden="true"></i></span>
+                <p class="category">Valores em Reais</p>
+              </div>
+              <div class="card-content table-responsive">
+                <table class="table">
+                  <thead class="text-danger">
+                    <tr>
+                      <th>Descrição</th>
+                      <th>Data</th>
+                      <th>Valor</th>
+                      <th>Média</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let negocio of dados.referenciasNegocios">
+                      <td>{{negocio.descricao}}</td>
+                      <td>{{negocio.data}}</td>
+                      <td>R$ {{negocio.valor}}</td>
+                      <td>{{negocio.media}}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
 
         <div class="row">
           <div class="col-md-12">
@@ -680,38 +670,6 @@
                       <td>{{r.contrato}}</td>
                       <td>{{r.origem}}</td>
                       <td>{{r.local}}</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-12">
-            <div class="card">
-              <div class="card-header" data-background-color="red">
-                <h4 class="title">Referenciais de Negócios no Mercado</h4>
-                <span class="pull-right" data-toggle="tooltip" style="font-size: 18px" data-placement="left" title="Pagamentos realizados nos últimos 9 meses"> <i class="fa fa-info-circle" aria-hidden="true"></i></span>
-                <p class="category">Valores em Reais</p>
-              </div>
-              <div class="card-content table-responsive">
-                <table class="table">
-                  <thead class="text-danger">
-                    <tr>
-                      <th>Descrição</th>
-                      <th>Data</th>
-                      <th>Valor</th>
-                      <th>Média</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr *ngFor="let negocio of dados.referenciasNegocios">
-                      <td>{{negocio.descricao}}</td>
-                      <td>{{negocio.data}}</td>
-                      <td>R$ {{negocio.valor}}</td>
-                      <td>{{negocio.media}}</td>
                     </tr>
                   </tbody>
                 </table>
