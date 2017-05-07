@@ -104,3 +104,8 @@ my-app .main-panel .main-content .card{
   box-shadow: 2px 6px 20px -4px rgba(0,0,0,0.45);
   z-index: 9999999;
 }
+
+.dashboard .table th {
+ font-weight: 500;
+ color: #999;
+}
