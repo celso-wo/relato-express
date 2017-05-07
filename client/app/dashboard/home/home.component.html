@@ -476,6 +476,137 @@
         </div>
 
 
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header" data-background-color="red">
+                <h4 class="title">Compromissos Parcelados Em Andamento</h4>
+                <i class="material-icons pull-right" (click)="expandTableCompromissoEmAndamento()">add</i>
+                <p class="category">Valores em Reais</p>
+              </div>
+              <div class="card-content table-responsive">
+                <table class="table">
+                  <thead class="text-danger">
+                    <tr>
+                      <th></th>
+                      <th></th>
+                      <th>Em Aberto</th>
+                      <th></th>
+                      <th>A Vencer</th>
+                      <th></th>
+                      <th>Total</th>
+                    </tr>
+                    <tr>
+                      <th>Instruções</th>
+                      <th>Contratos</th>
+                      <th>Valor</th>
+                      <th>%</th>
+                      <th>Valor</th>
+                      <th>%</th>
+                      <th>Valor</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>5</th>
+                      <th>46</th>
+                      <th>R$ 0</th>
+                      <th>0</th>
+                      <th>R$ 45.679,55</th>
+                      <th>100</th>
+                      <th>R$ 45.679,55</th>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div *ngIf="open">
+                <div class="card-header" ng-show="false" data-background-color="red">
+                  <h4 class="title">Compromissos Parcelados Em Andamento - Por Data</h4>
+                  <p class="category">Valores em Reais</p>
+                </div>
+                <div class="card-content table-responsive">
+                  <table class="table">
+                    <thead class="text-danger">
+                      <tr>
+                        <th>Data</th>
+                        <th>Em Aberto</th>
+                        <th>A Vencer</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>Set/16</th>
+                        <th>0</th>
+                        <th>R$ 23.256,23</th>
+                      </tr>
+                      <tr>
+                        <th>Ago/16</th>
+                        <th>0</th>
+                        <th>R$ 9.256,23</th>
+                      </tr>
+                      <tr>
+                        <th>Jul/16</th>
+                        <th>0</th>
+                        <th>R$ 11.256,23</th>
+                      </tr>
+                      <tr>
+                        <th>Jun/16</th>
+                        <th>0</th>
+                        <th>R$ 19.256,23</th>
+                      </tr>
+                      <tr>
+                        <th>Mai/16</th>
+                        <th>0</th>
+                        <th>R$ 26.256,23</th>
+                      </tr>
+                      <tr>
+                        <th>Abr/16</th>
+                        <th>0</th>
+                        <th>R$ 5.256,23</th>
+                      </tr>
+                      <tr>
+                        <th>Mar/16</th>
+                        <th>0</th>
+                        <th>R$ 9.256,23</th>
+                      </tr>
+                      <tr>
+                        <th>Fev/16</th>
+                        <th>0</th>
+                        <th>R$ 28.256,23</th>
+                      </tr>
+                      <tr>
+                        <th>Jan/16</th>
+                        <th>0</th>
+                        <th>R$ 8.256,23</th>
+                      </tr>
+                      <tr>
+                        <th>Dez/15</th>
+                        <th>0</th>
+                        <th>R$ 26.256,23</th>
+                      </tr>
+                      <tr>
+                        <th>Nov/15</th>
+                        <th>0</th>
+                        <th>R$ 14.256,23</th>
+                      </tr>
+                      <tr>
+                        <th>Out/15</th>
+                        <th>0</th>
+                        <th>R$ 19.256,23</th>
+                      </tr>
+                      <tr>
+                        <th>Dez/15</th>
+                        <th>0</th>
+                        <th>R$ 1.256,23</th>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
       <img id="assistente" src="assets/img/photo.png" (click)="onAssistenteClick()" />
     </div>
