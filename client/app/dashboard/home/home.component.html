@@ -371,38 +371,26 @@
         <div class="row">
           <div class="col-md-12">
             <div class="card">
-              <div class="card-header" data-background-color="serasa-blue">
-                <h4 class="title">Detalhes dos 10 Maiores Compromissos Financeiros Parcelados</h4>
-                <p class="category">Valores em Reais</p>
+              <div class="card-header" data-background-color="red">
+                <h4 class="title">Informações do Concentre - Protesto</h4>
+                <p class="category">(Ocorrências mais recentes - Até Cinco)</p>
               </div>
               <div class="card-content table-responsive">
                 <table class="table">
-                  <thead>
+                  <thead class="text-danger">
                     <tr>
-                      <th>Modalidade</th>
-                      <th>Data de Contratação</th>
-                      <th>Último</th>
-                      <th>Pré-Fixado</th>
-                      <th>QTD</th>
-                      <th>Total</th>
-                      <th>Pagas</th>
-                      <th>A Vencer</th>
-                      <th>Em Aberto</th>
-                      <th>Última Atualização</th>
+                      <th>Data Protesto</th>
+                      <th>Valor</th>
+                      <th>Cartório</th>
+                      <th>Cidade/UF</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr *ngFor="let r of dados.parcelados">
-                      <td>{{r.modalidade}}</td>
-                      <td>{{r.dataContratacao}}</td>
-                      <td>{{r.ultimoVencimento}}</td>
-                      <td>{{r.preFixado}}</td>
-                      <td>{{r.qtd}}</td>
-                      <td class="text-danger">R$ {{r.total}}</td>
-                      <td>{{r.pagas}}</td>
-                      <td>{{r.avencer}}</td>
-                      <td>{{r.emAberto}}</td>
-                      <td>{{r.ultimaAtualizacao}}</td>
+                    <tr *ngFor="let informacao of dados.informacoesconcentreprotesto">
+                      <td>{{informacao.dataProtesto}}</td>
+                      <td class="text-danger">R$ {{informacao.dataProtesto}}</td>
+                      <td>{{informacao.cartorio}}</td>
+                      <td>{{informacao.cidade}}</td>
                     </tr>
                   </tbody>
                 </table>
@@ -542,6 +530,49 @@
         <div class="row">
           <div class="col-md-12">
             <div class="card">
+              <div class="card-header" data-background-color="serasa-blue">
+                <h4 class="title">Detalhes dos 10 Maiores Compromissos Financeiros Parcelados</h4>
+                <p class="category">Valores em Reais</p>
+              </div>
+              <div class="card-content table-responsive">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Modalidade</th>
+                      <th>Data de Contratação</th>
+                      <th>Último</th>
+                      <th>Pré-Fixado</th>
+                      <th>QTD</th>
+                      <th>Total</th>
+                      <th>Pagas</th>
+                      <th>A Vencer</th>
+                      <th>Em Aberto</th>
+                      <th>Última Atualização</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let r of dados.parcelados">
+                      <td>{{r.modalidade}}</td>
+                      <td>{{r.dataContratacao}}</td>
+                      <td>{{r.ultimoVencimento}}</td>
+                      <td>{{r.preFixado}}</td>
+                      <td>{{r.qtd}}</td>
+                      <td class="text-danger">R$ {{r.total}}</td>
+                      <td>{{r.pagas}}</td>
+                      <td>{{r.avencer}}</td>
+                      <td>{{r.emAberto}}</td>
+                      <td>{{r.ultimaAtualizacao}}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
               <div class="card-header" data-background-color="red">
                 <h4 class="title">Informações do Recheque</h4>
                 <p class="category">Cheque Extraviados/Sustados</p>
@@ -589,38 +620,6 @@
             </div>
           </div>
         </div>
-
-        <div class="row">
-          <div class="col-md-12">
-            <div class="card">
-              <div class="card-header" data-background-color="red">
-                <h4 class="title">Informações do Concentre - Protesto</h4>
-                <p class="category">(Ocorrências mais recentes - Até Cinco)</p>
-              </div>
-              <div class="card-content table-responsive">
-                <table class="table">
-                  <thead class="text-danger">
-                    <tr>
-                      <th>Data Protesto</th>
-                      <th>Valor</th>
-                      <th>Cartório</th>
-                      <th>Cidade/UF</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr *ngFor="let informacao of dados.informacoesconcentreprotesto">
-                      <td>{{informacao.dataProtesto}}</td>
-                      <td class="text-danger">R$ {{informacao.dataProtesto}}</td>
-                      <td>{{informacao.cartorio}}</td>
-                      <td>{{informacao.cidade}}</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-
 
         <div class="row">
           <div class="col-md-12">
