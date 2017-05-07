@@ -71,52 +71,8 @@
     "vara": "0013",
     "cidade": "SAO PAULO/SP"
   }],
-  "pefin": [{
-      "data": "20/03/2017",
-      "modalidade": "TIT.DESCONTA",
-      "avalista": "Não",
-      "valor": "50,00",
-      "contrato": "30276/9",
-      "origem": "ALGAR MIDIA",
-      "local": "ULA"
-    },
-    {
-      "data": "20/02/2017",
-      "modalidade": "TIT.DESCONTA",
-      "avalista": "Não",
-      "valor": "50,00",
-      "contrato": "30276/9",
-      "origem": "ALGAR MIDIA",
-      "local": "ULA"
-    },
-    {
-      "data": "20/01/2017",
-      "modalidade": "TIT.DESCONTA",
-      "avalista": "Não",
-      "valor": "50,00",
-      "contrato": "30276/9",
-      "origem": "ALGAR MIDIA",
-      "local": "ULA"
-    }
-  ],
-  "refin": [{
-      "data": "17/02/2017",
-      "modalidade": "TIT.DESCONTA",
-      "avalista": "Não",
-      "valor": "50,00",
-      "contrato": "08200000000045212",
-      "origem": "ALGAR MIDIA",
-      "local": "ULA"
-    },
-    {
-      "data": "01/03/2017",
-      "modalidade": "TIT.DESCONTA",
-      "avalista": "Não",
-      "valor": "50,00",
-      "contrato": "042000000000053112",
-      "origem": "ALGAR MIDIA",
-      "local": "ULA"
-    }
+  "pefin": [],
+  "refin": [
   ],
   "informacoesRecheque": "NADA CONSTA PARA O CNPJ CONSULTADO",
   "registroConsulta": {
@@ -560,7 +516,7 @@
       "label": "A Vencer"
     }],
     "labels": [
-      "ABRIL/17", "MAR/17", "FEV/17", "JAN/17", "DEZ/16", "NOV/16", "OUT/16", "SET/16", "AGO/16"
+      "AGO/16", "SET/16", "OUT/16", "NOV/16", "DEZ/16", "JAN/17", "FEV/17", "MAR/17", "ABRIL/17"
     ],
     "options": {
       "responsive": true,
