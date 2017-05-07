@@ -435,7 +435,11 @@
           <div class="col-md-12">
             <div class="card">
               <div class="card-header" data-background-color="serasa-purple">
-                <h4 class="title">Sócios e Acionistas</h4>
+                <span class="pull-right" style="padding-top: 8px; cursor: pointer;" (click)="!openbar ? openTable(): undefined">
+                  <span style="font-size: 18px; padding-right: 10px;">Ver cadastro completo</span> <i style="font-size: 18px" *ngIf="openbar" class="fa fa-unlock" aria-hidden="true"></i>
+                <i style="font-size: 18px" *ngIf="!openbar" class="fa fa-lock" aria-hidden="true"></i>
+                </span>
+                <h4 class="title">Detalhe</h4>
               </div>
               <div class="card-content table-responsive">
                 <table class="table">
@@ -466,7 +470,7 @@
                       <td>0,00</td>
                       <td>70,00</td>
                     </tr>
-                    <tr *ngFor="let societario of dados.controlesocietario.data" [hidden]="!dados.controlesocietario.enableitens">
+                    <tr *ngFor="let societario of dados.controlesocietario.data" [hidden]="!openbar">
                       <td>{{societario.cpfcnpj}}</td>
                       <td>{{societario.socio}}</td>
                       <td>{{societario.entrada}}</td>
@@ -476,12 +480,6 @@
                     </tr>
                   </tbody>
                 </table>
-                <div [hidden]="dados.controlesocietario.enableitens">
-                    <button class="btn pull-right" (click)="dados.controlesocietario.enableitens = true" [hidden]="dados.controlesocietario.enableitens">
-                      <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                      <span> Sócio ADM (Completo)* </span>
-                    </button>
-                </div>
               </div>
               <div class="card-footer">
                 <p class="category">* Consultar tabela de preços</p>
