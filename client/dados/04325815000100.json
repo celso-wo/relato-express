@@ -28,33 +28,28 @@
     },
     "opened": false
   },
-  "informacoesConcentreProtesto": [
-    {
-      "dataProtesto":"20/02/2017",
-      "valor": "1.275,00",
-      "cartorio": "01",
-      "cidade": "UBERLANDIA - MG"
-    }
-  ],
-  "informacoesConcentreJudicial":[
-    {
-      "dataAcaoJudicial" :"19/08/2016",
-      "naturezaAcao": "FISCAL FEDERAL",
-      "avalista": "",
-      "valor":"43.333,00",
-      "distrito":"01",
-      "vara": "0013",
-      "cidade": "SAO PAULO/SP"
-    }
-  ],
-  "pefin" : [
-    {
+  "informacoesConcentreProtesto": [{
+    "dataProtesto": "20/02/2017",
+    "valor": "1.275,00",
+    "cartorio": "01",
+    "cidade": "UBERLANDIA - MG"
+  }],
+  "informacoesConcentreJudicial": [{
+    "dataAcaoJudicial": "19/08/2016",
+    "naturezaAcao": "FISCAL FEDERAL",
+    "avalista": "",
+    "valor": "43.333,00",
+    "distrito": "01",
+    "vara": "0013",
+    "cidade": "SAO PAULO/SP"
+  }],
+  "pefin": [{
       "data": "20/03/2017",
       "modalidade": "TIT.DESCONTA",
       "avalista": "Não",
       "valor": "50,00",
       "contrato": "30276/9",
-      "origem":"ALGAR MIDIA",
+      "origem": "ALGAR MIDIA",
       "local": "ULA"
     },
     {
@@ -63,7 +58,7 @@
       "avalista": "Não",
       "valor": "50,00",
       "contrato": "30276/9",
-      "origem":"ALGAR MIDIA",
+      "origem": "ALGAR MIDIA",
       "local": "ULA"
     },
     {
@@ -72,18 +67,17 @@
       "avalista": "Não",
       "valor": "50,00",
       "contrato": "30276/9",
-      "origem":"ALGAR MIDIA",
+      "origem": "ALGAR MIDIA",
       "local": "ULA"
     }
   ],
-  "refin" : [
-    {
+  "refin": [{
       "data": "17/02/2017",
       "modalidade": "TIT.DESCONTA",
       "avalista": "Não",
       "valor": "50,00",
       "contrato": "08200000000045212",
-      "origem":"ALGAR MIDIA",
+      "origem": "ALGAR MIDIA",
       "local": "ULA"
     },
     {
@@ -92,7 +86,7 @@
       "avalista": "Não",
       "valor": "50,00",
       "contrato": "042000000000053112",
-      "origem":"ALGAR MIDIA",
+      "origem": "ALGAR MIDIA",
       "local": "ULA"
     }
   ],
@@ -109,7 +103,7 @@
     "ago": 0,
     "jul": 2,
     "jun": 1,
-    "mai": 2, 
+    "mai": 2,
     "abr": 1,
     "marAnterior": 1
   },
@@ -121,50 +115,150 @@
     "+60": 0,
     "avista": 1
   },
-  "registroConsultaCincoUltimas": [
-    {
-      "dataConsulta":"18/04/2016",
-      "cnpjConsultante":"66.369.892/0004-77",
-      "clienteConsultante":"ANTONIO DA SILVA BRAGA",
-      "quantidadeConsutaDia":2
+  "registroConsultaCincoUltimas": [{
+      "dataConsulta": "18/04/2016",
+      "cnpjConsultante": "66.369.892/0004-77",
+      "clienteConsultante": "ANTONIO DA SILVA BRAGA",
+      "quantidadeConsutaDia": 2
     },
     {
-      "dataConsulta":"12/03/2016",
-      "cnpjConsultante":"66.369.892/0004-77",
-      "clienteConsultante":"ANTONIO DA SILVA BRAGA",
-      "quantidadeConsutaDia":4
+      "dataConsulta": "12/03/2016",
+      "cnpjConsultante": "66.369.892/0004-77",
+      "clienteConsultante": "ANTONIO DA SILVA BRAGA",
+      "quantidadeConsutaDia": 4
     },
     {
-      "dataConsulta":"12/02/2016",
-      "cnpjConsultante":"66.369.892/0004-77",
-      "clienteConsultante":"ANTONIO DA SILVA BRAGA",
-      "quantidadeConsutaDia":1
+      "dataConsulta": "12/02/2016",
+      "cnpjConsultante": "66.369.892/0004-77",
+      "clienteConsultante": "ANTONIO DA SILVA BRAGA",
+      "quantidadeConsutaDia": 1
     },
     {
-      "dataConsulta":"11/02/2016",
-      "cnpjConsultante":"66.369.892/0004-77",
-      "clienteConsultante":"ANTONIO DA SILVA BRAGA",
-      "quantidadeConsutaDia":3
+      "dataConsulta": "11/02/2016",
+      "cnpjConsultante": "66.369.892/0004-77",
+      "clienteConsultante": "ANTONIO DA SILVA BRAGA",
+      "quantidadeConsutaDia": 3
     },
     {
-      "dataConsulta":"11/01/2016",
-      "cnpjConsultante":"66.369.892/0004-77",
-      "clienteConsultante":"ANTONIO DA SILVA BRAGA",
-      "quantidadeConsutaDia":8
+      "dataConsulta": "11/01/2016",
+      "cnpjConsultante": "66.369.892/0004-77",
+      "clienteConsultante": "ANTONIO DA SILVA BRAGA",
+      "quantidadeConsutaDia": 8
     }
   ],
   "compromissosParceladosAndamento": {
-    "instrucoes":5,
-    "contratos":46,
-    "valorAberto":"0,00",
-    "valorVencer":"45.679,55",
+    "instrucoes": 5,
+    "contratos": 46,
+    "valorAberto": "0,00",
+    "valorVencer": "45.679,55",
     "valotTotal": "45.679,55"
   },
   "compromissosParceladosPagos": {
-    "instrucoes":3,
-    "contratos":30,
-    "valorMaiorAtraso":"0,00",
+    "instrucoes": 3,
+    "contratos": 30,
+    "valorMaiorAtraso": "0,00",
     "valotTotal": "45.679,55",
     "dias": 100
+  },
+
+  "cartaoCreditoLista": {
+    "instruções": 2,
+    "contratos": 4,
+    "valor": "A Pagar",
+    "nomes": "R$ 800.00",
+    "mediaMensal": "R$ 633.33",
+    "mediopagamento": "R$ 99.00",
+    "historico": [{
+        "data": "Set/16",
+        "valorpagar": "R$ 233.23",
+        "valorminino": "R$ 100.23",
+        "valorpago": "R$ 155.22",
+        "pagamentofatura": "R$ 189.33"
+      },
+      {
+        "data": "Ago/16",
+        "valorpagar": "R$ 238.23",
+        "valorminino": "R$ 200.23",
+        "valorpago": "R$ 655.22",
+        "pagamentofatura": "R$ 489.33"
+      },
+      {
+        "data": "Jul/16",
+        "valorpagar": "R$ 638.23",
+        "valorminino": "R$ 100.23",
+        "valorpago": "R$ 355.22",
+        "pagamentofatura": "R$ 189.33"
+      },
+      {
+        "data": "Jun/16",
+        "valorpagar": "R$ 738.23",
+        "valorminino": "R$ 350.23",
+        "valorpago": "R$ 355.22",
+        "pagamentofatura": "R$ 689.33"
+      },
+      {
+        "data": "Mai/16",
+        "valorpagar": "R$ 138.23",
+        "valorminino": "R$ 300.23",
+        "valorpago": "R$ 355.22",
+        "pagamentofatura": "R$ 989.33"
+      },
+      {
+        "data": "Abr/16",
+        "valorpagar": "R$ 138.23",
+        "valorminino": "R$ 300.23",
+        "valorpago": "R$ 355.22",
+        "pagamentofatura": "R$ 989.33"
+      },
+      {
+        "data": "Mar/16",
+        "valorpagar": "R$ 238.23",
+        "valorminino": "R$ 300.23",
+        "valorpago": "R$ 255.22",
+        "pagamentofatura": "R$ 389.33"
+      },
+      {
+        "data": "Fev/16",
+        "valorpagar": "R$ 638.23",
+        "valorminino": "R$ 200.23",
+        "valorpago": "R$ 255.22",
+        "pagamentofatura": "R$ 689.33"
+      },
+      {
+        "data": "Jan/16",
+        "valorpagar": "R$ 238.23",
+        "valorminino": "R$ 100.23",
+        "valorpago": "R$ 155.22",
+        "pagamentofatura": "R$ 489.33"
+      },
+      {
+        "data": "Dez/15",
+        "valorpagar": "R$ 238.23",
+        "valorminino": "R$ 200.23",
+        "valorpago": "R$ 55.22",
+        "pagamentofatura": "R$ 89.33"
+      },
+      {
+        "data": "Nov/15",
+        "valorpagar": "R$ 238.23",
+        "valorminino": "R$ 100.23",
+        "valorpago": "R$ 35.22",
+        "pagamentofatura": "R$ 689.33"
+      },
+      {
+        "data": "Out/15",
+        "valorpagar": "R$ 138.23",
+        "valorminino": "R$ 200.23",
+        "valorpago": "R$ 305.22",
+        "pagamentofatura": "R$ 189.33"
+      },
+      {
+        "data": "Set/15",
+        "valorpagar": "R$ 238.23",
+        "valorminino": "R$ 100.23",
+        "valorpago": "R$ 35.22",
+        "pagamentofatura": "R$ 689.33"
+      }
+    ]
   }
 }
