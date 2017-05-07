@@ -240,6 +240,51 @@
           </div>
         </div>
 
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header" data-background-color="red">
+                <h4 class="title">Referenciais de Negócios no Mercado</h4>
+                <p class="category">Valores em Reais</p>
+              </div>
+              <div class="card-content table-responsive">
+                <table class="table">
+                  <thead class="text-danger">
+                    <tr>
+                      <th>Descrição</th>
+                      <th>Data</th>
+                      <th>Valor</th>
+                      <th>Média</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Última Compra</td>
+                      <td>18/08/2016</td>
+                      <td>R$ 55.600,20</td>
+                      <td>R$ 5.200,60</td>
+                    </tr>
+                    <tr>
+                      <tr>
+                        <td>Maior Fatura</td>
+                        <td>18/02/2017</td>
+                        <td>R$ 30.600,20</td>
+                        <td>R$ 7.200,60</td>
+                      </tr>
+                      <tr>
+                        <td>Maior Acúmulo</td>
+                        <td>18/08/2017</td>
+                        <td>R$ 30.600,20</td>
+                        <td>R$ 3.200,60</td>
+                      </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
       <div class="col-md-6">
         <div class="row">
@@ -534,7 +579,7 @@
                 </table>
               </div>
               <div *ngIf="openCompromissoEmAndamento">
-                <div class="card-header" ng-show="false" data-background-color="red">
+                <div class="card-header">
                   <h4 class="title">Compromissos Parcelados Em Andamento - Por Data</h4>
                   <p class="category">Valores em Reais</p>
                 </div>
@@ -663,7 +708,7 @@
                 </table>
               </div>
               <div *ngIf="openCompromissoPagos">
-                <div class="card-header" ng-show="false" data-background-color="red">
+                <div class="card-header" ng-show="false">
                   <h4 class="title">Compromissos Parcelados Pagos - Por Data</h4>
                   <p class="category">Valores em Reais</p>
                 </div>
