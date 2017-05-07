@@ -2,6 +2,15 @@
   <div class="container-fluid">
     <img class="pull-left" style="height: 40px;" src="../../assets/img/logo.png" alt="">
     <a class="navbar-brand" href="#">Relato Express</a>
+    <ul class="nav nav-pills pull-right nav-pills-danger" style="margin-right:10px">
+      <li class="active"><a href="#">Negativo</a></li>
+    </ul>
+    <ul class="nav nav-pills pull-right nav-pills-serasa-blue" style="margin-right:10px">
+      <li class="active"><a href="#">Positivo</a></li>
+    </ul>
+    <ul class="nav nav-pills pull-right" style="margin-right:10px">
+      <li class="active"><a href="#">Cadastral</a></li>
+    </ul>
   </div>
 </nav>
 <div class="main-content dashboard" *ngIf="dados">
@@ -368,7 +377,7 @@
               </div>
             </div>
           </div>
-        </div>        
+        </div>
 
         <div class="row">
           <div class="col-md-12">
@@ -417,6 +426,65 @@
                   </tr>
                   </tbody>
                 </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header" data-background-color="serasa-purple">
+                <h4 class="title">Sócios e Acionistas</h4>
+              </div>
+              <div class="card-content table-responsive">
+                <table class="table">
+                  <thead class="text-danger">
+                    <tr>
+                      <th>CPF/CNPJ</th>
+                      <th>Sócio/Acionista</th>
+                      <th>Entrada</th>
+                      <th>Nacionalidade</th>
+                      <th>Votante</th>
+                      <th>Total</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>048.932.158-95</td>
+                      <td>CARLOS ALBERTO SILVA</td>
+                      <td>23/03/2014s</td>
+                      <td>BRASIL</td>
+                      <td>0,00</td>
+                      <td>50,00</td>
+                    </tr>
+                    <tr>
+                      <td>068.902.758-66</td>
+                      <td>LUCAS SIMAS OLIVEIRA</td>
+                      <td>11/02/2015</td>
+                      <td>BRASIL</td>
+                      <td>0,00</td>
+                      <td>70,00</td>
+                    </tr>
+                    <tr *ngFor="let societario of dados.controlesocietario.data" [hidden]="!dados.controlesocietario.enableitens">
+                      <td>{{societario.cpfcnpj}}</td>
+                      <td>{{societario.socio}}</td>
+                      <td>{{societario.entrada}}</td>
+                      <td>{{societario.nacionalidade}}</td>
+                      <td>{{societario.votante}}</td>
+                      <td>{{societario.total}}</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div [hidden]="dados.controlesocietario.enableitens">
+                    <button class="btn pull-right" (click)="dados.controlesocietario.enableitens = true" [hidden]="dados.controlesocietario.enableitens">
+                      <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                      <span> Sócio ADM (Completo)* </span>
+                    </button>
+                </div>
+              </div>
+              <div class="card-footer">
+                <p class="category">* Consultar tabela de preços</p>
               </div>
             </div>
           </div>
@@ -714,7 +782,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="card">
-              <div class="card-header card-chart" data-background-color="red">
+              <div class="card-header card-chart" data-background-color="purple">
                 <canvas baseChart [datasets]="dados.evolucaoRegistroConsultaGrafico.dados" [labels]="dados.evolucaoRegistroConsultaGrafico.labels" [options]="dados.evolucaoRegistroConsultaGrafico.options" [colors]="dados.evolucaoCompromissosGrafico.colors" [legend]="true"
                   [chartType]="dados.evolucaoRegistroConsultaGrafico.type"></canvas>
               </div>
@@ -730,7 +798,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="card">
-              <div class="card-header" data-background-color="red">
+              <div class="card-header" data-background-color="purple">
                 <h4 class="title">Registro de Consulta</h4>
                 <span class="pull-right" data-toggle="tooltip" style="font-size: 18px" data-placement="left" title="Pagamentos realizados nos últimos 9 meses"> <i class="fa fa-info-circle" aria-hidden="true"></i></span>
                 <p class="category">Cinco Últimas</p>
@@ -759,61 +827,7 @@
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-md-12">
-            <div class="card">
-              <div class="card-header" data-background-color="serasa-purple">
-                <h4 class="title">Sócios e Acionistas</h4>
-              </div>
-              <div class="card-content table-responsive">
-                <table class="table">
-                  <thead class="text-danger">
-                    <tr>
-                      <th>CPF/CNPJ</th>
-                      <th>Sócio/Acionista</th>
-                      <th>Entrada</th>
-                      <th>Nacionalidade</th>
-                      <th>Votante</th>
-                      <th>Total</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>048.932.158-95</td>
-                      <td>CARLOS ALBERTO SILVA</td>
-                      <td>23/03/2014s</td>
-                      <td>BRASIL</td>
-                      <td>0,00</td>
-                      <td>50,00</td>
-                    </tr>
-                    <tr>
-                      <td>068.902.758-66</td>
-                      <td>LUCAS SIMAS OLIVEIRA</td>
-                      <td>11/02/2015</td>
-                      <td>BRASIL</td>
-                      <td>0,00</td>
-                      <td>70,00</td>
-                    </tr>
-                    <tr *ngFor="let societario of dados.controlesocietario.data" [hidden]="!dados.controlesocietario.enableitens">
-                      <td>{{societario.cpfcnpj}}</td>
-                      <td>{{societario.socio}}</td>
-                      <td>{{societario.entrada}}</td>
-                      <td>{{societario.nacionalidade}}</td>
-                      <td>{{societario.votante}}</td>
-                      <td>{{societario.total}}</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <div [hidden]="dados.controlesocietario.enableitens">
-                    <button class="btn pull-right" (click)="dados.controlesocietario.enableitens = true" [hidden]="dados.controlesocietario.enableitens">
-                      <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                      <span> Sócio ADM (Completo) </span>
-                    </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+
       </div>
     </div>
   </div>
