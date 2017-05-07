@@ -210,6 +210,21 @@
         @include shadow-big-color($brand-info);
     }
 
+    [data-background-color="serasa-blue"]{
+        background: linear-gradient(60deg, $blue-700, $blue-900);
+        @include shadow-big-color($brand-info);
+    }
+
+    [data-background-color="serasa-purple"]{
+        background: linear-gradient(60deg, $purple-500, $purple-700);
+        @include shadow-big-color($brand-info);
+    }
+
+    [data-background-color="serasa-pink"]{
+        background: linear-gradient(60deg, $pink-300, $pink-500);
+        @include shadow-big-color($brand-info);
+    }
+
     [data-background-color="green"]{
         background: linear-gradient(60deg, $green-400, $green-600);
         @include shadow-big-color($brand-success);
