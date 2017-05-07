@@ -511,6 +511,47 @@
     }],
     "type": "line"
   },
+  "evolucaoRegistroConsultaGrafico": {
+    "dados": [{
+      "data": [24101, 18069, 8258, 3175, 7795, 118948, 157854, 115814, 102518],
+      "label": "A Vencer"
+    }],
+    "labels": [
+      "ABRIL/17", "MAR/17", "FEV/17", "JAN/17", "DEZ/16", "NOV/16", "OUT/16", "SET/16", "AGO/16"
+    ],
+    "options": {
+      "responsive": true,
+      "legend": {
+        "labels": {
+          "fontColor": "white"
+        }
+      },
+      "scales": {
+        "yAxes": [{
+          "ticks": {
+            "fontColor": "white",
+            "beginAtZero": true
+          },
+          "stacked": true
+        }],
+        "xAxes": [{
+          "ticks": {
+            "fontColor": "white",
+            "beginAtZero": true
+          }
+        }]
+      }
+    },
+    "colors": [{
+      "backgroundColor": "rgba(255,255,255,0.1)",
+      "borderColor": "#fff",
+      "pointBackgroundColor": "#fff",
+      "pointBorderColor": "#fff",
+      "pointHoverBackgroundColor": "#fff",
+      "pointHoverBorderColor": "rgba(148,159,177,0.8)"
+    }],
+    "type": "line"
+  },
   "parcelados": [{
       "modalidade": "Capital de Giro",
       "dataContratacao": "09/04/2017",
