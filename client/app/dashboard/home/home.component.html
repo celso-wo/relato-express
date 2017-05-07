@@ -10,7 +10,7 @@
 <div class="main-content dashboard" *ngIf="dados">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-12">
         <div class="card">
           <div class="card-header" data-background-color="serasa-purple">
             <h4 class="title">Indentificação / Localização</h4>
@@ -20,96 +20,116 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="row">
-                  <div class="col-md-2"> CNPJ:</div>
-                  <div class="col-md-6"> {{dados.dadoscadastrais.data.cnpj}}</div>
+                  <div class="col-md-2"><strong>Razão Social:</strong></div>
+                  <div class="col-md-8"> {{dados.dadoscadastrais.data.razaoSocial}}</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-md-4"><strong>CNPJ:</strong></div>
+                  <div class="col-md-8"> {{dados.dadoscadastrais.data.cnpj}}</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-md-4"><strong>Situação do CNPJ:</strong></div>
+                  <div class="col-md-8"> {{dados.dadoscadastrais.data.situacaoCnpj}}</div>
+                </div>
+              </div>
+            </div>
+
+            <hr/>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-md-4"><strong>Tipo de Sociedade:</strong></div>
+                  <div class="col-md-8"> {{dados.dadoscadastrais.data.tipoSociedade}}</div>
                 </div>
                 <div class="row">
-                  <div class="col-md-2"> Razão Social:</div>
-                  <div class="col-md-6"> {{dados.dadoscadastrais.data.razaoSocial}}</div>
-                </div>
-                <div class="row">
-                  <div class="col-md-2"> Tipo de Sociedade:</div>
-                  <div class="col-md-6"> {{dados.dadoscadastrais.data.tipoSociedade}}</div>
-                </div>
-                <div class="row">
-                  <div class="col-md-2"> Antecessora:</div>
-                  <div class="col-md-6"> {{dados.dadoscadastrais.data.antecessoraNome}}</div>
-                  <div class="col-md-2"> Até:</div>
+                  <div class="col-md-4"><strong>Antecessora:</strong></div>
+                  <div class="col-md-4"> {{dados.dadoscadastrais.data.antecessoraNome}}</div>
+                  <div class="col-md-2"><strong>Até:</strong></div>
                   <div class="col-md-2"> {{dados.dadoscadastrais.data.antecessoraAte}}</div>
                 </div>
                 <div class="row">
-                  <div class="col-md-2"> Registro:</div>
-                  <div class="col-md-6"> {{dados.dadoscadastrais.data.registro}}</div>
+                  <div class="col-md-4"><strong>Registro:</strong></div>
+                  <div class="col-md-8"> {{dados.dadoscadastrais.data.registro}}</div>
                 </div>
                 <div class="row">
-                  <div class="col-md-2"> Data de Registro:</div>
-                  <div class="col-md-6"> {{dados.dadoscadastrais.data.dataRegistro}}</div>
+                  <div class="col-md-4"><strong>Data de Registro:</strong></div>
+                  <div class="col-md-8"> {{dados.dadoscadastrais.data.dataRegistro}}</div>
                 </div>
                 <div class="row">
-                  <div class="col-md-2"> NIRE:</div>
-                  <div class="col-md-6"> {{dados.dadoscadastrais.data.nire}}</div>
+                  <div class="col-md-4"><strong>NIRE:</strong></div>
+                  <div class="col-md-8"> {{dados.dadoscadastrais.data.nire}}</div>
                 </div>
                 <div class="row">
-                  <div class="col-md-2"> Inscricao Estadual:</div>
-                  <div class="col-md-6"> {{dados.dadoscadastrais.data.inscricaoEstadual}}</div>
+                  <div class="col-md-4"><strong>Inscricao Estadual:</strong></div>
+                  <div class="col-md-8"> {{dados.dadoscadastrais.data.inscricaoEstadual}}</div>
                 </div>
                 <div class="row">
-                  <div class="col-md-2"> Endereço:</div>
-                  <div class="col-md-6"> {{dados.dadoscadastrais.data.endereco}}</div>
+                  <div class="col-md-4"><strong>Cod. Atividade Serasa:</strong></div>
+                  <div class="col-md-8"> {{dados.dadoscadastrais.data.codigoAtividadeSerasa}}</div>
                 </div>
                 <div class="row">
-                  <div class="col-md-2"> Inscricao Estadual:</div>
-                  <div class="col-md-6"> {{dados.dadoscadastrais.data.inscricaoEstadual}}</div>
+                  <div class="col-md-4"><strong>CNAE:</strong></div>
+                  <div class="col-md-8"> {{dados.dadoscadastrais.data.cnae}}</div>
                 </div>
                 <div class="row">
-                  <div class="col-md-2"> Bairro:</div>
-                  <div class="col-md-6"> {{dados.dadoscadastrais.data.bairro}}</div>
+                  <div class="col-md-4"><strong>Opção Tributária:</strong></div>
+                  <div class="col-md-8"> {{dados.dadoscadastrais.data.opcaoTributaria}}</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-md-4"><strong>Endereço:</strong></div>
+                  <div class="col-md-8"> {{dados.dadoscadastrais.data.endereco}}</div>
                 </div>
                 <div class="row">
-                  <div class="col-md-2"> Cidade:</div>
-                  <div class="col-md-6"> {{dados.dadoscadastrais.data.cidade}}</div>
+                  <div class="col-md-4"><strong>Inscricao Estadual:</strong></div>
+                  <div class="col-md-8"> {{dados.dadoscadastrais.data.inscricaoEstadual}}</div>
                 </div>
                 <div class="row">
-                  <div class="col-md-2"> Telefone:</div>
-                  <div class="col-md-6"> {{dados.dadoscadastrais.data.telefone}}</div>
+                  <div class="col-md-4"><strong>Bairro:</strong></div>
+                  <div class="col-md-8"> {{dados.dadoscadastrais.data.bairro}}</div>
                 </div>
                 <div class="row">
-                  <div class="col-md-2"> CEP:</div>
-                  <div class="col-md-6"> {{dados.dadoscadastrais.data.cep}}</div>
+                  <div class="col-md-4"><strong>Cidade:</strong></div>
+                  <div class="col-md-8"> {{dados.dadoscadastrais.data.cidade}}</div>
                 </div>
                 <div class="row">
-                  <div class="col-md-2"> Fundacao:</div>
-                  <div class="col-md-6"> {{dados.dadoscadastrais.data.fundacao}}</div>
+                  <div class="col-md-4"><strong>Telefone:</strong></div>
+                  <div class="col-md-8"> {{dados.dadoscadastrais.data.telefone}}</div>
                 </div>
                 <div class="row">
-                  <div class="col-md-2"> Filiais:</div>
-                  <div class="col-md-6"> {{dados.dadoscadastrais.data.filiais}}</div>
+                  <div class="col-md-4"><strong>CEP:</strong></div>
+                  <div class="col-md-8"> {{dados.dadoscadastrais.data.cep}}</div>
                 </div>
                 <div class="row">
-                  <div class="col-md-2"> Ramo:</div>
-                  <div class="col-md-6"> {{dados.dadoscadastrais.data.ramo}}</div>
+                  <div class="col-md-4"><strong>Fundacao:</strong></div>
+                  <div class="col-md-8"> {{dados.dadoscadastrais.data.fundacao}}</div>
                 </div>
                 <div class="row">
-                  <div class="col-md-2"> Cod. Atividade Serasa:</div>
-                  <div class="col-md-6"> {{dados.dadoscadastrais.data.codigoAtividadeSerasa}}</div>
+                  <div class="col-md-4"><strong>Filiais:</strong></div>
+                  <div class="col-md-8"> {{dados.dadoscadastrais.data.filiais}}</div>
                 </div>
                 <div class="row">
-                  <div class="col-md-2"> CNAE:</div>
-                  <div class="col-md-6"> {{dados.dadoscadastrais.data.cnae}}</div>
+                  <div class="col-md-4"><strong>Ramo:</strong></div>
+                  <div class="col-md-8"> {{dados.dadoscadastrais.data.ramo}}</div>
                 </div>
-                <div class="row">
-                  <div class="col-md-2"> Opção Tributária:</div>
-                  <div class="col-md-6"> {{dados.dadoscadastrais.data.opcaoTributaria}}</div>
-                </div>
-                <div class="row">
-                  <div class="col-md-2"> Situação do CNPJ:</div>
-                  <div class="col-md-6"> {{dados.dadoscadastrais.data.situacaoCnpj}}</div>
-                </div>
+
               </div>
             </div>
           </div>
         </div>
-
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
         <div class="row">
           <div class="col-md-12">
             <div class="card">
@@ -274,9 +294,6 @@
             </div>
           </div>
         </div>
-
-      </div>
-      <div class="col-md-6">
         <div class="row">
           <div class="col-md-12">
             <div class="card">
@@ -349,8 +366,9 @@
             </div>
           </div>
         </div>
+      </div>
 
-
+      <div class="col-md-6">
         <div class="row">
           <div class="col-md-12">
             <div class="card">

@@ -109,3 +109,11 @@ my-app .main-panel .main-content .card{
  font-weight: 500;
  color: #999;
 }
+
+.dashboard strong {
+  font-weight: 500;
+}
+
+.dashboard .card-content.table-responsive {
+  min-height: 146px;
+}
