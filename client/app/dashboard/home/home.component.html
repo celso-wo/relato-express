@@ -984,6 +984,49 @@
             </div>
           </div>
         </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header card-chart" data-background-color="serasa-blue">
+                <canvas baseChart [datasets]="dados.evolucaoCompromissosGrafico.dados" [labels]="dados.evolucaoCompromissosGrafico.labels" [options]="dados.evolucaoCompromissosGrafico.options" [colors]="dados.evolucaoCompromissosGrafico.colors" [legend]="true" [chartType]="dados.evolucaoCompromissosGrafico.type"></canvas>
+              </div>
+              <div class="card-content">
+                <h4 class="title">Evolução de Compromissos no Mercado</h4>
+                <p class="category">(Valores em Reais)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header card-chart" data-background-color="serasa-blue">
+                <canvas baseChart [datasets]="dados.compromissosRotativosGrafico.dados" [labels]="dados.compromissosRotativosGrafico.labels" [options]="dados.compromissosRotativosGrafico.options" [colors]="dados.compromissosRotativosGrafico.colors" [legend]="true" [chartType]="dados.compromissosRotativosGrafico.type"></canvas>
+              </div>
+              <div class="card-content">
+                <h4 class="title">Histórico de Compromissos Rotativos</h4>
+                <p class="category">(Valores em Reais)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header card-chart" data-background-color="serasa-blue">
+                <canvas baseChart [datasets]="dados.cartaoCreditoGrafico.dados" [labels]="dados.cartaoCreditoGrafico.labels" [options]="dados.cartaoCreditoGrafico.options" [colors]="dados.cartaoCreditoGrafico.colors" [legend]="true" [chartType]="dados.cartaoCreditoGrafico.type"></canvas>
+              </div>
+              <div class="card-content">
+                <h4 class="title">Histórico de Cartão de Crédito</h4>
+                <p class="category">(Valores em Reais)</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

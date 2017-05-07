@@ -341,111 +341,129 @@
     "type": "bar"
   },
 
-  "cartaoCreditoLista": {
-    "instruções": 2,
-    "contratos": 4,
-    "valor": "A Pagar",
-    "nomes": "R$ 800.00",
-    "mediaMensal": "R$ 633.33",
-    "mediopagamento": "R$ 99.00",
-    "historico": [
-      {
-        "data": "Set/16",
-        "valorpagar": "R$ 233.23",
-        "valorminino": "R$ 100.23",
-        "valorpago": "R$ 155.22",
-        "pagamentofatura": "R$ 189.33"
+  "cartaoCreditoGrafico": {
+    "dados": [
+      { "data": [16303, 23183, 30105, 43866, 55156, 16900, 9046, 20344, 17011], "label": "Valor Pago", "type":"bar"},
+      { "data": [1000, 1000, 1000, 1000, 1000, 1000, 0, 0, 1000], "label": "Diferença", "type":"bar"},
+      { "data": [1233, 4321, 4432, 3245, 2133, 2333, 1333, 2333, 1112], "label": "Valor Minimo", "type":"line", "yAxisID": "x" },
+      { "data": [17303, 24183, 31105, 44866, 56156, 17900, 10046, 20344, 18011], "label": "Valor a Pagar", "type":"line", "yAxisID": "x"}
+    ],
+    "labels": [
+      "ABRIL/17","MAR/17","FEV/17","JAN/17","DEZ/16","NOV/16","OUT/16","SET/16","AGO/16"
+    ],
+    "options": {
+      "responsive": true,
+      "legend": {
+        "labels": {
+          "fontColor": "white"
+        }
       },
-      {
-        "data": "Ago/16",
-        "valorpagar": "R$ 238.23",
-        "valorminino": "R$ 200.23",
-        "valorpago": "R$ 655.22",
-        "pagamentofatura": "R$ 489.33"
-      },
-      {
-        "data": "Jul/16",
-        "valorpagar": "R$ 638.23",
-        "valorminino": "R$ 100.23",
-        "valorpago": "R$ 355.22",
-        "pagamentofatura": "R$ 189.33"
-      },
-      {
-        "data": "Jun/16",
-        "valorpagar": "R$ 738.23",
-        "valorminino": "R$ 350.23",
-        "valorpago": "R$ 355.22",
-        "pagamentofatura": "R$ 689.33"
-      },
-      {
-        "data": "Mai/16",
-        "valorpagar": "R$ 138.23",
-        "valorminino": "R$ 300.23",
-        "valorpago": "R$ 355.22",
-        "pagamentofatura": "R$ 989.33"
-      },
-      {
-        "data": "Abr/16",
-        "valorpagar": "R$ 138.23",
-        "valorminino": "R$ 300.23",
-        "valorpago": "R$ 355.22",
-        "pagamentofatura": "R$ 989.33"
-      },
-      {
-        "data": "Mar/16",
-        "valorpagar": "R$ 238.23",
-        "valorminino": "R$ 300.23",
-        "valorpago": "R$ 255.22",
-        "pagamentofatura": "R$ 389.33"
-      },
-      {
-        "data": "Fev/16",
-        "valorpagar": "R$ 638.23",
-        "valorminino": "R$ 200.23",
-        "valorpago": "R$ 255.22",
-        "pagamentofatura": "R$ 689.33"
-      },
-      {
-        "data": "Jan/16",
-        "valorpagar": "R$ 238.23",
-        "valorminino": "R$ 100.23",
-        "valorpago": "R$ 155.22",
-        "pagamentofatura": "R$ 489.33"
-      },
-      {
-        "data": "Dez/15",
-        "valorpagar": "R$ 238.23",
-        "valorminino": "R$ 200.23",
-        "valorpago": "R$ 55.22",
-        "pagamentofatura": "R$ 89.33"
-      },
-      {
-        "data": "Nov/15",
-        "valorpagar": "R$ 238.23",
-        "valorminino": "R$ 100.23",
-        "valorpago": "R$ 35.22",
-        "pagamentofatura": "R$ 689.33"
-      },
-      {
-        "data": "Out/15",
-        "valorpagar": "R$ 138.23",
-        "valorminino": "R$ 200.23",
-        "valorpago": "R$ 305.22",
-        "pagamentofatura": "R$ 189.33"
-      },
-      {
-        "data": "Set/15",
-        "valorpagar": "R$ 238.23",
-        "valorminino": "R$ 100.23",
-        "valorpago": "R$ 35.22",
-        "pagamentofatura": "R$ 689.33"
+      "scales": {
+        "yAxes": [
+          {
+            "ticks": {
+              "fontColor": "white",
+              "beginAtZero": true
+            },
+            "stacked": true
+          },
+          {
+            "id":"x",
+            "ticks": {
+              "fontColor": "white",
+              "beginAtZero": true
+            },
+            "stacked": false,
+            "display": false
+          }
+        ],
+        "xAxes": [
+          {
+            "ticks": {
+              "fontColor": "white",
+              "beginAtZero": true
+            }
+          }
+        ]
       }
-    ]
+    },
+    "colors": [
+      {
+        "backgroundColor": "rgba(255,255,255,0.8)"
+      },
+      {
+        "backgroundColor": "#ef9a9a"
+      },
+      {
+        "backgroundColor": "rgba(255,255,255,0.0)",
+        "borderColor": "#fff",
+        "pointBackgroundColor": "#fff",
+        "pointBorderColor": "#fff",
+        "pointHoverBackgroundColor": "#fff",
+        "pointHoverBorderColor": "rgba(148,159,177,0.8)"
+      },
+      {
+        "backgroundColor": "rgba(255,255,255,0.0)",
+        "borderColor": "#fff",
+        "pointBackgroundColor": "#fff",
+        "pointBorderColor": "#fff",
+        "pointHoverBackgroundColor": "#fff",
+        "pointHoverBorderColor": "rgba(148,159,177,0.8)"
+      }
+    ],
+    "type": "bar"
   },
 
   "evolucaoCompromissosGrafico": {
     "dados": [
       { "data": [24101, 18069, 8258, 3175, 7795, 118948, 157854, 115814, 102518], "label": "A Vencer" }
+    ],
+    "labels": [
+      "ABRIL/17","MAR/17","FEV/17","JAN/17","DEZ/16","NOV/16","OUT/16","SET/16","AGO/16"
+    ],
+    "options": {
+      "responsive": true,
+      "legend": {
+        "labels": {
+          "fontColor": "white"
+        }
+      },
+      "scales": {
+        "yAxes": [
+          {
+            "ticks": {
+              "fontColor": "white",
+              "beginAtZero": true
+            },
+            "stacked": true
+          }
+        ],
+        "xAxes": [
+          {
+            "ticks": {
+              "fontColor": "white",
+              "beginAtZero": true
+            }
+          }
+        ]
+      }
+    },
+    "colors": [
+      {
+        "backgroundColor": "rgba(255,255,255,0.1)",
+        "borderColor": "#fff",
+        "pointBackgroundColor": "#fff",
+        "pointBorderColor": "#fff",
+        "pointHoverBackgroundColor": "#fff",
+        "pointHoverBorderColor": "rgba(148,159,177,0.8)"
+      }
+    ],
+    "type": "line"
+  },
+
+  "compromissosRotativosGrafico": {
+    "dados": [
+      { "data": [24101, 18069, 8258, 3175, 7795, 118948, 157854, 115814, 102518], "label": "Valor no Mês" }
     ],
     "labels": [
       "ABRIL/17","MAR/17","FEV/17","JAN/17","DEZ/16","NOV/16","OUT/16","SET/16","AGO/16"
