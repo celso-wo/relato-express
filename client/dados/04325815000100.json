@@ -28,6 +28,34 @@
     },
     "opened": false
   },
+  "controlesocietario": {
+    "enableitens":false,
+    "data":[
+    {
+      "cpfcnpj": "048.932.158-95",
+      "socio": "GILBERTO CARDOSO DE MORAES",
+      "entrada": "02/02/2015",
+      "nacionalidade": "BOLIVIA",
+      "votante":"0,00",
+      "total": "80,00"
+    },
+    {
+      "cpfcnpj": "049.112.223-45",
+      "socio": "AFONSO GILMAR COSTA",
+      "entrada": "15/03/2016",
+      "nacionalidade": "BOLIVIA",
+      "votante":"0,00",
+      "total": "80,00"
+    },
+    {
+      "cpfcnpj": "033.252.678-05",
+      "socio": "GIOVANNA MENDES DE AMARAL",
+      "entrada": "09/04/2016",
+      "nacionalidade": "BOLIVIA",
+      "votante":"0,00",
+      "total": "80,00"
+    }
+  ]},
   "informacoesconcentreprotesto": [{
     "dataProtesto": "20/02/2017",
     "valor": "1.275,00",
