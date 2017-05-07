@@ -790,11 +790,29 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr *ngFor="let registro of dados.registroConsultaCincoUltimas">
-                      <td>{{registro.dataConsulta}}</td>
-                      <td>{{registro.cnpjConsultante}}</td>
-                      <td>{{registro.clienteConsultante}}</td>
-                      <td>{{registro.quantidadeConsutaDia}}</td>
+                    <tr>
+                      <td>048.932.158-95</td>
+                      <td>CARLOS ALBERTO SILVA</td>
+                      <td>23/03/2014s</td>
+                      <td>BRASIL</td>
+                      <td>0,00</td>
+                      <td>50,00</td>
+                    </tr>
+                    <tr>
+                      <td>068.902.758-66</td>
+                      <td>LUCAS SIMAS OLIVEIRA</td>
+                      <td>11/02/2015</td>
+                      <td>BRASIL</td>
+                      <td>0,00</td>
+                      <td>70,00</td>
+                    </tr>
+                    <tr *ngFor="let societario of dados.controlesocietario">
+                      <td>{{societario.cpfcnpj}}</td>
+                      <td>{{societario.socio}}</td>
+                      <td>{{societario.entrada}}</td>
+                      <td>{{societario.nacionalidade}}</td>
+                      <td>{{societario.votante}}</td>
+                      <td>{{societario.total}}</td>
                     </tr>
                   </tbody>
                 </table>
