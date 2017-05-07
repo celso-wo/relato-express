@@ -21,6 +21,7 @@ var HomeComponent = (function () {
     }
     HomeComponent.prototype.ngOnInit = function () {
         initDemo();
+        introJs().start();
     };
     HomeComponent = __decorate([
         core_1.Component({

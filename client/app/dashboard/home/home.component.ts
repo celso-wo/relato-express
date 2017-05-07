@@ -1,5 +1,6 @@
 import { Component, OnInit, trigger, state, style, transition, animate } from '@angular/core';
 import initDemo = require('../../../assets/js/charts.js');
+import * as introJs from 'intro.js';
 
 declare var $: any;
 
@@ -24,5 +25,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     initDemo();
+
+    introJs().start();
   }
 }
