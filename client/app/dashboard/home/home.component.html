@@ -163,7 +163,7 @@
                   </thead>
                   <tbody>
                     <tr *ngFor="let informacaojudicial of dados.informacoesconcentrejudicial">
-                      <td>{{informacaojudicial.dataProtesto}}</td>
+                      <td>{{informacaojudicial.dataAcaoJudicial}}</td>
                       <td>{{informacaojudicial.naturezaAcao}}</td>
                       <td>{{informacaojudicial.avalista}}</td>
                       <td class="text-danger">R$ {{informacaojudicial.valor}}</td>
@@ -177,7 +177,6 @@
             </div>
           </div>
         </div>
-
         <div class="row">
           <div class="col-md-12">
             <div class="card">
@@ -196,35 +195,11 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
-                      <td>18/08/2016</td>
-                      <td>66.369.892/0004-77</td>
-                      <td>ANTONIO DA SILVA BRAGA</td>
-                      <td>6</td>
-                    </tr>
-                    <tr>
-                      <td>18/08/2016</td>
-                      <td>66.369.892/0004-77</td>
-                      <td>ANTONIO DA SILVA BRAGA</td>
-                      <td>6</td>
-                    </tr>
-                    <tr>
-                      <td>18/08/2016</td>
-                      <td>66.369.892/0004-77</td>
-                      <td>ANTONIO DA SILVA BRAGA</td>
-                      <td>6</td>
-                    </tr>
-                    <tr>
-                      <td>18/08/2016</td>
-                      <td>66.369.892/0004-77</td>
-                      <td>ANTONIO DA SILVA BRAGA</td>
-                      <td>6</td>
-                    </tr>
-                    <tr>
-                      <td>18/08/2016</td>
-                      <td>66.369.892/0004-77</td>
-                      <td>ANTONIO DA SILVA BRAGA</td>
-                      <td>6</td>
+                    <tr *ngFor="let registro of dados.registroConsultaCincoUltimas">
+                      <td>{{registro.dataConsulta}}</td>
+                      <td>{{registro.cnpjConsultante}}</td>
+                      <td>{{registro.clienteConsultante}}</td>
+                      <td>{{registro.quantidadeConsutaDia}}</td>
                     </tr>
                   </tbody>
                 </table>
@@ -232,7 +207,6 @@
             </div>
           </div>
         </div>
-
 
         <div class="row">
           <div class="col-md-12">
@@ -252,25 +226,12 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
-                      <td>Última Compra</td>
-                      <td>18/08/2016</td>
-                      <td>R$ 55.600,20</td>
-                      <td>R$ 5.200,60</td>
-                    </tr>
-                    <tr>
-                      <tr>
-                        <td>Maior Fatura</td>
-                        <td>18/02/2017</td>
-                        <td>R$ 30.600,20</td>
-                        <td>R$ 7.200,60</td>
-                      </tr>
-                      <tr>
-                        <td>Maior Acúmulo</td>
-                        <td>18/08/2017</td>
-                        <td>R$ 30.600,20</td>
-                        <td>R$ 3.200,60</td>
-                      </tr>
+                    <tr *ngFor="let negocio of dados.referenciasNegocios">
+                      <td>{{negocio.descricao}}</td>
+                      <td>{{negocio.data}}</td>
+                      <td>R$ {{negocio.valor}}</td>
+                      <td>{{negocio.media}}</td>
+                    </tr>                      
                   </tbody>
                 </table>
               </div>
@@ -316,79 +277,10 @@
                   </tbody>
                 </table>
               </div>
-              <div *ngIf="openCompromissoRotativos">
-                <div class="card-header" ng-show="false">
-                  <h4 class="title">Histórico de Compomissos Rotativos - Por Data</h4>
-                  <p class="category">Valores em Reais</p>
-                </div>
-                <div class="card-content table-responsive">
-                  <table class="table">
-                    <thead class="text-danger">
-                      <tr>
-                        <th>Data</th>
-                        <th>Valor Mês</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th>Set/16</th>
-                        <th>R$ 233.23</th>
-                      </tr>
-                      <tr>
-                        <th>Ago/16</th>
-                        <th>R$ 233.23</th>
-                      </tr>
-                      <tr>
-                        <th>Jul/16</th>
-                        <th>R$ 233.23</th>
-                      </tr>
-                      <tr>
-                        <th>Jun/16</th>
-                        <th>R$ 233.23</th>
-                      </tr>
-                      <tr>
-                        <th>Mai/16</th>
-                        <th>R$ 233.23</th>
-                      </tr>
-                      <tr>
-                        <th>Abr/16</th>
-                        <th>R$ 233.23</th>
-                      </tr>
-                      <tr>
-                        <th>Mar/16</th>
-                        <th>R$ 233.23</th>
-                      </tr>
-                      <tr>
-                        <th>Fev/16</th>
-                        <th>R$ 233.23</th>
-                      </tr>
-                      <tr>
-                        <th>Jan/16</th>
-                        <th>R$ 233.23</th>
-                      </tr>
-                      <tr>
-                        <th>Dez/15</th>
-                        <th>R$ 233.23</th>
-                      </tr>
-                      <tr>
-                        <th>Nov/15</th>
-                        <th>R$ 233.23</th>
-                      </tr>
-                      <tr>
-                        <th>Out/15</th>
-                        <th>R$ 233.23</th>
-                      </tr>
-                      <tr>
-                        <th>Dez/15</th>
-                        <th>R$ 233.23</th>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
             </div>
           </div>
         </div>
+
 
         <div class="row">
           <div class="col-md-12">
@@ -421,118 +313,6 @@
                     </tr>
                   </tbody>
                 </table>
-              </div>
-              <div *ngIf="openCartaoCredito">
-                <div class="card-header" ng-show="false">
-                  <h4 class="title">Histórico de Cartão de Crédito - Por Data</h4>
-                  <p class="category">Valores em Reais</p>
-                </div>
-                <div class="card-content table-responsive">
-                  <table class="table">
-                    <thead class="text-danger">
-                      <tr>
-                        <th>Data</th>
-                        <th>Valor A Pagar</th>
-                        <th>Valor Mínimo</th>
-                        <th>Valor Pago</th>
-                        <th>% de Pagamentos das Faturas</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th>Set/16</th>
-                        <th>R$ 233.23</th>
-                        <th>R$ 100.23</th>
-                        <th>R$ 233.23</th>
-                        <th>R$ 100.23</th>
-                      </tr>
-                      <tr>
-                        <th>Ago/16</th>
-                        <th>R$ 233.23</th>
-                        <th>R$ 100.23</th>
-                        <th>R$ 233.23</th>
-                        <th>R$ 100.23</th>
-                      </tr>
-                      <tr>
-                        <th>Jul/16</th>
-                        <th>R$ 233.23</th>
-                        <th>R$ 100.23</th>
-                        <th>R$ 233.23</th>
-                        <th>R$ 100.23</th>
-                      </tr>
-                      <tr>
-                        <th>Jun/16</th>
-                        <th>R$ 233.23</th>
-                        <th>R$ 100.23</th>
-                        <th>R$ 233.23</th>
-                        <th>R$ 100.23</th>
-                      </tr>
-                      <tr>
-                        <th>Mai/16</th>
-                        <th>R$ 233.23</th>
-                        <th>R$ 100.23</th>
-                        <th>R$ 233.23</th>
-                        <th>R$ 100.23</th>
-                      </tr>
-                      <tr>
-                        <th>Abr/16</th>
-                        <th>R$ 233.23</th>
-                        <th>R$ 100.23</th>
-                        <th>R$ 233.23</th>
-                        <th>R$ 100.23</th>
-                      </tr>
-                      <tr>
-                        <th>Mar/16</th>
-                        <th>R$ 233.23</th>
-                        <th>R$ 100.23</th>
-                        <th>R$ 233.23</th>
-                        <th>R$ 100.23</th>
-                      </tr>
-                      <tr>
-                        <th>Fev/16</th>
-                        <th>R$ 233.23</th>
-                        <th>R$ 100.23</th>
-                        <th>R$ 233.23</th>
-                        <th>R$ 100.23</th>
-                      </tr>
-                      <tr>
-                        <th>Jan/16</th>
-                        <th>R$ 233.23</th>
-                        <th>R$ 233.23</th>
-                        <th>R$ 100.23</th>
-                        <th>R$ 100.23</th>
-                      </tr>
-                      <tr>
-                        <th>Dez/15</th>
-                        <th>R$ 233.23</th>
-                        <th>R$ 100.23</th>
-                        <th>R$ 233.23</th>
-                        <th>R$ 100.23</th>
-                      </tr>
-                      <tr>
-                        <th>Nov/15</th>
-                        <th>R$ 233.23</th>
-                        <th>R$ 100.23</th>
-                        <th>R$ 233.23</th>
-                        <th>R$ 100.23</th>
-                      </tr>
-                      <tr>
-                        <th>Out/15</th>
-                        <th>R$ 233.23</th>
-                        <th>R$ 100.23</th>
-                        <th>R$ 233.23</th>
-                        <th>R$ 100.23</th>
-                      </tr>
-                      <tr>
-                        <th>Dez/15</th>
-                        <th>R$ 233.23</th>
-                        <th>R$ 100.23</th>
-                        <th>R$ 233.23</th>
-                        <th>R$ 100.23</th>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
               </div>
             </div>
           </div>
@@ -631,6 +411,7 @@
             </div>
           </div>
         </div>
+
         <div class="row">
           <div class="col-md-12">
             <div class="card">
@@ -652,12 +433,12 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <th>81 | 81%</th>
-                      <th>4 | 4%</th>
-                      <th>5 | 5%</th>
-                      <th>30 | 30%</th>
-                      <th>10 | 10%</th>
-                      <th>60 | 61%</th>
+                      <th>{{dados.historicopagamentos.pontual}}</th>
+                      <th>{{dados.historicopagamentos.oitoquinze}}</th>
+                      <th>{{dados.historicopagamentos.dezesseistrinta}}</th>
+                      <th>{{dados.historicopagamentos.trintaeumsessenta}}</th>
+                      <th>{{dados.historicopagamentos.maissessentaa}}</th>
+                      <th>{{dados.historicopagamentos.avista}}</th>
                     </tr>
                   </tbody>
                 </table>
@@ -671,7 +452,6 @@
             <div class="card">
               <div class="card-header" data-background-color="red">
                 <h4 class="title">Compromissos Parcelados Em Andamento</h4>
-                <i class="material-icons pull-right" (click)="expandTableCompromissoEmAndamento()">add</i>
                 <p class="category">Valores em Reais</p>
               </div>
               <div class="card-content table-responsive">
@@ -698,100 +478,16 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <th>5</th>
-                      <th>46</th>
-                      <th>R$ 0</th>
-                      <th>0</th>
-                      <th>R$ 45.679,55</th>
-                      <th>100</th>
-                      <th>R$ 45.679,55</th>
+                      <th>{{dados.compromissosResumoParceladoAndamento.intrucoes}}</th>
+                      <th>{{dados.compromissosResumoParceladoAndamento.contrato}}</th>
+                      <th>R$ {{dados.compromissosResumoParceladoAndamento.valor}}</th>
+                      <th>{{dados.compromissosResumoParceladoAndamento.porcentagem}}</th>
+                      <th>R$ {{dados.compromissosResumoParceladoAndamento.valor2}}</th>
+                      <th>{{dados.compromissosResumoParceladoAndamento.porcentagem2}}</th>
+                      <th>R$ {{dados.compromissosResumoParceladoAndamento.valor3}}</th>
                     </tr>
                   </tbody>
                 </table>
-              </div>
-              <div *ngIf="openCompromissoEmAndamento">
-                <div class="card-header">
-                  <h4 class="title">Compromissos Parcelados Em Andamento - Por Data</h4>
-                  <p class="category">Valores em Reais</p>
-                </div>
-                <div class="card-content table-responsive">
-                  <table class="table">
-                    <thead class="text-danger">
-                      <tr>
-                        <th>Data</th>
-                        <th>Em Aberto</th>
-                        <th>A Vencer</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th>Set/16</th>
-                        <th>0</th>
-                        <th>R$ 23.256,23</th>
-                      </tr>
-                      <tr>
-                        <th>Ago/16</th>
-                        <th>0</th>
-                        <th>R$ 9.256,23</th>
-                      </tr>
-                      <tr>
-                        <th>Jul/16</th>
-                        <th>0</th>
-                        <th>R$ 11.256,23</th>
-                      </tr>
-                      <tr>
-                        <th>Jun/16</th>
-                        <th>0</th>
-                        <th>R$ 19.256,23</th>
-                      </tr>
-                      <tr>
-                        <th>Mai/16</th>
-                        <th>0</th>
-                        <th>R$ 26.256,23</th>
-                      </tr>
-                      <tr>
-                        <th>Abr/16</th>
-                        <th>0</th>
-                        <th>R$ 5.256,23</th>
-                      </tr>
-                      <tr>
-                        <th>Mar/16</th>
-                        <th>0</th>
-                        <th>R$ 9.256,23</th>
-                      </tr>
-                      <tr>
-                        <th>Fev/16</th>
-                        <th>0</th>
-                        <th>R$ 28.256,23</th>
-                      </tr>
-                      <tr>
-                        <th>Jan/16</th>
-                        <th>0</th>
-                        <th>R$ 8.256,23</th>
-                      </tr>
-                      <tr>
-                        <th>Dez/15</th>
-                        <th>0</th>
-                        <th>R$ 26.256,23</th>
-                      </tr>
-                      <tr>
-                        <th>Nov/15</th>
-                        <th>0</th>
-                        <th>R$ 14.256,23</th>
-                      </tr>
-                      <tr>
-                        <th>Out/15</th>
-                        <th>0</th>
-                        <th>R$ 19.256,23</th>
-                      </tr>
-                      <tr>
-                        <th>Dez/15</th>
-                        <th>0</th>
-                        <th>R$ 1.256,23</th>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
               </div>
             </div>
           </div>
@@ -827,100 +523,15 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <th>5</th>
-                      <th>46</th>
-                      <th>R$ 0</th>
-                      <th>0</th>
-                      <th>R$ 45.679,55</th>
-                      <th>100</th>
-                      <th>28</th>
+                      <th>{{dados.compromissosResumoParceladoAndamento.intrucoes}}</th>
+                      <th>{{dados.compromissosResumoParceladoAndamento.contrato}}</th>
+                      <th>R$ {{dados.compromissosResumoParceladoAndamento.valor}}</th>
+                      <th>{{dados.compromissosResumoParceladoAndamento.dias}}</th>
+                      <th>R$ {{dados.compromissosResumoParceladoAndamento.valor2}}</th>
+                      <th>{{dados.compromissosResumoParceladoAndamento.dias2}}</th>
                     </tr>
                   </tbody>
                 </table>
-              </div>
-              <div *ngIf="openCompromissoPagos">
-                <div class="card-header" ng-show="false">
-                  <h4 class="title">Compromissos Parcelados Pagos - Por Data</h4>
-                  <p class="category">Valores em Reais</p>
-                </div>
-                <div class="card-content table-responsive">
-                  <table class="table">
-                    <thead class="text-danger">
-                      <tr>
-                        <th>Data</th>
-                        <th>Em Aberto</th>
-                        <th>A Vencer</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th>Set/16</th>
-                        <th>0</th>
-                        <th>R$ 23.256,23</th>
-                      </tr>
-                      <tr>
-                        <th>Ago/16</th>
-                        <th>0</th>
-                        <th>R$ 9.256,23</th>
-                      </tr>
-                      <tr>
-                        <th>Jul/16</th>
-                        <th>0</th>
-                        <th>R$ 11.256,23</th>
-                      </tr>
-                      <tr>
-                        <th>Jun/16</th>
-                        <th>0</th>
-                        <th>R$ 19.256,23</th>
-                      </tr>
-                      <tr>
-                        <th>Mai/16</th>
-                        <th>0</th>
-                        <th>R$ 26.256,23</th>
-                      </tr>
-                      <tr>
-                        <th>Abr/16</th>
-                        <th>0</th>
-                        <th>R$ 5.256,23</th>
-                      </tr>
-                      <tr>
-                        <th>Mar/16</th>
-                        <th>0</th>
-                        <th>R$ 9.256,23</th>
-                      </tr>
-                      <tr>
-                        <th>Fev/16</th>
-                        <th>0</th>
-                        <th>R$ 28.256,23</th>
-                      </tr>
-                      <tr>
-                        <th>Jan/16</th>
-                        <th>0</th>
-                        <th>R$ 8.256,23</th>
-                      </tr>
-                      <tr>
-                        <th>Dez/15</th>
-                        <th>0</th>
-                        <th>R$ 26.256,23</th>
-                      </tr>
-                      <tr>
-                        <th>Nov/15</th>
-                        <th>0</th>
-                        <th>R$ 14.256,23</th>
-                      </tr>
-                      <tr>
-                        <th>Out/15</th>
-                        <th>0</th>
-                        <th>R$ 19.256,23</th>
-                      </tr>
-                      <tr>
-                        <th>Dez/15</th>
-                        <th>0</th>
-                        <th>R$ 1.256,23</th>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
               </div>
             </div>
           </div>

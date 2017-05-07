@@ -113,15 +113,45 @@
     "abr": 1,
     "marAnterior": 1
   },
-  "historicoPagamentos": {
+  "historicopagamentos": {
     "pontual": 0,
-    "815": 0,
-    "1630": 0,
-    "3160": 0,
-    "+60": 0,
+    "oitoquinze": 0,
+    "dezesseistrinta": 0,
+    "trintaeumsessenta": 0,
+    "maissessentaa": 0,
     "avista": 1
   },
-
+  "compromissosResumoParceladoAndamento": {
+    "intrucoes": 0,
+    "contrato": 0,
+    "valor": 0,
+    "porcentagem": 0,
+    "valor2": 0,
+    "porcentagem2": 1,
+    "valor3": 0
+  },
+  "compromissosResumoParceladoPagos": {
+    "intrucoes": 0,
+    "contrato": 0,
+    "valor": 0,
+    "dias": 0,
+    "valor2": 0,
+    "dias2": 1
+  },
+  "referenciasNegocios": [
+      {
+        "descricao": "Última Compra",
+        "data": "02/02/2017",
+        "valor": "55.600,20",
+        "media": "55.600,20"
+      },
+      {
+        "descricao": "Maior Acumulo",
+        "data": "02/02/2017",
+        "valor": "55.600,20",
+        "media": "55.600,20"
+      }
+    ],
   "historicoPagamentosGrafico": {
     "dados": [
       { "data": [1417303, 1424183, 1431105, 1144866, 1356156, 1317900, 291046, 201344, 138011], "label": "Pontual"},
