@@ -806,7 +806,7 @@
           <div class="col-md-12">
             <div class="card">
               <div class="card-header" data-background-color="serasa-purple">
-                <h4 class="title">Detalhe</h4>
+                <h4 class="title">Sócios e Acionistas</h4>
               </div>
               <div class="card-content table-responsive">
                 <table class="table">
@@ -838,7 +838,10 @@
                       <td>70,00</td>
                     </tr>
                     <div [hidden]="dados.controlesocietario.enableitens">
-                        <button class="btn pull-right" (click)="dados.controlesocietario.enableitens = true" [hidden]="dados.controlesocietario.enableitens">Sócio ADM (Completo)</button>
+                        <button class="btn pull-right" (click)="dados.controlesocietario.enableitens = true" [hidden]="dados.controlesocietario.enableitens">
+                          <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                          <span> Sócio ADM (Completo) </span>
+                        </button>
                     </div>
                     <tr *ngFor="let societario of dados.controlesocietario.data" [hidden]="!dados.controlesocietario.enableitens">
                       <td>{{societario.cpfcnpj}}</td>
