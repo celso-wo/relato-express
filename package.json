@@ -1,9 +1,9 @@
 {
-  "name": "node-todo",
+  "name": "relato-express",
   "version": "0.0.1",
-  "description": "Simple todo application.",
+  "description": "Relato Express.",
   "main": "server.js",
-  "author": "Scotch",
+  "author": "Team 13",
   "dependencies": {
     "body-parser": "^1.4.3",
     "express": "^4.13.4",
