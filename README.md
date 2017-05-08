@@ -17,13 +17,6 @@ It is available under the MIT license.
 * [mikemajesty](https://github.com/mikemajesty) - 
 **Mike Lima** &lt;mikee_2008@hotmail.com&gt;
 * [celso-wo](https://github.com/celso-wo) -
-**Celso Wo** &lt;celsowo@gmail.com&gt; Special thank you.
-* [jeanvitor06](https://github.com/jeanvitor06) -
-**Jean Vitor** &lt;jeanvitor06@gmail.com&gt;
-* [danieloprado](https://github.com/danieloprado) -
-**Daniel Prado** &lt;danielprado.ad@gmail.com&gt;
+**Celso Wo** &lt;celsowo@gmail.com&gt;
 * [GabrielJacquier](https://github.com/GabrielJacquier) -
 **Gabriel Jacquier** &lt;gabrieljacquierme@gmail.com&gt;
-* [Mateus-Oli](https://github.com/Mateus-Oli) -
-**Mateus Oli** &lt;mateus.oli.car@gmail.com&gt;
-
