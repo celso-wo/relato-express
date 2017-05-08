@@ -1,20 +1,16 @@
 {
   "files.exclude": {
-    ".editorconfig": true,
+    ".editorconfig": false,
     ".eslintrc": false,
-    ".gitignore": true,
-    ".jshintrc": true,
-    ".jsbeautifyrc": true,
-    "client/node_modules/": true,
-    "server/node_modules/": true,
-    "**/*.js": {
-      "when": "$(basename).ts"
-    },
-    "**/*.map": {
-      "when": "$(basename).map"
-    },
-    "**/.git": true,
-    "**/.DS_Store": true
+    ".gitignore": false,
+    ".jshintrc": false,
+    ".jsbeautifyrc": false,
+    "client/node_modules/": false,
+    "server/node_modules/": false,
+    "**/*.js": false,
+    "**/*.map": false,
+    "**/.git": false,
+    "**/.DS_Store": false
   },
   "vsicons.presets.angular": false
 }
