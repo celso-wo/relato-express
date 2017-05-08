@@ -6,12 +6,6 @@
 ## Try it yourself.
 [click here](https://relato-express.herokuapp.com/#/entrada)
 
-
-### License
-
-It is available under the MIT license.
-[License](https://opensource.org/licenses/mit-license.php)
-
 ### Collaborators
 
 * [mikemajesty](https://github.com/mikemajesty) - 
@@ -20,3 +14,8 @@ It is available under the MIT license.
 **Celso Wo** &lt;celsowo@gmail.com&gt;
 * [GabrielJacquier](https://github.com/GabrielJacquier) -
 **Gabriel Jacquier** &lt;gabrieljacquierme@gmail.com&gt;
+
+### License
+
+It is available under the MIT license.
+[License](https://opensource.org/licenses/mit-license.php)
