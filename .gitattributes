@@ -1,2 +1,6 @@
-client/node_modules/* linguist-vendored
-client/node_modules/* linguist-language=TypeScript
+client/assets/css/bootstrap.min.css linguist-vendored
+client/assets/css/demo.css linguist-vendored
+client/assets/css/introjs-rtl.min.css linguist-vendored
+client/assets/css/introjs.min.css linguist-vendored
+client/assets/css/material-dashboard.css linguist-vendored
+client/documentation/css/demo-documentation.css linguist-vendored
