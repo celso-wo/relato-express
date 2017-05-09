@@ -1,1 +1,1 @@
-client/node_modules linguist-vendored
+client/node_modules/** linguist-vendored
