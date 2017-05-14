@@ -1,2 +1,4 @@
 client/assets/css/* linguist-vendored
+client/assets/bootstrap.min.css linguist-vendored
 relato-express/client/assets/* linguist-vendored
+relato-express/client/assets/bootstrap.min.css linguist-vendored
